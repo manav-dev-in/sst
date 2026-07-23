@@ -4106,51 +4106,59 @@ const GLOSSARY = [
 
 const SVG_DIAGRAMS = [
   {
-    title: "1. India Administrative & Political Map (States & Union Territories)",
-    desc: "Complete high-resolution political map of India detailing all 28 States and 8 Union Territories with state capitals.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/India_political_map.svg/1024px-India_political_map.svg.png",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/India_administrative_map.svg/1024px-India_administrative_map.svg.png"
+    title: "1. India Administrative & Political Map",
+    desc: "Complete political map of India detailing states, union territories, and capital cities.",
+    imgUrl: "https://www.mapsofindia.com/maps/india/india-political-map.htm",
+    directImgUrl: "https://www.mapsofindia.com/maps/india/india-political-map.gif",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/India_political_map.svg/1024px-India_political_map.svg.png"
   },
   {
     title: "2. Historical Map of Pre-1947 British India & Princely States",
-    desc: "Historical administrative map depicting British Indian Provinces alongside over 565 Princely States before August 1947 accession.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/India_1947_partition.svg/1024px-India_1947_partition.svg.png",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/British_Indian_Empire_1909_imperial_gazetteer_map.jpg/1024px-British_Indian_Empire_1909_imperial_gazetteer_map.jpg"
+    desc: "Historical administrative map depicting integration of Princely States and British Indian Provinces.",
+    imgUrl: "princely.png",
+    directImgUrl: "princely.png",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/India_1947_partition.svg/1024px-India_1947_partition.svg.png"
   },
   {
     title: "3. Indian Electronic Voting Machine (EVM) & VVPAT System",
-    desc: "Detailed photographic schematic of the Control Unit, Balloting Unit, and Voter Verifiable Paper Audit Trail (VVPAT) unit used in Indian democratic elections.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Indian_EVM_with_VVPAT.jpg/1024px-Indian_EVM_with_VVPAT.jpg",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Indian_Electronic_Voting_Machine.jpg/1024px-Indian_Electronic_Voting_Machine.jpg"
+    desc: "Transparency and operational schematic for EVMs and VVPAT from Election Commission of India.",
+    imgUrl: "https://pucl.org/manage-writings/require-transparency-around-use-of-evms-from-the-election-commission-of-india/",
+    directImgUrl: "https://pucl.org/wp-content/uploads/2024/05/1lj4blt8_evm-and-vvpat_625x300_12_March_19.jpg",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Indian_EVM_with_VVPAT.jpg/1024px-Indian_EVM_with_VVPAT.jpg"
   },
   {
-    title: "4. Natural Resources Classification Tree Diagram",
-    desc: "Comprehensive geographical classification tree of natural resources based on origin (biotic/abiotic), exhaustibility (renewable/non-renewable), and ownership.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Renewable_energy_sources.svg/1024px-Renewable_energy_sources.svg.png",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Resource_classification_chart.svg/1024px-Resource_classification_chart.svg.png"
+    title: "4. Mind Map - Social Science & Natural Resources",
+    desc: "Comprehensive mind map illustrating key topics, natural resources, and social science concepts.",
+    imgUrl: "mindmap.png",
+    directImgUrl: "mindmap.png",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Renewable_energy_sources.svg/1024px-Renewable_energy_sources.svg.png"
   },
   {
     title: "5. Factors of Production & Circular Flow of Economic Income",
-    desc: "Economic diagram illustrating how Land, Labour, Capital, and Entrepreneurship generate Rent, Wages, Interest, and Profit across households and firms.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Circular_flow_of_income_model.svg/1024px-Circular_flow_of_income_model.svg.png",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Factors_of_production_diagram.svg/1024px-Factors_of_production_diagram.svg.png"
+    desc: "Economic diagram illustrating how factors of production and income circulate in an economy.",
+    imgUrl: "https://www.economicsonline.co.uk/definitions/the-circular-flow-diagram.html/",
+    directImgUrl: "https://www.economicsonline.co.uk/content/images/2024/03/1-2.webp",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Circular_flow_of_income_model.svg/1024px-Circular_flow_of_income_model.svg.png"
   },
   {
-    title: "6. Global Supply Chain & Manufacturing Logistics Network",
-    desc: "5-stage supply chain flow diagram showing raw material extraction, component manufacturing, assembly, warehouse logistics, and retail sale.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Supply_chain_management_diagram.svg/1024px-Supply_chain_management_diagram.svg.png",
+    title: "6. Global Supply Chain & Business Workflow System",
+    desc: "Key components of supply chain and business workflow system outline diagram.",
+    imgUrl: "supply chain.png",
+    directImgUrl: "supply chain.png",
     fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Supply_chain_stages.svg/1024px-Supply_chain_stages.svg.png"
   },
   {
-    title: "7. India Demographic Dividend & Age-Group Population Pyramid",
-    desc: "Statistical demographic pyramid showing India's youth workforce advantage with over 65% of the population in the 15–64 working-age bracket.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/India_single_age_population_pyramid_2020.png/1024px-India_single_age_population_pyramid_2020.png",
-    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/India_demographic_transition.png/1024px-India_demographic_transition.png"
+    title: "7. India's Demographic Dividend Analysis",
+    desc: "Statistical analysis and demographic dividend metrics for working-age population.",
+    imgUrl: "https://www.amulyacharan.com/2025/07/18/indias-demographic-dividend-are-we-ready-to-reap-it/",
+    directImgUrl: "https://www.amulyacharan.com/wp-content/uploads/2025/07/1-Image-Jul-14-2025-at-02_23_07-PM.jpg",
+    fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/India_single_age_population_pyramid_2020.png/1024px-India_single_age_population_pyramid_2020.png"
   },
   {
-    title: "8. Election Commission of India & Democratic Voting Booth",
-    desc: "Constitutional structure diagram and polling booth setup illustrating secret ballot voting, Presiding Officers, and EVM security.",
-    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Indian_General_Election_Polling_Station.jpg/1024px-Indian_General_Election_Polling_Station.jpg",
+    title: "8. Election Commission of India",
+    desc: "Constitutional framework and operational structure of the Election Commission of India.",
+    imgUrl: "eci.png",
+    directImgUrl: "eci.png",
     fallbackUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Election_Commission_of_India_Logo.svg/1024px-Election_Commission_of_India_Logo.svg.png"
   }
 ];
@@ -4725,16 +4733,21 @@ function renderDiagrams() {
     const card = document.createElement('div');
     card.className = 'diagram-card card';
     card.style.cssText = 'height:auto; display:flex; flex-direction:column; gap:12px; cursor:pointer;';
+    const displaySrc = (d.imgUrl && (d.imgUrl.endsWith('.png') || d.imgUrl.endsWith('.jpg') || d.imgUrl.endsWith('.jpeg') || d.imgUrl.endsWith('.svg') || d.imgUrl.endsWith('.webp') || d.imgUrl.endsWith('.gif'))) ? d.imgUrl : (d.directImgUrl || d.fallbackUrl);
+    
     card.innerHTML = `
-      <div class="diagram-img-wrap" style="position:relative; width:100%; height:220px; border-radius:8px; overflow:hidden; background:var(--navy-darker);" onclick="openDiagramLightbox('${d.imgUrl}', '${d.title.replace(/'/g, "\'")}')">
-        <img src="${d.imgUrl}" alt="${d.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s var(--ease);" onerror="this.onerror=null; this.src='${d.fallbackUrl}';">
+      <div class="diagram-img-wrap" style="position:relative; width:100%; height:220px; border-radius:8px; overflow:hidden; background:var(--navy-darker);" onclick="openDiagramLightbox('${d.imgUrl.replace(/'/g, "\\'")}', '${d.title.replace(/'/g, "\\'")}', '${(d.directImgUrl || d.fallbackUrl || '').replace(/'/g, "\\'")}')">
+        <img src="${displaySrc}" alt="${d.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s var(--ease);" onerror="this.onerror=null; this.src='${d.fallbackUrl}';">
         <div class="diagram-img-overlay" style="position:absolute; inset:0; background:rgba(7,26,46,0.7); color:var(--cyan); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s var(--ease); font-weight:700; font-size:0.9rem;">
           🔍 Click to View High-Res Diagram
         </div>
       </div>
       <div class="diagram-info" style="padding:5px 0;">
         <h4 style="color:var(--cyan); margin:0 0 6px 0; font-size:1.05rem;">${d.title}</h4>
-        <p style="color:var(--gray-light); font-size:0.85rem; margin:0; line-height:1.5;">${d.desc}</p>
+        <p style="color:var(--gray-light); font-size:0.85rem; margin:0 0 6px 0; line-height:1.5;">${d.desc}</p>
+        <a href="${d.imgUrl}" target="_blank" onclick="event.stopPropagation()" style="color:var(--cyan); font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:4px; text-decoration:none; opacity:0.9;">
+          🔗 Link: ${d.imgUrl.length > 38 ? d.imgUrl.substring(0, 35) + '...' : d.imgUrl}
+        </a>
       </div>
     `;
 
@@ -4751,7 +4764,7 @@ function renderDiagrams() {
   });
 }
 
-function openDiagramLightbox(imgUrl, title) {
+function openDiagramLightbox(imgUrl, title, directImgUrl) {
   let lightbox = document.getElementById('diagram-lightbox');
   if (!lightbox) {
     lightbox = document.createElement('div');
@@ -4760,14 +4773,20 @@ function openDiagramLightbox(imgUrl, title) {
     lightbox.onclick = (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); };
     document.body.appendChild(lightbox);
   }
+  const isDirectImg = (imgUrl && (imgUrl.endsWith('.png') || imgUrl.endsWith('.jpg') || imgUrl.endsWith('.jpeg') || imgUrl.endsWith('.svg') || imgUrl.endsWith('.webp') || imgUrl.endsWith('.gif')));
+  const displaySrc = isDirectImg ? imgUrl : (directImgUrl || imgUrl);
+
   lightbox.innerHTML = `
     <div class="modal-box" style="max-width:950px; text-align:center; padding:24px; background:var(--glass-modal); border:1px solid var(--cyan); border-radius:16px;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
         <h3 style="margin:0; color:var(--cyan); font-size:1.2rem;">${title}</h3>
         <button class="icon-btn" onclick="document.getElementById('diagram-lightbox').classList.remove('open')">✕</button>
       </div>
-      <div style="background:var(--navy-darker); padding:16px; border-radius:14px; max-height:75vh; overflow:auto; display:flex; justify-content:center; align-items:center; border:1px solid var(--glass-border);">
-        <img src="${imgUrl}" alt="${title}" style="max-width:100%; max-height:70vh; object-fit:contain; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.6);">
+      <div style="background:var(--navy-darker); padding:20px; border-radius:14px; max-height:75vh; overflow:auto; display:flex; flex-direction:column; justify-content:center; align-items:center; border:1px solid var(--glass-border); gap:14px;">
+        <img src="${displaySrc}" alt="${title}" style="max-width:100%; max-height:60vh; object-fit:contain; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.6);" onerror="this.onerror=null; this.src='${directImgUrl}';">
+        <a href="${imgUrl}" target="_blank" rel="noopener noreferrer" class="btn primary-btn" style="padding:8px 18px; font-size:0.88rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+          🌐 Open Source URL / High-Res Image
+        </a>
       </div>
     </div>
   `;
