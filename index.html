@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SST Study Guide</title>
+  <meta name="description" content="Complete Single Page Application (SPA) study website for Grade 8 Social Science featuring unabridged study guides, detailed educational diagrams, flashcards, MCQs, glossary, and 15-minute revision tools.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Background & Particle System -->
+  <div class="bg-layer"></div>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="dots"></div>
+
+  <!-- Global Reading Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Header Sticky Glass Navbar -->
+  <header>
+    <div class="nav-wrap">
+      <a href="#home" class="logo hero-link">
+        <div class="logo-mark">SST</div>
+        <span>SST Study Guide</span>
+      </a>
+
+      <nav>
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="search-input" placeholder="Search topics, terms..." aria-label="Global search">
+        </div>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#natural-resources" class="nav-link">Natural Resources</a>
+        <a href="#political-map" class="nav-link">Political Map</a>
+        <a href="#electoral-system" class="nav-link">Electoral System</a>
+        <a href="#factors-production" class="nav-link">Factors of Production</a>
+        <a href="#diagrams" class="nav-link">Diagrams & Maps</a>
+        <a href="#quick-revision" class="nav-link">Quick Revision</a>
+        <a href="#flashcards" class="nav-link">Flashcards</a>
+        <a href="#mcqs" class="nav-link">MCQs Quiz</a>
+        <a href="#important-questions" class="nav-link">Important Questions</a>
+        <a href="#glossary" class="nav-link">Glossary</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle mobile navigation menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main SPA Content Shell -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="eyebrow">
+        <span>✨ SOCIAL SCIENCE EXAM COMPANION</span>
+      </div>
+      <h1>SST Study Guide</h1>
+      <p class="subtitle">
+        Master Social Science through Interactive Learning. Unabridged textbook explanations, interactive mind maps, visual schematics, 150+ smart active recall flashcards, 200+ practice MCQs, and 15-minute exam revision tools.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#natural-resources" class="cta-btn hero-link">
+          Explore All Topics
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#quick-revision" class="cta-btn-outline hero-link">
+          ⚡ 15-Min Quick Revision
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-chip">
+          <b id="stat-total-topics">28</b>
+          <span>Textbook Topics</span>
+        </div>
+        <div class="stat-chip">
+          <b id="stat-fc-learned">0 / 150</b>
+          <span>Flashcards Learned</span>
+        </div>
+        <div class="stat-chip">
+          <b id="stat-quiz-high">0 / 200</b>
+          <span>Quiz High Score</span>
+        </div>
+        <div class="stat-chip">
+          <b id="stat-bookmarks">0</b>
+          <span>Bookmarked Topics</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 1: NATURAL RESOURCES AND THEIR USE -->
+    <section id="natural-resources" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">CHAPTER 1</div>
+        <h2>Natural Resources and Their Use</h2>
+        <p>Explore Nature vs. Resources, conditions for resource transformation (Technological, Economic, Cultural), classification criteria, renewable & non-renewable resources, ecosystem services, and sustainable conservation strategies.</p>
+      </div>
+
+      <div class="card-grid" id="natural-resources-grid">
+        <!-- Topic cards dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- CHAPTER 2: RESHAPING INDIA'S POLITICAL MAP -->
+    <section id="political-map" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">CHAPTER 2</div>
+        <h2>Reshaping India's Political Map</h2>
+        <p>Master the historical integration of 565+ princely states, Sardar Vallabhbhai Patel's diplomacy, the Instrument of Accession, States Reorganisation Commission (SRC 1953), States Reorganisation Act 1956, and linguistic state reorganization.</p>
+      </div>
+
+      <div class="card-grid" id="political-map-grid">
+        <!-- Topic cards dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- CHAPTER 5: UNIVERSAL ADULT FRANCHISE & ELECTORAL SYSTEM -->
+    <section id="electoral-system" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">CHAPTER 5</div>
+        <h2>Universal Adult Franchise & India's Electoral System</h2>
+        <p>Deep dive into Article 326, election principles, the Election Commission of India (ECI), Electronic Voting Machines (EVMs), VVPAT, Model Code of Conduct, Lok Sabha vs. Vidhan Sabha elections, and democratic voting ethics.</p>
+      </div>
+
+      <div class="card-grid" id="electoral-system-grid">
+        <!-- Topic cards dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- CHAPTER 7: FACTORS OF PRODUCTION -->
+    <section id="factors-production" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">CHAPTER 7</div>
+        <h2>Factors of Production & Economic Systems</h2>
+        <p>Comprehensive coverage of Land, Labour, Physical & Financial Capital (Fixed & Working Capital), Human Capital, Entrepreneurship, Technology & AI automation, Supply Chains, and India's Demographic Dividend.</p>
+      </div>
+
+      <div class="card-grid" id="factors-production-grid">
+        <!-- Topic cards dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DIAGRAMS & MAPS SECTION -->
+    <section id="diagrams" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">VISUAL LEARNING</div>
+        <h2>Ultra-Detailed Schematics, Maps & Mind Maps</h2>
+        <p>Interactive HTML/CSS mind maps, supply chain flowcharts, election lifecycle diagrams, factors of production matrices, and political integration historical timelines.</p>
+      </div>
+
+      <div class="diagram-grid" id="diagrams-grid">
+        <!-- Diagram cards dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- QUICK REVISION SECTION -->
+    <section id="quick-revision" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">EXAM PREPARATION</div>
+        <h2>15-Minute Rapid Revision</h2>
+        <p>High-yield definitions, constitutional articles, economic formulas, key historical milestones, memory tricks, comparison tables, and golden rules for rapid pre-exam review.</p>
+      </div>
+
+      <div id="quick-revision-wrap">
+        <!-- Revision content dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- FLASHCARDS SECTION -->
+    <section id="flashcards" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">ACTIVE RECALL</div>
+        <h2>Interactive 3D Flashcards (150+ Deck)</h2>
+        <p>Test your memory with active recall flashcards. Click to flip, filter by topic, track learned cards, and shuffle decks.</p>
+      </div>
+
+      <div class="flashcard-wrap">
+        <div class="flashcard-controls">
+          <button class="fc-filter-btn active" onclick="filterFlashcards(event, 'All')">All Topics</button>
+          <button class="fc-filter-btn" onclick="filterFlashcards(event, 'Natural Resources')">Natural Resources</button>
+          <button class="fc-filter-btn" onclick="filterFlashcards(event, 'Political Map')">Political Map</button>
+          <button class="fc-filter-btn" onclick="filterFlashcards(event, 'Electoral System')">Electoral System</button>
+          <button class="fc-filter-btn" onclick="filterFlashcards(event, 'Factors of Production')">Factors of Production</button>
+          <button class="fc-filter-btn" onclick="shuffleFlashcards()">🔀 Shuffle</button>
+        </div>
+
+        <div class="flashcard" id="flashcard" onclick="flipFlashcard()">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <div class="fc-tag" id="fc-tag">TOPIC</div>
+              <div class="fc-question" id="fc-question">Question Loading...</div>
+              <div class="fc-hint">Click card to flip 🔄</div>
+            </div>
+            <div class="flashcard-back">
+              <div class="fc-tag">ANSWER</div>
+              <div class="fc-answer" id="fc-answer">Answer Loading...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard-nav">
+          <button class="modal-nav-btn" onclick="prevFlashcard()">← Previous</button>
+          <span id="fc-counter" style="font-weight:700; color:var(--cyan); font-size:0.9rem;">1 / 150</span>
+          <button class="modal-nav-btn" onclick="nextFlashcard()">Next →</button>
+          <button class="modal-nav-btn" id="fc-mark-btn" onclick="toggleMarkLearned()">Mark as Learned</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MCQS QUIZ SECTION -->
+    <section id="mcqs" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">SELF ASSESSMENT</div>
+        <h2>200+ Practice Multiple-Choice Quiz</h2>
+        <p>Interactive practice quiz with instant answer validation, detailed explanations, live score tracking, and progress bar.</p>
+      </div>
+
+      <div class="quiz-container" id="quiz-container">
+        <div class="quiz-header">
+          <span class="quiz-progress-text" id="quiz-count">Question 1 of 200</span>
+          <span class="quiz-score-badge">Score: Practice Mode</span>
+        </div>
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quiz-fill"></div>
+        </div>
+
+        <h3 class="quiz-q-title" id="quiz-q-title">Question loading...</h3>
+        <div class="quiz-options" id="quiz-options">
+          <!-- Quiz options injected dynamically -->
+        </div>
+
+        <div class="quiz-explanation" id="quiz-explanation"></div>
+
+        <div style="margin-top:20px; text-align:right;">
+          <button class="cta-btn" id="quiz-next-btn" style="display:none;" onclick="nextQuizQuestion()">
+            Next Question →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPORTANT QUESTIONS SECTION -->
+    <section id="important-questions" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">EXAM BANK</div>
+        <h2>Important Exam Questions</h2>
+        <p>Categorized exam question bank (1 Mark, 2 Marks, 3 Marks, 5 Marks) with model answers in interactive accordions.</p>
+      </div>
+
+      <div id="important-questions-wrap">
+        <!-- Accordion items dynamically injected via script.js -->
+      </div>
+    </section>
+
+    <!-- GLOSSARY SECTION -->
+    <section id="glossary" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">DICTIONARY</div>
+        <h2>Alphabetical Social Science Glossary</h2>
+        <p>Complete A-Z key terms dictionary with instant letter filtering.</p>
+      </div>
+
+      <div class="glossary-letters" id="glossary-letters">
+        <!-- Letter filter buttons dynamically injected -->
+      </div>
+
+      <div class="glossary-grid" id="glossary-grid">
+        <!-- Glossary term cards dynamically injected -->
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="chapter-section">
+      <div class="section-head">
+        <div class="section-tag">ABOUT THIS HUB</div>
+        <h2>SST Study Guide</h2>
+        <p>Engineered for deep understanding, visual clarity, and grade perfection in Grade 8 Social Science.</p>
+      </div>
+
+      <div class="card" style="height:auto; max-width:800px; margin:0 auto;">
+        <h3>Social Science Curriculum Alignment</h3>
+        <p style="color:var(--gray-light); line-height:1.7;">
+          This Single Page Application provides comprehensive, unabridged coverage of Grade 8 Social Science curriculum modules: Natural Resources and Their Use (Geography), Reshaping India's Political Map (History), Universal Adult Franchise and India's Electoral System (Civics), and Factors of Production (Economics). Every definition, historical milestone, constitutional article, economic mechanism, memory trick, flowchart, comparison table, and common mistake is retained in full detail.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FULLSCREEN TOPIC READER MODAL -->
+  <div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this) closeModal()">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div class="modal-header-icon" id="modal-icon">🌍</div>
+          <h2 id="modal-title">Topic Reader Title</h2>
+        </div>
+        <div class="modal-actions">
+          <button class="icon-btn" id="modal-bookmark" title="Bookmark Topic">☆</button>
+          <button class="icon-btn" onclick="copyModalContent()" title="Copy Notes">📋</button>
+          <button class="icon-btn" onclick="printModalContent()" title="Print Topic">🖨️</button>
+          <button class="icon-btn" onclick="closeModal()" title="Close (Esc)">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-read-progress">
+        <div class="modal-read-progress-bar" id="modal-progress"></div>
+      </div>
+
+      <div class="modal-body" id="modal-body">
+        <!-- Topic content rendered dynamically -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="modal-nav-btn" id="modal-prev" onclick="navigateModalTopic(-1)">
+          ← Previous Topic
+        </button>
+        <span style="font-size:0.85rem; color:var(--gray-muted);">Press Esc to Close • Left/Right to Navigate</span>
+        <button class="modal-nav-btn" id="modal-next" onclick="navigateModalTopic(1)">
+          Next Topic →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- SPA Engine Script -->
+  <script src="script.js"></script>
+</body>
+</html>
