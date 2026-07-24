@@ -935,6 +935,32 @@ main {
   transform: translateY(-2px);
 }
 
+/* Bright Red Close Button with White 'X' & Red Glow */
+.icon-btn.close-btn,
+.close-btn {
+  background: linear-gradient(135deg, #ff3b30, #dc2626) !important;
+  color: #ffffff !important;
+  border: 1px solid #f87171 !important;
+  font-size: 1.15rem !important;
+  font-weight: 900 !important;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.8), 0 0 25px rgba(239, 68, 68, 0.5) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.icon-btn.close-btn:hover,
+.close-btn:hover {
+  background: linear-gradient(135deg, #ef4444, #b91c1c) !important;
+  color: #ffffff !important;
+  transform: scale(1.12) rotate(90deg) !important;
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.95), 0 0 45px rgba(239, 68, 68, 0.7) !important;
+}
+
+.icon-btn.close-btn:active,
+.close-btn:active {
+  transform: scale(0.95) !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.8) !important;
+}
+
 .modal-read-progress {
   height: 3px;
   background: rgba(255, 255, 255, 0.08);
