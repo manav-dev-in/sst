@@ -8,10 +8,13 @@ const STATE = {
   currentTopicIndex: 0,
   flashcardIndex: 0,
   flashcardFiltered: [],
+  flashcardSelectedTopics: [],
   quizIndex: 0,
   quizScore: 0,
   quizUserAnswers: [],
   quizActiveQuestions: [],
+  quizSelectedTopics: [],
+  glossarySelectedLetters: [],
   searchQuery: ''
 };
 
@@ -10342,14 +10345,51 @@ function toggleMarkLearned() {
 }
 
 function filterFlashcards(event, topicName) {
-  document.querySelectorAll('.fc-filter-btn').forEach(btn => btn.classList.remove('active'));
-  if (event && event.target) event.target.classList.add('active');
+  if (!STATE.flashcardSelectedTopics) STATE.flashcardSelectedTopics = [];
 
   if (topicName === 'All') {
-    STATE.flashcardFiltered = [...FLASHCARDS];
+    STATE.flashcardSelectedTopics = [];
   } else {
-    STATE.flashcardFiltered = FLASHCARDS.filter(c => c.topic === topicName);
+    const idx = STATE.flashcardSelectedTopics.indexOf(topicName);
+    if (idx >= 0) {
+      STATE.flashcardSelectedTopics.splice(idx, 1);
+    } else {
+      STATE.flashcardSelectedTopics.push(topicName);
+    }
   }
+
+  // Update button active state highlights
+  const buttons = document.querySelectorAll('.fc-filter-btn');
+  buttons.forEach(btn => {
+    const text = btn.textContent;
+    if (text.includes('Shuffle') || text.includes('🔀')) return;
+
+    if (STATE.flashcardSelectedTopics.length === 0) {
+      if (text.includes('All Topics')) btn.classList.add('active');
+      else btn.classList.remove('active');
+    } else {
+      if (text.includes('All Topics')) {
+        btn.classList.remove('active');
+      } else {
+        const isSel = STATE.flashcardSelectedTopics.some(t => text.includes(t));
+        if (isSel) btn.classList.add('active');
+        else btn.classList.remove('active');
+      }
+    }
+  });
+
+  // Apply Union / OR logic multi-filtering
+  if (STATE.flashcardSelectedTopics.length === 0) {
+    STATE.flashcardFiltered = [...FLASHCARDS];
+    showToast('Flashcards: All Topics (500 Cards)');
+  } else {
+    STATE.flashcardFiltered = FLASHCARDS.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
+    const countLabel = STATE.flashcardSelectedTopics.length === 1 
+      ? STATE.flashcardSelectedTopics[0] 
+      : `${STATE.flashcardSelectedTopics.length} Topics Selected`;
+    showToast(`Flashcards: ${countLabel} (${STATE.flashcardFiltered.length} Cards)`);
+  }
+
   STATE.flashcardIndex = 0;
   updateFlashcardUI();
 }
@@ -10364,13 +10404,12 @@ function shuffleFlashcards() {
   showToast('🔀 Flashcards shuffled!');
 }
 
-
 function renderQuiz() {
-  if (!STATE.quizCurrentTopicFilter) STATE.quizCurrentTopicFilter = 'All';
-  if (STATE.quizCurrentTopicFilter === 'All') {
+  if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
+  if (STATE.quizSelectedTopics.length === 0) {
     STATE.quizActiveQuestions = [...MCQS];
   } else {
-    STATE.quizActiveQuestions = MCQS.filter(q => q.topic === STATE.quizCurrentTopicFilter);
+    STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
   }
   STATE.quizIndex = 0;
   STATE.quizScore = 0;
@@ -10379,38 +10418,64 @@ function renderQuiz() {
 }
 
 function filterQuiz(event, topicName) {
-  document.querySelectorAll('.mcq-filter-btn').forEach(btn => btn.classList.remove('active'));
-  if (event && event.target) {
-    event.target.classList.add('active');
+  if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
+
+  if (topicName === 'All') {
+    STATE.quizSelectedTopics = [];
   } else {
-    // Highlight button by topic name
-    document.querySelectorAll('.mcq-filter-btn').forEach(btn => {
-      if (btn.textContent.includes(topicName) || (topicName === 'All' && btn.textContent.includes('All Topics'))) {
-        btn.classList.add('active');
-      }
-    });
+    const idx = STATE.quizSelectedTopics.indexOf(topicName);
+    if (idx >= 0) {
+      STATE.quizSelectedTopics.splice(idx, 1);
+    } else {
+      STATE.quizSelectedTopics.push(topicName);
+    }
   }
 
-  STATE.quizCurrentTopicFilter = topicName || 'All';
-  if (STATE.quizCurrentTopicFilter === 'All') {
+  // Update button active state highlights
+  const buttons = document.querySelectorAll('.mcq-filter-btn');
+  buttons.forEach(btn => {
+    const text = btn.textContent;
+    if (text.includes('Shuffle') || text.includes('🔀')) return;
+
+    if (STATE.quizSelectedTopics.length === 0) {
+      if (text.includes('All Topics')) btn.classList.add('active');
+      else btn.classList.remove('active');
+    } else {
+      if (text.includes('All Topics')) {
+        btn.classList.remove('active');
+      } else {
+        const isSel = STATE.quizSelectedTopics.some(t => text.includes(t));
+        if (isSel) btn.classList.add('active');
+        else btn.classList.remove('active');
+      }
+    }
+  });
+
+  // Apply Union / OR logic multi-filtering
+  if (STATE.quizSelectedTopics.length === 0) {
     STATE.quizActiveQuestions = [...MCQS];
+    showToast('Quiz Filtered: All Topics (500 Questions)');
   } else {
-    STATE.quizActiveQuestions = MCQS.filter(q => q.topic === STATE.quizCurrentTopicFilter);
+    STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
+    const countLabel = STATE.quizSelectedTopics.length === 1 
+      ? STATE.quizSelectedTopics[0] 
+      : `${STATE.quizSelectedTopics.length} Topics Selected`;
+    showToast(`Quiz Filtered: ${countLabel} (${STATE.quizActiveQuestions.length} Questions)`);
   }
+
   STATE.quizIndex = 0;
   STATE.quizScore = 0;
   resetQuizContainerUI();
   updateQuizQuestion();
-  showToast(`Filtered MCQs: ${STATE.quizCurrentTopicFilter} (${STATE.quizActiveQuestions.length} Questions)`);
 }
 
 function shuffleQuiz() {
-  if (!STATE.quizCurrentTopicFilter) STATE.quizCurrentTopicFilter = 'All';
+  if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
   if (STATE.quizActiveQuestions.length === 0) {
-    if (STATE.quizCurrentTopicFilter === 'All') {
+    if (STATE.quizSelectedTopics.length === 0) {
       STATE.quizActiveQuestions = [...MCQS];
     } else {
-      STATE.quizActiveQuestions = MCQS.filter(q => q.topic === STATE.quizCurrentTopicFilter);
+      STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
     }
   }
   for (let i = STATE.quizActiveQuestions.length - 1; i > 0; i--) {
@@ -10668,14 +10733,50 @@ function displayGlossaryTerms(terms) {
 }
 
 function filterGlossaryLetter(event, letter) {
-  document.querySelectorAll('.glossary-letter-btn').forEach(btn => btn.classList.remove('active'));
-  if (event && event.target) event.target.classList.add('active');
+  if (!STATE.glossarySelectedLetters) STATE.glossarySelectedLetters = [];
 
   if (letter === 'ALL') {
-    displayGlossaryTerms(GLOSSARY);
+    STATE.glossarySelectedLetters = [];
   } else {
-    const filtered = GLOSSARY.filter(item => item.term.toUpperCase().startsWith(letter));
+    const idx = STATE.glossarySelectedLetters.indexOf(letter);
+    if (idx >= 0) {
+      STATE.glossarySelectedLetters.splice(idx, 1);
+    } else {
+      STATE.glossarySelectedLetters.push(letter);
+    }
+  }
+
+  // Update letter buttons active state highlights
+  const buttons = document.querySelectorAll('.glossary-letter-btn');
+  buttons.forEach(btn => {
+    const btnLetter = btn.textContent.trim();
+    if (STATE.glossarySelectedLetters.length === 0) {
+      if (btnLetter === 'ALL') btn.classList.add('active');
+      else btn.classList.remove('active');
+    } else {
+      if (btnLetter === 'ALL') {
+        btn.classList.remove('active');
+      } else {
+        if (STATE.glossarySelectedLetters.includes(btnLetter)) btn.classList.add('active');
+        else btn.classList.remove('active');
+      }
+    }
+  });
+
+  // Apply Union / OR logic multi-filtering across terms
+  if (STATE.glossarySelectedLetters.length === 0) {
+    displayGlossaryTerms(GLOSSARY);
+    showToast('Glossary: Showing All Terms');
+  } else {
+    const filtered = GLOSSARY.filter(item => {
+      const firstChar = item.term.charAt(0).toUpperCase();
+      return STATE.glossarySelectedLetters.includes(firstChar);
+    });
     displayGlossaryTerms(filtered);
+    const countLabel = STATE.glossarySelectedLetters.length === 1 
+      ? `Letter ${STATE.glossarySelectedLetters[0]}` 
+      : `Letters [${STATE.glossarySelectedLetters.join(', ')}]`;
+    showToast(`Glossary: ${countLabel} (${filtered.length} Terms)`);
   }
 }
 
