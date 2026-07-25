@@ -2,6 +2,7 @@
 
 const STATE = {
   activeTab: 'home',
+  syllabusMode: localStorage.getItem('g8_sst_syllabus_mode') || 'Term 1',
   bookmarks: JSON.parse(localStorage.getItem('g8_sst_bookmarks') || '[]'),
   learnedFlashcards: JSON.parse(localStorage.getItem('g8_sst_learned_fc') || '[]'),
   quizHighScore: parseInt(localStorage.getItem('g8_sst_quiz_score') || '0', 10),
@@ -19,7 +20,7 @@ const STATE = {
 };
 
 const TOPICS = [
-{
+  {
     id: 'ch1-nature-vs-resources',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -43,8 +44,8 @@ const TOPICS = [
             Nature becomes a resource <em>only when humans discover its utility and possess the technological capability to extract and process it</em>.
           </div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-conditions-transformation',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -66,8 +67,8 @@ const TOPICS = [
             <br>• <strong>C</strong> – Cultural Acceptability
           </div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-classification-resources',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -86,8 +87,8 @@ const TOPICS = [
             <li><strong>By Status of Development:</strong> Potential, Developed, Stock, Reserves.</li>
           </ul>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-renewable-sustainability',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -110,8 +111,8 @@ const TOPICS = [
             Development that satisfies present needs without compromising future generations. Practice the 3Rs: <strong>Reduce</strong>, <strong>Reuse</strong>, and <strong>Recycle</strong>.
           </div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-soil-resources-profile',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -133,8 +134,8 @@ const TOPICS = [
           <h3>Major Soils of India</h3>
           <p>Alluvial Soil (northern plains), Black Regur Soil (Deccan cotton belt), Red & Yellow Soil, Laterite Soil (leached Western Ghats), Arid Soil (Thar desert).</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-water-resources-watershed',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -152,8 +153,8 @@ const TOPICS = [
             <li><strong>Taanka System:</strong> Underground rooftop rainwater storage tanks in Rajasthan houses.</li>
           </ul>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-mineral-belts-metallurgy',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -171,8 +172,8 @@ const TOPICS = [
           <h3>Key Metallic Ores</h3>
           <p>Iron Ore (Magnetite & Hematite), Bauxite (Aluminum smelting), Copper, and Monazite Sands of Kerala (Thorium nuclear fuel).</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch1-energy-transition-renewable',
     chapterId: 'natural-resources',
     chapterTitle: 'Natural Resources and Their Use',
@@ -190,8 +191,8 @@ const TOPICS = [
             <li><strong>Wind Energy:</strong> Muppandal Wind Farm in Tamil Nadu.</li>
           </ul>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-colonial-partition-princely',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -207,8 +208,8 @@ const TOPICS = [
             Lapse of British Paramountcy gave princely rulers three choices: join India, join Pakistan, or remain independent. Sardar Patel prevented national balkanization.
           </div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-sardar-patel-integration',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -224,8 +225,8 @@ const TOPICS = [
             Legal document signed by princely rulers ceding control over 3 national subjects: <strong>Defense, External Affairs, and Communications</strong>.
           </div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-case-studies-integration',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -242,8 +243,8 @@ const TOPICS = [
           <h3>3. Jammu & Kashmir</h3>
           <p>Maharaja Hari Singh signed the Instrument of Accession on Oct 26, 1947 following tribal raider invasion.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-states-reorganisation-act',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -260,8 +261,8 @@ const TOPICS = [
           <h3>States Reorganisation Act 1956</h3>
           <p>Recommended by Justice Fazl Ali, H.N. Kunzru, and K.M. Panikkar, establishing <strong>14 States + 6 Union Territories</strong>.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-post-1956-statehood-milestones',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -273,8 +274,8 @@ const TOPICS = [
     contentHtml: `
           <p>1960: Bombay split into Gujarat & Maharashtra. 1961: Goa liberated (Operation Vijay). 1963: Nagaland. 1966: Punjab & Haryana split. 1971: Himachal statehood. 1975: Sikkim (36th Amendment). 1987: Mizoram, Arunachal, Goa statehood.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-2000-2014-new-states-movement',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -286,8 +287,8 @@ const TOPICS = [
     contentHtml: `
           <p>November 2000 Statehood Trio: Chhattisgarh (from MP), Uttarakhand (from UP), Jharkhand (from Bihar). June 2, 2014: Telangana carved from Andhra Pradesh.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-jk-reorganisation-2019-ut-mergers',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -300,8 +301,8 @@ const TOPICS = [
           <p>Oct 31, 2019: J&K reorganised into UT of J&K (with Assembly) and UT of Ladakh (without Assembly). Jan 26, 2020: Dadra & Nagar Haveli merged with Daman & Diu.</p>
           <div class="formula-block">Current India Map = 28 States + 8 Union Territories</div>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch2-constitutional-articles-disputes',
     chapterId: 'political-map',
     chapterTitle: 'Reshaping India\'s Political Map',
@@ -313,8 +314,8 @@ const TOPICS = [
     contentHtml: `
           <p>Article 1: "Union of States". Article 2: Admitting new states. Article 3: Exclusive power of Parliament to alter state names and boundaries by simple majority.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-adult-franchise-article326',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -326,8 +327,8 @@ const TOPICS = [
     contentHtml: `
           <p>Article 326 guarantees equal voting rights to all citizens aged 18 and above. Voting age was lowered from 21 to 18 by the 61st Constitutional Amendment Act, 1988.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-election-commission-eci',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -339,8 +340,8 @@ const TOPICS = [
     contentHtml: `
           <p>Article 324 establishes an independent Election Commission. Sukumar Sen was India's first CEC. ECI regulates elections to Parliament, Assemblies, President, and Vice President.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-evm-vvpat-evolution',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -352,8 +353,8 @@ const TOPICS = [
     contentHtml: `
           <p>EVMs tested in 1982 (Kerala) and deployed nationwide in 2004. Manufactured by BEL & ECIL. VVPAT prints 7-second paper verification slip. NOTA introduced in 2013 Supreme Court ruling.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-election-cycle-process',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -365,8 +366,8 @@ const TOPICS = [
     contentHtml: `
           <p>Lifecycle: Notification ➔ Nominations ➔ Scrutiny by RO ➔ Campaigning & MCC ➔ 48h Silence Period ➔ Secret Ballot Polling ➔ Counting & Certificate of Election.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-voter-registration-epic-portal',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -378,8 +379,8 @@ const TOPICS = [
     contentHtml: `
           <p>Form 6 (new 18-yr voter registration), Form 7 (deletions), Form 8 (corrections). EPIC (Elector's Photo Identity Card). Jan 25 celebrated as National Voters' Day.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-model-code-conduct-cvigil',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -391,8 +392,8 @@ const TOPICS = [
     contentHtml: `
           <p>MCC prevents misuse of official government power. Campaign silence period begins 48h before polling closes. cVIGIL app resolves citizen code violation reports within 100 minutes.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-fptp-vs-proportional-representation',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -404,8 +405,8 @@ const TOPICS = [
     contentHtml: `
           <p>FPTP: Candidate with most votes wins (Lok Sabha / Vidhan Sabha). PR-STV: Single Transferable Vote preference ranking (Rajya Sabha / Presidential elections).</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch5-electoral-reforms-women-reservation',
     chapterId: 'electoral-system',
     chapterTitle: 'Universal Adult Franchise & Electoral System',
@@ -417,8 +418,8 @@ const TOPICS = [
     contentHtml: `
           <p>T.N. Seshan reforms, mandatory Form 26 wealth/criminal disclosure affidavit, ₹95L Lok Sabha spend limit, 1/6th vote deposit forfeiture, and Nari Shakti Vandan Adhiniyam (33% women reservation).</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-intro-factors-production',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -430,8 +431,8 @@ const TOPICS = [
     contentHtml: `
           <p>The 4 Factors & Income Rewards: Land ➔ Rent, Labour ➔ Wages, Capital ➔ Interest, Entrepreneurship ➔ Profit.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-land-natural-factor',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -443,8 +444,8 @@ const TOPICS = [
     contentHtml: `
           <p>Land includes all natural gifts (soil, minerals, water, climate). Features: passive factor, fixed supply, immobile. Reward: Rent.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-labour-human-effort',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -456,8 +457,8 @@ const TOPICS = [
     contentHtml: `
           <p>Labour is active human effort. Perishable (lost if unworked today). Physical (manual stamina) vs. Mental (intellectual analysis & design). Reward: Wages.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-human-capital-investment',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -469,8 +470,8 @@ const TOPICS = [
     contentHtml: `
           <p>Human Capital = Education + Technical Skills + Health. Skill India & ITIs empower youth into productive economic capital assets.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-facilitators-kaizen',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -482,8 +483,8 @@ const TOPICS = [
     contentHtml: `
           <p>Kaizen = 'Change for the better' (continuous daily incremental quality improvement). Automation & AI act as force multipliers.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-demographic-dividend-india',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -495,8 +496,8 @@ const TOPICS = [
     contentHtml: `
           <p>Demographic Dividend occurs when working-age population (15-64) exceeds dependents. India's median age ~28 gives a vast workforce advantage.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-capital-fixed-working',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -508,8 +509,8 @@ const TOPICS = [
     contentHtml: `
           <p>Fixed Capital: Durable over years (machinery, tractor). Working Capital: Consumed in 1 production cycle (seeds, raw cotton, daily cash). Reward: Interest.</p>
         `
-  },,
-{
+  }, ,
+  {
     id: 'ch7-entrepreneurship-startups',
     chapterId: 'factors-production',
     chapterTitle: 'Factors of Production & Economic Systems',
@@ -3026,7 +3027,7 @@ const FLASHCARDS = [
     "q": "What is factor substitution?",
     "a": "Replacing one factor of production with another (such as replacing manual labour with capital machinery)."
   }
-,,
+  , ,
 ];
 
 const MCQS = [
@@ -9036,141 +9037,141 @@ const IMPORTANT_QUESTIONS = {
   "m1": [
     {
       "q": "What is a Natural Resource?",
-      "a": "Anything available in nature that has utility, value, and satisfies human needs and desires."
+      "a": "<strong>Natural Resource:</strong> Any substance, element, or energy source occurring naturally in the environment that possesses utility, economic value, and the direct capacity to satisfy human needs and desires (e.g., fresh water, fertile soil, crude oil, solar energy)."
     },
     {
       "q": "State the TEC Rule for resource status.",
-      "a": "Technological Accessibility, Economic Feasibility, and Cultural Acceptability."
+      "a": "<strong>The TEC Rule:</strong> For any natural substance to be classified as a resource, it must satisfy three criteria simultaneously:<br>• <strong>T</strong> – Technological Accessibility (availability of scientific tools & extraction know-how).<br>• <strong>E</strong> – Economic Feasibility (extraction value must exceed cost).<br>• <strong>C</strong> – Cultural Acceptability (society accepts its extraction & consumption)."
     },
     {
       "q": "Define Universal Adult Franchise.",
-      "a": "The democratic right of every adult citizen (aged 18+) to vote without discrimination based on caste, gender, religion, or wealth."
+      "a": "<strong>Universal Adult Franchise:</strong> The foundational democratic principle guaranteeing every adult citizen (aged 18 and above) the right to cast one equal vote in elections, without any discrimination based on caste, creed, gender, religion, place of birth, or economic status."
     },
     {
       "q": "Which Article of the Constitution guarantees Universal Adult Franchise in India?",
-      "a": "Article 326 of the Constitution of India."
+      "a": "<strong>Article 326</strong> of the Constitution of India explicitly mandates that elections to the Lok Sabha and State Legislative Assemblies (Vidhan Sabha) shall be conducted on the basis of adult suffrage."
     },
     {
       "q": "What is the minimum voting age in India currently?",
-      "a": "18 years of age (lowered from 21 by the 61st Constitutional Amendment Act, 1988)."
+      "a": "<strong>18 years of age.</strong> Originally set at 21 years in 1950, it was formally lowered to 18 years by the landmark <strong>61st Constitutional Amendment Act, 1988</strong> (which came into force in March 1989)."
     },
     {
       "q": "Who was known as the 'Iron Man of India'?",
-      "a": "Sardar Vallabhbhai Patel, India's first Deputy Prime Minister and Home Minister."
+      "a": "<strong>Sardar Vallabhbhai Patel</strong>, India's first Deputy Prime Minister and Home Minister, earned this title for his decisive leadership, diplomatic skill, and firm resolve in integrating over 565 princely states into the Indian Union."
     },
     {
       "q": "What is the Instrument of Accession (IoA)?",
-      "a": "A legal document signed by princely state rulers acceding to India, ceding Defense, External Affairs, and Communications."
+      "a": "<strong>Instrument of Accession (IoA):</strong> A binding legal document executed by the rulers of princely states in 1947, by which they agreed to accede to the Dominion of India, surrendering control over three core subjects: <strong>Defense, External Affairs, and Communications</strong>."
     },
     {
       "q": "Name the four fundamental Factors of Production.",
-      "a": "Land, Labour, Capital, and Entrepreneurship."
+      "a": "The four core economic factors required to produce goods and services are:<br>1. <strong>Land</strong> (Natural resources & space)<br>2. <strong>Labour</strong> (Human physical & mental effort)<br>3. <strong>Capital</strong> (Physical tools, machinery & working capital)<br>4. <strong>Entrepreneurship</strong> (Visionary organization & risk-taking)"
     },
     {
       "q": "What is the primary economic reward earned by Land?",
-      "a": "Rent."
+      "a": "<strong>Rent:</strong> The unearned economic return or payment made to landowners for utilizing natural space, fertile soil, or mineral-rich real estate."
     },
     {
       "q": "What is the economic reward earned by Labour?",
-      "a": "Wages or Salary."
+      "a": "<strong>Wages or Salary:</strong> Monetary remuneration paid to workers in exchange for their physical or cognitive labour input during production."
     },
     {
       "q": "What is Fixed Capital?",
-      "a": "Durable man-made physical assets used repeatedly over years, such as machinery, factory buildings, and tractors."
+      "a": "<strong>Fixed Capital:</strong> Long-term, durable physical assets that can be used repeatedly in the production process over many years without being consumed in a single cycle (e.g., factory buildings, tractors, heavy manufacturing machinery, computer servers)."
     },
     {
       "q": "What is Working Capital?",
-      "a": "Short-term assets consumed or converted during a single production cycle, like raw materials and cash liquidity."
+      "a": "<strong>Working Capital:</strong> Short-term operational inputs that are completely transformed or consumed within a single production cycle, as well as liquid cash required to pay daily wages and electricity bills (e.g., raw cotton, seeds, chemical reagents, cash-in-hand)."
     },
     {
       "q": "Define Human Capital.",
-      "a": "The accumulated knowledge, skills, technical expertise, and health embodied in a nation's workforce."
+      "a": "<strong>Human Capital:</strong> The accumulated stock of professional knowledge, technical expertise, cognitive skills, innovation capability, and health embodied in a nation's working population, built through education and specialized training."
     },
     {
       "q": "What is Japanese Kaizen philosophy?",
-      "a": "A business philosophy focused on continuous, incremental workplace productivity improvement involving all workers."
+      "a": "<strong>Kaizen (改善):</strong> A Japanese business & industrial philosophy meaning 'continuous improvement'. It focuses on making small, ongoing positive changes in work processes, involving employees at every level to enhance efficiency, eliminate waste, and boost quality."
     },
     {
       "q": "What is VVPAT?",
-      "a": "Voter Verifiable Paper Audit Trail machine connected to EVMs that displays a 7-second paper slip for vote verification."
+      "a": "<strong>VVPAT (Voter Verifiable Paper Audit Trail):</strong> An independent ballot verification system attached to Electronic Voting Machines (EVMs). When a voter presses a button, it prints a paper slip displaying the candidate name, serial number, and party symbol for 7 seconds behind a sealed glass window before automatically dropping into a secure lockbox."
     }
   ],
   "m2": [
     {
       "q": "Differentiate between Nature and Resources with suitable examples.",
-      "a": "<strong>Nature</strong> includes everything existing naturally without human creation (e.g. forest trees, crude oil). A <strong>Resource</strong> is part of nature transformed by human knowledge and technology to satisfy needs (e.g. wooden desks, refined petrol)."
+      "a": "<strong>Nature vs. Resource Distinction:</strong><br>• <strong>Nature:</strong> Refers to all biophysical features existing on Earth independently of human presence (e.g., raw waterfall, unmined petroleum under sea beds, wild virgin forests).<br>• <strong>Resource:</strong> Refers to elements of nature that have been identified, extracted, and processed using human knowledge, skill, and technology to meet human needs (e.g., hydroelectricity generated from waterfalls, refined petrol, timber desks).<br>• <strong>Key Takeaway:</strong> <em>Nature turns into a Resource only through human intelligence and utility recognition.</em>"
     },
     {
       "q": "Explain the three options given to Princely States by the Indian Independence Act 1947.",
-      "a": "1. Accede to the Dominion of India.<br>2. Accede to the Dominion of Pakistan.<br>3. Remain an independent sovereign state."
+      "a": "Under Section 7(1)(b) of the Indian Independence Act 1947, British Paramountcy over princely states lapsed on August 15, 1947, giving rulers three distinct choices:<br>1. <strong>Accede to the Dominion of India</strong> by signing the Instrument of Accession.<br>2. <strong>Accede to the Dominion of Pakistan</strong>.<br>3. <strong>Remain an independent sovereign state</strong> (an option strongly opposed by Sardar Patel as a threat to national security)."
     },
     {
       "q": "Why was the States Reorganisation Commission (SRC 1953) appointed?",
-      "a": "The SRC was appointed under Justice Fazl Ali in Dec 1953 to recommend redrawing state boundaries along linguistic lines following Potti Sreeramulu's 56-day fast and public demand."
+      "a": "<strong>Appointment of SRC (1953):</strong><br>• <strong>Trigger:</strong> Following the death of veteran freedom fighter <strong>Potti Sreeramulu</strong> after a 56-day hunger strike, violent public demonstrations erupted, forcing the creation of Andhra State in October 1953.<br>• <strong>Formation:</strong> To systematically address nationwide demands for language-based administrative boundaries, the Union Government appointed the States Reorganisation Commission in December 1953 under <strong>Justice Fazl Ali, H.N. Kunzru, and K.M. Panikkar</strong>.<br>• <strong>Outcome:</strong> Recommended redrawing India's political map primarily on linguistic cohesion, leading to the States Reorganisation Act 1956."
     },
     {
       "q": "Differentiate between Fixed Capital and Working Capital.",
-      "a": "<strong>Fixed Capital</strong> consists of durable long-term assets used repeatedly (e.g., machines, buildings). <strong>Working Capital</strong> consists of inputs consumed in a single cycle (e.g., raw cotton, cash)."
+      "a": "<strong>Comparison Framework:</strong><br>• <strong>Fixed Capital:</strong> Includes long-lasting physical tools, building infrastructure, and heavy machinery. It is durable over multiple production years, undergoes accounting depreciation, and does not get consumed in a single production run (e.g., automated loom, tractor).<br>• <strong>Working Capital:</strong> Consists of raw materials, intermediate goods, and liquid cash liquidity. It gets completely consumed or converted into finished goods during a single production cycle (e.g., raw silk thread, fuel, cash for daily wages)."
     },
     {
       "q": "What is the Demographic Dividend and why is it crucial for India?",
-      "a": "Demographic Dividend is economic growth potential when the working-age population (15-64) exceeds non-working dependents. India's median age of ~28 offers a major growth window until 2055."
+      "a": "<strong>Demographic Dividend:</strong> The accelerated economic growth potential that occurs when a nation's demographic structure shifts such that the working-age population (ages 15–64) outnumbers non-working dependents (children under 15 and elderly above 65).<br>• <strong>Significance for India:</strong> Over 65% of India's population is in the working-age bracket, with a median age of ~28 years. This provides a golden 30-to-40-year window (until ~2055) to drive industrialization, boost savings, elevate GDP per capita, and establish India as a global manufacturing hub."
     },
     {
       "q": "Differentiate between Biotic and Abiotic Resources.",
-      "a": "<strong>Biotic Resources</strong> originate from living organic matter (forests, crops, fish, coal). <strong>Abiotic Resources</strong> originate from non-living physical inorganic matter (land, water, minerals)."
+      "a": "<strong>Classification Criteria:</strong><br>• <strong>Biotic Resources:</strong> Obtained from the biosphere and possess organic life or originate from living matter (e.g., forests, agricultural crops, livestock, marine fish, fossil fuels like coal & petroleum formed from decayed organic matter).<br>• <strong>Abiotic Resources:</strong> Composed of non-living, physical, and inorganic matter derived from the lithosphere, atmosphere, or hydrosphere (e.g., land, iron ore, copper, drinking water, atmospheric gases)."
     },
     {
       "q": "What is the Model Code of Conduct (MCC) in elections?",
-      "a": "A set of guidelines issued by the Election Commission of India governing political party behavior, speeches, and campaign spending once election dates are announced."
+      "a": "<strong>Model Code of Conduct (MCC):</strong> A comprehensive set of ethical and procedural guidelines issued by the Election Commission of India (ECI) to ensure free, fair, and orderly elections.<br>• <strong>Implementation:</strong> Comes into force immediately when election schedules are officially announced.<br>• <strong>Key Rules:</strong> Prohibits ruling parties from using government vehicles or public funds for campaigning, bans announcing new welfare schemes or infrastructure grants after election announcement, and enforces a mandatory <strong>48-hour Silence Period</strong> prior to polling close."
     },
     {
       "q": "Why is Labour considered a 'perishable' factor of production?",
-      "a": "Unworked labour time is lost forever. If a worker remains unemployed for a day, that day's labour capacity cannot be stored or recovered later."
+      "a": "<strong>Perishability of Labour:</strong> Labour capacity is intrinsically linked to time and the physical presence of the worker.<br>• <strong>Core Economic Reason:</strong> Unlike physical capital or raw materials which can be stored in a warehouse for future use, <em>unworked labour hours are permanently lost</em>. If a factory worker is unemployed or idle for one day, that specific day's productive labor capacity disappears forever and can never be recovered or stored."
     },
     {
       "q": "What is the role of a Returning Officer (RO)?",
-      "a": "An officer appointed by ECI responsible for overseeing the entire election process, nomination scrutiny, and result declaration in a specific constituency."
+      "a": "<strong>Returning Officer (RO):</strong> A senior statutory officer appointed by the Election Commission of India for each parliamentary or assembly constituency.<br>• <strong>Duties:</strong> Oversees nomination paper submission, conducts rigorous scrutiny of candidate affidavits, allocates official election symbols to recognized & independent candidates, supervises polling station setup, oversees vote counting, and officially certifies the election result winner."
     },
     {
       "q": "What are Ecosystem Services?",
-      "a": "Essential benefits provided by natural ecosystems: Provisioning (food/water), Regulating (climate/floods), Supporting (soil/oxygen), and Cultural (beauty/tourism)."
+      "a": "<strong>Ecosystem Services:</strong> The direct and indirect economic, environmental, and life-support benefits provided by natural ecosystems to human civilization without direct payment.<br>• <strong>Four Categories:</strong><br>1. <i>Provisioning Services:</i> Food, timber, fresh water, medicinal plants.<br>2. <i>Regulating Services:</i> Carbon sequestration, climate regulation, flood mitigation by wetlands, soil erosion control.<br>3. <i>Supporting Services:</i> Soil formation, nutrient cycling, oxygen production via photosynthesis.<br>4. <i>Cultural Services:</i> Recreational, aesthetic, and spiritual enrichment."
     }
   ],
   "m3": [
     {
       "q": "Explain the three mandatory conditions required for any natural substance to become a resource.",
-      "a": "1. <strong>Technological Accessibility:</strong> Humans must possess tools, scientific knowledge, and know-how to extract it.<br>2. <strong>Economic Feasibility:</strong> Financial benefit derived from extraction must exceed total costs.<br>3. <strong>Cultural Acceptability:</strong> Usage must align with societal ethics, laws, and environmental safety."
+      "a": "<strong>Resource Transformation Conditions:</strong><br>A natural substance does not automatically become a resource simply because it exists in nature. It must fulfill three mandatory conditions:<br><br>1. <strong>Technological Accessibility:</strong> Humans must possess the technological tools, scientific knowledge, engineering skill, and infrastructure to extract, refine, and utilize the substance efficiently (e.g., shale gas remained a dormant rock layer until hydraulic fracturing technology was developed).<br><br>2. <strong>Economic Feasibility:</strong> The financial value of the extracted resource and its market returns must significantly exceed the cumulative cost of exploration, extraction, processing, and environmental mitigation.<br><br>3. <strong>Cultural & Environmental Acceptability:</strong> The extraction and consumption of the resource must align with societal ethics, legal frameworks, public health standards, and ecological safety guidelines."
     },
     {
       "q": "Describe the accession process of Junagadh, Hyderabad, and Jammu & Kashmir.",
-      "a": "1. <strong>Junagadh:</strong> Integrated via a democratic plebiscite (referendum) in Feb 1948 where >99% voted for India.<br>2. <strong>Hyderabad:</strong> Integrated through Operation Polo (5-day police action) in Sept 1948, suppressing the Razakar militia.<br>3. <strong>Jammu & Kashmir:</strong> Maharaja Hari Singh signed the Instrument of Accession on Oct 26, 1947 during a Pakistani tribal invasion."
+      "a": "<strong>Integration of Problem States (1947–1948):</strong><br><br>1. <strong>Junagadh (Plebiscite):</strong> The Muslim Nawab of Junagadh acceded to Pakistan despite a >80% Hindu population and no contiguous land border with Pakistan. Sardar Patel dispatched troops to secure borders and held a democratic <strong>Plebiscite (referendum) in February 1948</strong>, where over 99% of residents voted to join India.<br><br>2. <strong>Hyderabad (Operation Polo):</strong> Nizam Mir Osman Ali Khan refused accession, seeking independent statehood while encouraging the violent <i>Razakar</i> militia. In September 1948, the Indian Army executed <strong>Operation Polo</strong> (a 5-day police action), disarming the militia and integrating Hyderabad into the Union.<br><br>3. <strong>Jammu & Kashmir (Instrument of Accession):</strong> Maharaja Hari Singh initially hesitated to join either dominion. However, when armed Pakistani tribal invaders assaulted the state in October 1947, the Maharaja appealed for military aid and signed the official <strong>Instrument of Accession on October 26, 1947</strong>, acceding Defense, Foreign Affairs, and Communications to India."
     },
     {
       "q": "Explain the structure, composition, and core responsibilities of the Election Commission of India (ECI).",
-      "a": "Established under <strong>Article 324</strong>, ECI consists of Chief Election Commissioner and 2 Election Commissioners appointed by the President.<br><strong>Responsibilities:</strong> 1. Updating electoral rolls. 2. Scheduling elections. 3. Recognizing parties & symbols. 4. Enforcing Model Code of Conduct."
+      "a": "<strong>Constitutional Framework of ECI:</strong><br><br>• <strong>Constitutional Mandate:</strong> Established under <strong>Article 324</strong> as an autonomous, multi-member permanent constitutional authority tasked with superintending, directing, and conducting free and fair elections.<br><br>• <strong>Composition:</strong> Consists of a <strong>Chief Election Commissioner (CEC)</strong> and two <strong>Election Commissioners (ECs)</strong> appointed by the President of India. They enjoy fixed 6-year tenures (or up to age 65) with security of tenure equivalent to Supreme Court Judges.<br><br>• <strong>Core Responsibilities:</strong><br>1. <i>Electoral Rolls:</i> Periodic revision and digital purification of voter lists across all 543 Lok Sabha constituencies.<br>2. <i>Election Schedule & MCC:</i> Announcing election dates, enforcing the Model Code of Conduct, and deploying election observers.<br>3. <i>Political Parties & Symbols:</i> Granting national/state party status and assigning official voting symbols.<br>4. <i>EVM & VVPAT Management:</i> Supervising the security, randomisation, and audit counting of electronic voting equipment."
     },
     {
       "q": "What is Human Capital and how does raw human labour transform into human capital?",
-      "a": "Human Capital is the accumulated knowledge, skills, health, and expertise in a workforce. Raw labour transforms into human capital through sustained investments in quality education, technical skill training (Skill India), and healthcare."
+      "a": "<strong>Human Capital Formation:</strong><br><br>• <strong>Definition:</strong> Human Capital is the stock of productive skill, scientific knowledge, managerial competence, and physical health embodied in a country's working-age population.<br><br>• <strong>Transformation Mechanism:</strong> Raw human labour (unskilled physical muscle power) transforms into high-yield Human Capital through five critical investment pillars:<br>1. <strong>Quality Education:</strong> Primary, secondary, and higher vocational education developing foundational literacy, analytical reasoning, and problem-solving.<br>2. <strong>Technical & Skill Training:</strong> Specialized industrial training institutes (ITIs), coding bootcamps, and government initiatives like <i>Skill India</i> and <i>PMKVY</i>.<br>3. <strong>Healthcare Infrastructure:</strong> Clean drinking water, immunization, and healthcare facilities that reduce sick leaves, increase life expectancy, and raise daily worker productivity.<br>4. <strong>Information & Mobility:</strong> Access to job market information networks and geographic mobility allowing workers to relocate to high-productivity sectors.<br>5. <strong>Research & Innovation:</strong> Fostering specialized R&D capabilities in science, engineering, software, and AI automation."
     },
     {
       "q": "Explain the 5 stages of a product Supply Chain using the example of a Chocolate Bar.",
-      "a": "1. <strong>Extraction:</strong> Cocoa farming & milk production.<br>2. <strong>Processing:</strong> Cocoa roasting & grinding.<br>3. <strong>Manufacturing:</strong> Mixing cocoa butter, milk powder, & sugar into chocolate bars.<br>4. <strong>Logistics:</strong> Refrigerated truck transport to distribution centers.<br>5. <strong>Retail:</strong> Kirana store sale to consumers."
+      "a": "<strong>Supply Chain Blueprint (Chocolate Bar Example):</strong><br><br>1. <strong>Stage 1 — Primary Extraction (Raw Inputs):</strong> Cocoa bean harvesting by cocoa farmers in Kerala/Ghana, along with dairy farming for fresh milk and sugarcane cultivation for sugar.<br><br>2. <strong>Stage 2 — Intermediate Processing:</strong> Fermenting, drying, and roasting cocoa beans, followed by grinding into cocoa mass and pressing into cocoa butter and powder at processing mills.<br><br>3. <strong>Stage 3 — Manufacturing & Blending:</strong> Industrial confectionery factories combine cocoa butter, milk solids, sugar, and emulsifiers in automated vats, moulding them into foil-wrapped chocolate bars.<br><br>4. <strong>Stage 4 — Logistics & Cold-Chain Distribution:</strong> Temperature-controlled refrigerated trucks transport packaged chocolates to regional logistics hubs and distribution warehouses.<br><br>5. <strong>Stage 5 — Retail & Final Consumption:</strong> Delivery to local kirana outlets, supermarkets, and quick-commerce dark stores where end consumers purchase the finished chocolate bar."
     }
   ],
   "m5": [
     {
       "q": "Detailed Essay: Explain the Four Factors of Production, their economic rewards, and how they interact in an economic supply chain.",
-      "a": "<strong>Introduction:</strong> Every economic good/service requires 4 Factors of Production: Land, Labour, Capital, and Entrepreneurship.<br><br><strong>1. Land (Reward: Rent):</strong> All gifts of nature (soil, water, minerals, sunlight). Passive & fixed in supply.<br><strong>2. Labour (Reward: Wages):</strong> Physical & mental human effort. Active & perishable factor.<br><strong>3. Capital (Reward: Interest):</strong> Man-made physical tools, machinery (Fixed Capital), and raw materials/cash (Working Capital).<br><strong>4. Entrepreneurship (Reward: Profit):</strong> Human visionary catalyst combining land, labour, and capital while bearing financial risk.<br><br><strong>Interdependence:</strong> No factor produces alone. In manufacturing, land provides raw inputs, labour operates capital machinery, while the entrepreneur organizes production and manages market supply chains."
+      "a": "<strong>Comprehensive Economic Analysis:</strong><br><br>Every product or service created in an economy requires the systematic combination of four fundamental <strong>Factors of Production</strong>:<br><br>1. <strong>LAND (Economic Reward: Rent)</strong><br>• <i>Definition:</i> Includes all free gifts of nature provided by the biophysical environment—fertile agricultural soil, groundwater, timber forests, mineral deposits (iron ore, bauxite), atmospheric air, and geographic site location.<br>• <i>Characteristics:</i> Supply is geographically fixed, immobile, and passive. Income earned by land owners is termed <strong>Rent</strong>.<br><br>2. <strong>LABOUR (Economic Reward: Wages / Salary)</strong><br>• <i>Definition:</i> All human physical and mental efforts exerted during the production process to generate economic utilities.<br>• <i>Characteristics:</i> Labour is active, heterogeneous (varies by skill level), and highly perishable (unworked labor hours cannot be stored). Workers earn <strong>Wages or Salaries</strong>.<br><br>3. <strong>CAPITAL (Economic Reward: Interest)</strong><br>• <i>Definition:</i> Man-made physical assets created to assist future production.<br>• <i>Types:</i> Divided into <strong>Fixed Capital</strong> (durable machinery, factory buildings, tools) and <strong>Working Capital</strong> (raw materials, fuel, cash liquidity). Owners of financial capital earn <strong>Interest</strong>.<br><br>4. <strong>ENTREPRENEURSHIP (Economic Reward: Profit / Loss)</strong><br>• <i>Definition:</i> The human visionary catalyst who organizes Land, Labour, and Capital into a business enterprise, makes strategic decisions, drives product innovation, and assumes financial risk.<br>• <i>Characteristics:</i> Earns residual <strong>Profit</strong> if successful, or bears financial <strong>Loss</strong> if revenue falls below total operational costs.<br><br><strong>Interdependence in a Modern Supply Chain:</strong><br>No single factor can create wealth in isolation. In a modern automobile plant, <i>Land</i> provides the factory site and raw steel ore; <i>Labour</i> operates welding robots and performs engineering design; <i>Capital</i> provides assembly machinery and working funds; while the <i>Entrepreneur</i> secures investment, manages global logistics, and markets the vehicle to consumers."
     },
     {
       "q": "Historical Analysis: Discuss Sardar Vallabhbhai Patel's diplomatic strategy in integrating 565+ Princely States into the Indian Union after 1947.",
-      "a": "<strong>Background:</strong> The Indian Independence Act 1947 declared that British Paramountcy would lapse, giving 565+ princely states options to join India, Pakistan, or stay independent.<br><br><strong>Sardar Patel's Strategy:</strong><br>1. <strong>Instrument of Accession (IoA):</strong> Negotiated accession on 3 key national subjects\u2014Defense, External Affairs, and Communications.<br>2. <strong>Privy Purse Incentive:</strong> Offered tax-free financial allowances proportional to state revenues.<br>3. <strong>Appeals to Patriotism:</strong> Highlighted shared history, culture, and economic survival.<br>4. <strong>Firm Realpolitik:</strong> Conducted Operation Polo in Hyderabad (Sept 1948) and held a plebiscite in Junagadh (Feb 1948) when rulers resisted democratic integration.<br><br><strong>Outcome:</strong> Unified India into a contiguous democratic nation."
+      "a": "<strong>Historical Integration of Princely States:</strong><br><br><strong>Background & Crisis:</strong><br>When British Paramountcy lapsed on August 15, 1947, India faced potential balkanization into over 565 independent princely kingdoms. As Home Minister, <strong>Sardar Vallabhbhai Patel</strong>, assisted by V.P. Menon, orchestrated an unprecedented political integration campaign.<br><br><strong>Patel's Multi-Pronged Strategy:</strong><br><br>1. <strong>The Instrument of Accession (IoA):</strong> Patel persuaded rulers to sign the IoA, ceding control over only three national subjects—<i>Defense, External Affairs, and Communications</i>—while retaining internal autonomy initially.<br><br>2. <strong>Privy Purse & Royal Privileges:</strong> Offered rulers a tax-free financial allowance (Privy Purse) guaranteed by the Constitution, along with titles and personal property rights, incentivizing peaceful accession.<br><br>3. <strong>Appeals to Shared Heritage & Patriotism:</strong> Reminded princes of their patriotic duty to build a united democratic Bharat, pointing out that landlocked states could not survive economically or militarily on their own.<br><br>4. <strong>Decisive Realpolitik & Military Action:</strong><br>• <i>Junagadh:</i> Deployed troops and organized a democratic Plebiscite in Feb 1948 (>99% voted for India).<br>• <i>Hyderabad:</i> Launched <strong>Operation Polo</strong> in Sept 1948, neutralizing the Razakar militia in 5 days.<br>• <i>Jammu & Kashmir:</i> Accepted accession on Oct 26, 1947 when Pakistani invaders struck, dispatching airlifted troops to defend Srinagar.<br><br><strong>Historical Significance:</strong> Unified 565+ fragmented territories into a single geographic entity, establishing the foundation for modern federal India."
     },
     {
       "q": "Civics Deep-Dive: Explain Universal Adult Franchise, Article 326, election voting technology evolution (Ballots to EVMs & VVPAT), and democratic ethics.",
-      "a": "<strong>Universal Adult Franchise (Article 326):</strong> Grants equal voting rights to every citizen aged 18+ without discrimination based on caste, gender, religion, or wealth. Voting age was lowered from 21 to 18 by the 61st Amendment Act, 1988.<br><br><strong>Voting Technology Evolution:</strong><br>1. <strong>Paper Ballots (1951-1990s):</strong> Physical ink stamps on paper ballot sheets dropped into steel boxes.<br>2. <strong>EVMs (2004 Nationwide):</strong> Electronic Voting Machines manufactured by BEL/ECIL providing fast, tamper-proof vote recording.<br>3. <strong>VVPAT (2013/2019):</strong> Prints a 7-second paper slip behind a sealed window before dropping into a locked box for verification.<br><br><strong>Democratic Ethics:</strong> Enforcing the Model Code of Conduct (MCC), maintaining 48-hour Silence Period, and reporting violations via cVIGIL app."
+      "a": "<strong>Comprehensive Democratic Systems Analysis:</strong><br><br><strong>1. Universal Adult Franchise (Article 326):</strong><br>• <i>Constitutional Foundation:</i> Article 326 enshrines adult suffrage as the bedrock of Indian democracy, guaranteeing every citizen aged 18+ one equal vote.<br>• <i>61st Amendment (1988):</i> Lowered the voting age from 21 to 18 years, empowering youth participation.<br>• <i>Democratic Significance:</i> Eliminates colonial-era property or educational voter qualifications, establishing political equality across gender, caste, and wealth lines.<br><br><strong>2. Evolution of Voting Technology in India:</strong><br>• <i>Paper Ballot Era (1951–1990s):</i> Voters stamped paper ballots and dropped them into steel boxes. Highly vulnerable to ballot box tampering, booth capturing, and prolonged counting delays.<br>• <i>EVM Introduction (1982–2004):</i> Electronic Voting Machines developed by BEL and ECIL were trialed in 1982 (Kerala) and deployed nationwide in the 2004 General Elections. Features tamper-proof microcontrollers, battery operation, and instant vote tallying.<br>• <i>VVPAT Rollout (2013–2019):</i> Voter Verifiable Paper Audit Trail machines were integrated to display a 7-second printed verification slip behind a sealed glass window before dropping into a locked box, providing a 100% verifiable physical paper trail for audit counts.<br><br><strong>3. Democratic Ethics & Electoral Integrity:</strong><br>• <i>Model Code of Conduct (MCC):</i> Enforces a level playing field once elections are announced.<br>• <i>48-Hour Silence Period:</i> Bans campaign rallies, public speeches, and political broadcasts 48 hours prior to polling close.<br>• <i>cVIGIL App & Vigilance:</i> Enables citizens to report election code violations in real-time with geotagged photo/video evidence."
     }
   ]
 };
@@ -10077,7 +10078,7 @@ function handleScroll() {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
-  
+
   const progressBar = document.getElementById('progress-bar');
   if (progressBar) progressBar.style.width = scrolled + '%';
 
@@ -10097,9 +10098,64 @@ if (document.getElementById('back-to-top')) {
   });
 }
 
+function setSyllabusMode(mode) {
+  STATE.syllabusMode = mode;
+  localStorage.setItem('g8_sst_syllabus_mode', mode);
+
+  const isPA1 = mode === 'PA 1';
+  document.querySelectorAll('#header-mode-pa1, #hero-mode-pa1').forEach(b => {
+    b.classList.toggle('active', isPA1);
+  });
+  document.querySelectorAll('#header-mode-term1, #hero-mode-term1').forEach(b => {
+    b.classList.toggle('active', !isPA1);
+  });
+
+  showToast(isPA1 ? '📝 Exam Mode: PA 1 (Chapters 1 & 2 Only)' : '🎓 Exam Mode: Term 1 (All 4 Chapters)');
+
+  applySyllabusFilter();
+}
+
+function applySyllabusFilter() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
+  // 1. Section Visibility & Nav Styling
+  const ch5Sec = document.getElementById('electoral-system');
+  const ch7Sec = document.getElementById('factors-production');
+  const navCh5 = document.getElementById('nav-electoral-system');
+  const navCh7 = document.getElementById('nav-factors-production');
+
+  if (ch5Sec) ch5Sec.style.display = isPA1 ? 'none' : 'block';
+  if (ch7Sec) ch7Sec.style.display = isPA1 ? 'none' : 'block';
+
+  if (navCh5) {
+    navCh5.style.opacity = isPA1 ? '0.4' : '1';
+    navCh5.style.pointerEvents = isPA1 ? 'none' : 'auto';
+    navCh5.title = isPA1 ? 'Term 1 Only' : '';
+  }
+  if (navCh7) {
+    navCh7.style.opacity = isPA1 ? '0.4' : '1';
+    navCh7.style.pointerEvents = isPA1 ? 'none' : 'auto';
+    navCh7.title = isPA1 ? 'Term 1 Only' : '';
+  }
+
+  // 2. Re-render Grid Views
+  renderTopics();
+  renderFlashcards();
+  renderQuiz();
+  renderImportantQuestions();
+  renderGlossary();
+  renderDiagrams();
+  renderQuickRevision();
+  updateHeroStats();
+}
+
 function updateHeroStats() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const pa1Topics = TOPICS.filter(t => t.chapterId === 'natural-resources' || t.chapterId === 'political-map');
+  const activeCount = isPA1 ? pa1Topics.length : TOPICS.length;
+
   const statTopics = document.getElementById('stat-total-topics');
-  if (statTopics) statTopics.textContent = TOPICS.length;
+  if (statTopics) statTopics.textContent = isPA1 ? `${activeCount} (PA 1)` : `${TOPICS.length} (Term 1)`;
 
   const statFc = document.getElementById('stat-fc-learned');
   if (statFc) statFc.textContent = `${STATE.learnedFlashcards.length} / ${FLASHCARDS.length}`;
@@ -10121,7 +10177,13 @@ function renderTopics() {
 
   Object.values(grids).forEach(grid => { if (grid) grid.innerHTML = ''; });
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
   TOPICS.forEach((topic, idx) => {
+    if (isPA1 && (topic.chapterId === 'electoral-system' || topic.chapterId === 'factors-production')) {
+      return;
+    }
+
     const grid = grids[topic.chapterId];
     if (!grid) return;
 
@@ -10162,7 +10224,7 @@ function toggleBookmark(id) {
   localStorage.setItem('g8_sst_bookmarks', JSON.stringify(STATE.bookmarks));
   renderTopics();
   updateHeroStats();
-  
+
   const modalBm = document.getElementById('modal-bookmark');
   if (modalBm) {
     modalBm.textContent = STATE.bookmarks.includes(id) ? '★' : '☆';
@@ -10281,8 +10343,32 @@ function setupKeyboardListeners() {
 }
 
 function renderFlashcards() {
-  if (STATE.flashcardFiltered.length === 0) {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  if (isPA1) {
+    STATE.flashcardFiltered = FLASHCARDS.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map');
+  } else if (STATE.flashcardSelectedTopics && STATE.flashcardSelectedTopics.length > 0) {
+    STATE.flashcardFiltered = FLASHCARDS.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
+  } else {
     STATE.flashcardFiltered = [...FLASHCARDS];
+  }
+
+  // Dim filter buttons for Term 1 topics in PA 1 mode
+  const filterBtns = document.querySelectorAll('#fc-filter-wrap button');
+  filterBtns.forEach(btn => {
+    const txt = btn.textContent;
+    if (isPA1 && (txt.includes('Electoral System') || txt.includes('Factors of Production'))) {
+      btn.style.opacity = '0.35';
+      btn.style.pointerEvents = 'none';
+      btn.title = 'Term 1 Only';
+    } else {
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+      btn.title = '';
+    }
+  });
+
+  if (STATE.flashcardIndex >= STATE.flashcardFiltered.length) {
+    STATE.flashcardIndex = 0;
   }
   updateFlashcardUI();
 }
@@ -10384,8 +10470,8 @@ function filterFlashcards(event, topicName) {
     showToast('Flashcards: All Topics (500 Cards)');
   } else {
     STATE.flashcardFiltered = FLASHCARDS.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
-    const countLabel = STATE.flashcardSelectedTopics.length === 1 
-      ? STATE.flashcardSelectedTopics[0] 
+    const countLabel = STATE.flashcardSelectedTopics.length === 1
+      ? STATE.flashcardSelectedTopics[0]
       : `${STATE.flashcardSelectedTopics.length} Topics Selected`;
     showToast(`Flashcards: ${countLabel} (${STATE.flashcardFiltered.length} Cards)`);
   }
@@ -10405,12 +10491,30 @@ function shuffleFlashcards() {
 }
 
 function renderQuiz() {
-  if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
-  if (STATE.quizSelectedTopics.length === 0) {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  if (isPA1) {
+    STATE.quizActiveQuestions = MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map');
+  } else if (!STATE.quizSelectedTopics || STATE.quizSelectedTopics.length === 0) {
     STATE.quizActiveQuestions = [...MCQS];
   } else {
     STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
   }
+
+  // Dim filter buttons for Term 1 topics in PA 1 mode
+  const filterBtns = document.querySelectorAll('#quiz-filter-wrap button');
+  filterBtns.forEach(btn => {
+    const txt = btn.textContent;
+    if (isPA1 && (txt.includes('Electoral System') || txt.includes('Factors of Production'))) {
+      btn.style.opacity = '0.35';
+      btn.style.pointerEvents = 'none';
+      btn.title = 'Term 1 Only';
+    } else {
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+      btn.title = '';
+    }
+  });
+
   STATE.quizIndex = 0;
   STATE.quizScore = 0;
   resetQuizContainerUI();
@@ -10457,8 +10561,8 @@ function filterQuiz(event, topicName) {
     showToast('Quiz Filtered: All Topics (500 Questions)');
   } else {
     STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
-    const countLabel = STATE.quizSelectedTopics.length === 1 
-      ? STATE.quizSelectedTopics[0] 
+    const countLabel = STATE.quizSelectedTopics.length === 1
+      ? STATE.quizSelectedTopics[0]
       : `${STATE.quizSelectedTopics.length} Topics Selected`;
     showToast(`Quiz Filtered: ${countLabel} (${STATE.quizActiveQuestions.length} Questions)`);
   }
@@ -10617,15 +10721,28 @@ function renderQuizResults() {
   `;
 }
 
-
 function renderImportantQuestions() {
   const container = document.getElementById('important-questions-wrap');
   if (!container) return;
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const isCh5or7 = item => {
+    const text = (item.q + ' ' + item.a).toLowerCase();
+    const ch5ch7Keywords = ['article 326', 'article 324', 'voting age', '61st constitutional', 'election commission', 'evm', 'vvpat', 'labour', 'capital', 'factor of production', 'factors of production', 'fixed capital', 'working capital', 'entrepreneur', 'kaizen', 'demographic dividend'];
+    return ch5ch7Keywords.some(kw => text.includes(kw));
+  };
+
+  const m1List = isPA1 ? IMPORTANT_QUESTIONS.m1.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m1;
+  const m2List = isPA1 ? IMPORTANT_QUESTIONS.m2.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m2;
+  const m3List = isPA1 ? IMPORTANT_QUESTIONS.m3.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m3;
+  const m5List = isPA1 ? IMPORTANT_QUESTIONS.m5.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m5;
+
   container.innerHTML = `
+    ${isPA1 ? `<div class="callout callout-important" style="margin-bottom:20px; background:rgba(34,211,238,0.1); border-color:var(--cyan);"><div class="callout-title" style="color:var(--cyan);">📝 PA 1 Syllabus Active</div>Showing Important Questions from Chapter 1 (Natural Resources) & Chapter 2 (Political Map).</div>` : ''}
+
     <div class="accordion-group" style="margin-bottom:30px;">
       <h3 style="color:var(--cyan); margin-bottom:15px;">⭐ 1 Mark Questions</h3>
-      ${IMPORTANT_QUESTIONS.m1.map(item => `
+      ${m1List.map(item => `
         <div class="accordion-item" style="background:var(--glass-card); border:1px solid var(--glass-border); border-radius:10px; margin-bottom:12px; overflow:hidden; transition:all 0.3s var(--ease);">
           <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')" style="padding:16px 20px; color:var(--white-soft); font-weight:600; font-size:1rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
             <span>❓ ${item.q}</span>
@@ -10642,7 +10759,7 @@ function renderImportantQuestions() {
 
     <div class="accordion-group" style="margin-bottom:30px;">
       <h3 style="color:var(--cyan); margin-bottom:15px;">⭐⭐ 2 Marks Short Answer Questions</h3>
-      ${IMPORTANT_QUESTIONS.m2.map(item => `
+      ${m2List.map(item => `
         <div class="accordion-item" style="background:var(--glass-card); border:1px solid var(--glass-border); border-radius:10px; margin-bottom:12px; overflow:hidden; transition:all 0.3s var(--ease);">
           <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')" style="padding:16px 20px; color:var(--white-soft); font-weight:600; font-size:1rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
             <span>❓ ${item.q}</span>
@@ -10659,7 +10776,7 @@ function renderImportantQuestions() {
 
     <div class="accordion-group" style="margin-bottom:30px;">
       <h3 style="color:var(--cyan); margin-bottom:15px;">⭐⭐⭐ 3 Marks Conceptual Questions</h3>
-      ${IMPORTANT_QUESTIONS.m3.map(item => `
+      ${m3List.map(item => `
         <div class="accordion-item" style="background:var(--glass-card); border:1px solid var(--glass-border); border-radius:10px; margin-bottom:12px; overflow:hidden; transition:all 0.3s var(--ease);">
           <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')" style="padding:16px 20px; color:var(--white-soft); font-weight:600; font-size:1rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
             <span>❓ ${item.q}</span>
@@ -10676,7 +10793,7 @@ function renderImportantQuestions() {
 
     <div class="accordion-group" style="margin-bottom:30px;">
       <h3 style="color:var(--cyan); margin-bottom:15px;">🏆 5 Marks Long Essay Questions</h3>
-      ${IMPORTANT_QUESTIONS.m5.map(item => `
+      ${m5List.map(item => `
         <div class="accordion-item" style="background:var(--glass-card); border:1px solid var(--glass-border); border-radius:10px; margin-bottom:12px; overflow:hidden; transition:all 0.3s var(--ease);">
           <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')" style="padding:16px 20px; color:var(--white-soft); font-weight:600; font-size:1rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
             <span>❓ ${item.q}</span>
@@ -10696,7 +10813,7 @@ function renderImportantQuestions() {
     const style = document.createElement('style');
     style.id = 'accordion-style';
     style.textContent = `
-      .accordion-item.active .accordion-body { max-height: 1500px !important; padding-top: 10px !important; padding-bottom: 20px !important; }
+      .accordion-item.active .accordion-body { max-height: 4000px !important; padding-top: 10px !important; padding-bottom: 20px !important; }
       .accordion-item.active .acc-icon { transform: rotate(45deg); color: var(--rose) !important; }
       .accordion-item.active { border-color: var(--cyan) !important; box-shadow: 0 0 15px rgba(34, 211, 238, 0.2); }
     `;
@@ -10704,20 +10821,30 @@ function renderImportantQuestions() {
   }
 }
 
-
 function renderGlossary() {
-  const lettersWrap = document.getElementById('glossary-letters');
-  const grid = document.getElementById('glossary-grid');
-  if (!grid) return;
+  const isPA1 = STATE.syllabusMode === 'PA 1';
 
+  // Topic filter button visibility for PA 1 vs Term 1
+  const topicBtns = document.querySelectorAll('#glossary-topic-wrap button');
+  topicBtns.forEach(btn => {
+    const txt = btn.textContent;
+    if (isPA1 && (txt.includes('Electoral System') || txt.includes('Factors of Production'))) {
+      btn.style.display = 'none';
+    } else {
+      btn.style.display = 'inline-block';
+    }
+  });
+
+  // Letter filter buttons setup
+  const lettersWrap = document.getElementById('glossary-letters');
   const alphabet = ['ALL', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
-  if (lettersWrap) {
+  if (lettersWrap && lettersWrap.children.length === 0) {
     lettersWrap.innerHTML = alphabet.map(l => `
       <button class="glossary-letter-btn ${l === 'ALL' ? 'active' : ''}" onclick="filterGlossaryLetter(event, '${l}')">${l}</button>
     `).join('');
   }
 
-  displayGlossaryTerms(GLOSSARY);
+  filterGlossaryCombined();
 }
 
 function displayGlossaryTerms(terms) {
@@ -10726,10 +10853,37 @@ function displayGlossaryTerms(terms) {
 
   grid.innerHTML = terms.map(item => `
     <div class="card glossary-card" style="height:auto;">
-      <div style="font-weight:700; color:var(--cyan); font-size:1.1rem; margin-bottom:6px;">${item.term}</div>
+      <h4 style="color:var(--cyan); margin-top:0; margin-bottom:8px;">${item.term}</h4>
       <p style="color:var(--gray-light); font-size:0.9rem; margin:0; line-height:1.5;">${item.def}</p>
     </div>
   `).join('');
+}
+
+function filterGlossaryTopic(event, topicName) {
+  if (!STATE.glossarySelectedTopics) STATE.glossarySelectedTopics = [];
+
+  const btns = document.querySelectorAll('#glossary-topic-wrap .glossary-topic-btn');
+  if (topicName === 'All') {
+    STATE.glossarySelectedTopics = [];
+    btns.forEach(b => b.classList.remove('active'));
+    if (event && event.target) event.target.classList.add('active');
+  } else {
+    const idx = STATE.glossarySelectedTopics.indexOf(topicName);
+    if (idx >= 0) {
+      STATE.glossarySelectedTopics.splice(idx, 1);
+      if (event && event.target) event.target.classList.remove('active');
+    } else {
+      STATE.glossarySelectedTopics.push(topicName);
+      if (event && event.target) event.target.classList.add('active');
+    }
+    const allBtn = document.querySelector('#glossary-topic-wrap .glossary-topic-btn');
+    if (allBtn) {
+      if (STATE.glossarySelectedTopics.length === 0) allBtn.classList.add('active');
+      else allBtn.classList.remove('active');
+    }
+  }
+
+  filterGlossaryCombined();
 }
 
 function filterGlossaryLetter(event, letter) {
@@ -10746,7 +10900,6 @@ function filterGlossaryLetter(event, letter) {
     }
   }
 
-  // Update letter buttons active state highlights
   const buttons = document.querySelectorAll('.glossary-letter-btn');
   buttons.forEach(btn => {
     const btnLetter = btn.textContent.trim();
@@ -10763,21 +10916,46 @@ function filterGlossaryLetter(event, letter) {
     }
   });
 
-  // Apply Union / OR logic multi-filtering across terms
-  if (STATE.glossarySelectedLetters.length === 0) {
-    displayGlossaryTerms(GLOSSARY);
-    showToast('Glossary: Showing All Terms');
-  } else {
-    const filtered = GLOSSARY.filter(item => {
-      const firstChar = item.term.charAt(0).toUpperCase();
+  filterGlossaryCombined();
+}
+
+function filterGlossaryCombined() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  let filtered = [...GLOSSARY];
+
+  const ch5ch7Keywords = ['article 324', 'article 326', '61st constitutional amendment', 'election commission', 'evm', 'vvpat', 'fptp', 'model code of conduct', 'nota', 'single transferable vote', 'universal adult franchise', 'labour', 'capital', 'factors of production', 'fixed capital', 'working capital', 'entrepreneurship', 'rent', 'wages', 'interest', 'profit', 'human capital', 'kaizen', 'demographic dividend'];
+
+  if (isPA1) {
+    filtered = filtered.filter(t => !ch5ch7Keywords.some(kw => t.term.toLowerCase().includes(kw)));
+  } else if (STATE.glossarySelectedTopics && STATE.glossarySelectedTopics.length > 0) {
+    filtered = filtered.filter(t => {
+      const termLower = (t.term + ' ' + t.def).toLowerCase();
+      return STATE.glossarySelectedTopics.some(topic => {
+        if (topic === 'Natural Resources') {
+          return ['resource', 'soil', 'water', 'taanka', 'mineral', 'bauxite', 'energy', 'renewable', 'abiotic', 'biotic', '3rs', 'terracing', 'stock', 'reserve', 'sustainable'].some(k => termLower.includes(k));
+        }
+        if (topic === 'Political Map') {
+          return ['princely', 'patel', 'accession', 'reorganisation', 'fazl', 'sriramulu', 'junagadh', 'hyderabad', 'goa', 'ahom', 'mughal', 'sultanate', 'balkan', 'lapse', 'article 1', 'article 2', 'article 3'].some(k => termLower.includes(k));
+        }
+        if (topic === 'Electoral System') {
+          return ['election', 'evm', 'vvpat', 'franchise', 'article 324', 'article 326', '61st constitutional', 'constituency', 'fptp', 'nota', 'cvigil', 'epic', 'voter'].some(k => termLower.includes(k));
+        }
+        if (topic === 'Factors of Production') {
+          return ['factor', 'production', 'land', 'labour', 'capital', 'entrepreneur', 'rent', 'wages', 'interest', 'profit', 'kaizen', 'demographic dividend', 'human capital'].some(k => termLower.includes(k));
+        }
+        return true;
+      });
+    });
+  }
+
+  if (STATE.glossarySelectedLetters && STATE.glossarySelectedLetters.length > 0) {
+    filtered = filtered.filter(t => {
+      const firstChar = t.term.charAt(0).toUpperCase();
       return STATE.glossarySelectedLetters.includes(firstChar);
     });
-    displayGlossaryTerms(filtered);
-    const countLabel = STATE.glossarySelectedLetters.length === 1 
-      ? `Letter ${STATE.glossarySelectedLetters[0]}` 
-      : `Letters [${STATE.glossarySelectedLetters.join(', ')}]`;
-    showToast(`Glossary: ${countLabel} (${filtered.length} Terms)`);
   }
+
+  displayGlossaryTerms(filtered);
 }
 
 function renderDiagrams() {
@@ -10785,12 +10963,19 @@ function renderDiagrams() {
   if (!container) return;
   container.innerHTML = '';
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
   SVG_DIAGRAMS.forEach((d) => {
+    // In PA 1 mode: ONLY show Diagram 1, 2, and 4 (hide 3, 5, 6, 7, 8)
+    if (isPA1 && !(d.title.startsWith('1.') || d.title.startsWith('2.') || d.title.startsWith('4.'))) {
+      return;
+    }
+
     const card = document.createElement('div');
     card.className = 'diagram-card card';
     card.style.cssText = 'height:auto; display:flex; flex-direction:column; gap:12px; cursor:pointer;';
     const displaySrc = (d.imgUrl && (d.imgUrl.endsWith('.png') || d.imgUrl.endsWith('.jpg') || d.imgUrl.endsWith('.jpeg') || d.imgUrl.endsWith('.svg') || d.imgUrl.endsWith('.webp') || d.imgUrl.endsWith('.gif'))) ? d.imgUrl : (d.directImgUrl || d.fallbackUrl);
-    
+
     card.innerHTML = `
       <div class="diagram-img-wrap" style="position:relative; width:100%; height:220px; border-radius:8px; overflow:hidden; background:var(--navy-darker);" onclick="openDiagramLightbox('${d.imgUrl.replace(/'/g, "\\'")}', '${d.title.replace(/'/g, "\\'")}', '${(d.directImgUrl || d.fallbackUrl || '').replace(/'/g, "\\'")}')">
         <img src="${displaySrc}" alt="${d.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s var(--ease);" onerror="this.onerror=null; this.src='${d.fallbackUrl}';">
@@ -10849,12 +11034,46 @@ function openDiagramLightbox(imgUrl, title, directImgUrl) {
   lightbox.classList.add('open');
 }
 
+function openTableModal(title, tableHtml) {
+  let modal = document.getElementById('table-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'table-modal';
+    modal.className = 'modal-overlay';
+    modal.onclick = (e) => { if (e.target === modal) modal.classList.remove('open'); };
+    document.body.appendChild(modal);
+  }
+
+  modal.innerHTML = `
+    <div class="modal-box" style="max-width:950px; width:92vw; padding:26px; background:linear-gradient(165deg, rgba(13, 30, 48, 0.98), rgba(7, 20, 36, 0.99)); border:1px solid rgba(34, 211, 238, 0.45); border-radius:20px; box-shadow:0 25px 70px rgba(0,0,0,0.85), 0 0 50px rgba(34, 211, 238, 0.25);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:1px solid rgba(34, 211, 238, 0.25); padding-bottom:14px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:1.4rem;">📊</span>
+          <h3 style="margin:0; color:var(--cyan); font-size:1.25rem; font-weight:700;">${title}</h3>
+        </div>
+        <button class="icon-btn close-btn" onclick="document.getElementById('table-modal').classList.remove('open')" title="Close (Esc)" style="background:rgba(225, 29, 72, 0.2); border:1px solid rgba(225, 29, 72, 0.5); color:#f43f5e; font-weight:700; width:34px; height:34px; border-radius:50%; cursor:pointer; font-size:1rem; display:flex; align-items:center; justify-content:center;">✕</button>
+      </div>
+      <div style="max-height:72vh; overflow:auto; padding:4px;">
+        ${tableHtml}
+      </div>
+      <div style="margin-top:18px; text-align:right; font-size:0.82rem; color:var(--gray-muted);">
+        Click outside or press Esc to close • Full Screen View
+      </div>
+    </div>
+  `;
+  modal.classList.add('open');
+}
+
 function renderQuickRevision() {
   const container = document.getElementById('quick-revision-wrap');
   if (!container) return;
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
   container.innerHTML = `
     <div class="chapter-section" style="padding-top:10px;">
+      ${isPA1 ? `<div class="callout callout-important" style="margin-bottom:24px; background:rgba(34,211,238,0.1); border-color:var(--cyan);"><div class="callout-title" style="color:var(--cyan);">📝 Exam Mode Active: PA 1 (Chapters 1 & 2)</div>Focusing 15-minute rapid summary on <strong>Natural Resources & Their Use</strong> and <strong>Reshaping India's Political Map</strong>.</div>` : ''}
+
       <div class="callout callout-important" style="margin-bottom:30px;">
         <div class="callout-title">⚡ 15-Minute Rapid Exam Summary</div>
         Review key constitutional articles, economic formulas, historical timelines, golden memory tricks, comparison tables, and common pitfalls before stepping into your Social Science examination.
@@ -10864,93 +11083,234 @@ function renderQuickRevision() {
       <h3 style="color:var(--cyan); margin-bottom:14px;">📜 Key Constitutional Articles & Economic Formulas</h3>
       <div class="formula-block" style="text-align:left; margin-bottom:30px;">
         <ul style="line-height:1.9;">
-          <li><strong>Article 326 (Universal Adult Franchise):</strong> Elections to Lok Sabha & Legislative Assemblies on adult suffrage (Voting age 18+).</li>
-          <li><strong>Article 324 (Election Commission):</strong> Independent constitutional authority for election superintendence and control.</li>
+          ${isPA1 ? '' : '<li><strong>Article 326 (Universal Adult Franchise):</strong> Elections to Lok Sabha & Legislative Assemblies on adult suffrage (Voting age 18+).</li>'}
+          ${isPA1 ? '' : '<li><strong>Article 324 (Election Commission):</strong> Independent constitutional authority for election superintendence and control.</li>'}
           <li><strong>Resource Status Threshold:</strong> Resource = Natural Substance + Technological Accessibility + Economic Feasibility + Cultural Acceptability.</li>
-          <li><strong>Dependency Ratio Formula:</strong> Dependency Ratio = [(Population < 15 + Population > 65) / Working-Age Population (15–64)] &times; 100</li>
-          <li><strong>61st Constitutional Amendment Act (1988):</strong> Lowered minimum voting age from 21 to 18 years.</li>
+          ${isPA1 ? '' : '<li><strong>Dependency Ratio Formula:</strong> Dependency Ratio = [(Population &lt; 15 + Population &gt; 65) / Working-Age Population (15–64)] &times; 100</li>'}
+          ${isPA1 ? '' : '<li><strong>61st Constitutional Amendment Act (1988):</strong> Lowered minimum voting age from 21 to 18 years.</li>'}
           <li><strong>States Reorganisation Act 1956 (7th Amendment):</strong> Created 14 States & 6 Union Territories on linguistic lines.</li>
           <li><strong>26th Constitutional Amendment Act (1971):</strong> Abolished Privy Purse pensions for former princely state rulers.</li>
         </ul>
       </div>
 
-      <!-- HISTORICAL TIMELINE TABLE -->
-      <h3 style="color:var(--cyan); margin-bottom:14px;">📅 Major Historical & Constitutional Milestones</h3>
+      <!-- HIGH-YIELD COMPARISON TABLES -->
+      <h3 style="color:var(--cyan); margin-bottom:14px;">⚔️ High-Yield Exam Comparison Tables <span style="font-size:0.8rem; font-weight:400; color:var(--gray-muted); margin-left:8px;">(Click any table card to expand full-screen ⤢)</span></h3>
+
+      <div style="display:flex; flex-direction:column; gap:24px; margin-bottom:30px;">
+        <div class="card clickable-table-card" style="width:100%; cursor:pointer;" onclick="openTableModal('Biotic vs. Abiotic Resources', this.querySelector('table').outerHTML)">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="color:var(--cyan); margin:0;">Biotic vs. Abiotic Resources</h4>
+            <span style="font-size:0.75rem; background:rgba(34,211,238,0.12); color:var(--cyan); padding:3px 10px; border-radius:12px; border:1px solid rgba(34,211,238,0.3);">🔍 Expand ⤢</span>
+          </div>
+          <table style="width:100%; border-collapse:collapse; font-size:0.9rem; border:1px solid rgba(34,211,238,0.3);">
+            <thead>
+              <tr style="background:rgba(15,23,42,0.9); color:var(--cyan);">
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Feature</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Biotic Resources</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Abiotic Resources</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Origin</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Living organic matter</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Non-living inorganic matter</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Renewability</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Biological reproduction</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Geological time / Cycles</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Examples</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Forests, Crops, Fish, Coal</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Land, Air, Water, Iron Ore</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        ${isPA1 ? '' : `
+        <div class="card clickable-table-card" style="width:100%; cursor:pointer;" onclick="openTableModal('Fixed Capital vs. Working Capital', this.querySelector('table').outerHTML)">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="color:var(--cyan); margin:0;">Fixed Capital vs. Working Capital</h4>
+            <span style="font-size:0.75rem; background:rgba(34,211,238,0.12); color:var(--cyan); padding:3px 10px; border-radius:12px; border:1px solid rgba(34,211,238,0.3);">🔍 Expand ⤢</span>
+          </div>
+          <table style="width:100%; border-collapse:collapse; font-size:0.9rem; border:1px solid rgba(34,211,238,0.3);">
+            <thead>
+              <tr style="background:rgba(15,23,42,0.9); color:var(--cyan);">
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Feature</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Fixed Capital</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Working Capital</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Lifespan</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Durable over years</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Single production cycle</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Exhaustion</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Does not get used up</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Consumed/transformed completely</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Examples</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Machinery, Tractor, Factory</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Seeds, Raw Cotton, Cash</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card clickable-table-card" style="width:100%; cursor:pointer;" onclick="openTableModal('Lok Sabha vs. Vidhan Sabha', this.querySelector('table').outerHTML)">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="color:var(--cyan); margin:0;">Lok Sabha vs. Vidhan Sabha</h4>
+            <span style="font-size:0.75rem; background:rgba(34,211,238,0.12); color:var(--cyan); padding:3px 10px; border-radius:12px; border:1px solid rgba(34,211,238,0.3);">🔍 Expand ⤢</span>
+          </div>
+          <table style="width:100%; border-collapse:collapse; font-size:0.9rem; border:1px solid rgba(34,211,238,0.3);">
+            <thead>
+              <tr style="background:rgba(15,23,42,0.9); color:var(--cyan);">
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Feature</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Lok Sabha</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Vidhan Sabha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Level</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Union National Parliament</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">State Legislative Assembly</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Members</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">543 MPs</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">MLAs (Varies by state size)</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Head</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Prime Minister</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Chief Minister</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card clickable-table-card" style="width:100%; cursor:pointer;" onclick="openTableModal('Physical Labour vs. Mental Labour', this.querySelector('table').outerHTML)">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="color:var(--cyan); margin:0;">Physical Labour vs. Mental Labour</h4>
+            <span style="font-size:0.75rem; background:rgba(34,211,238,0.12); color:var(--cyan); padding:3px 10px; border-radius:12px; border:1px solid rgba(34,211,238,0.3);">🔍 Expand ⤢</span>
+          </div>
+          <table style="width:100%; border-collapse:collapse; font-size:0.9rem; border:1px solid rgba(34,211,238,0.3);">
+            <thead>
+              <tr style="background:rgba(15,23,42,0.9); color:var(--cyan);">
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Feature</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Physical Labour</th>
+                <th style="padding:10px 14px; border:1px solid rgba(34,211,238,0.25);">Mental Labour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Effort</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Muscular strength & stamina</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Cognitive analysis & skill</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Input</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Manual execution</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Problem-solving & design</td></tr>
+              <tr><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2); font-weight:600;">Examples</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Construction worker, Porter</td><td style="padding:10px 14px; border:1px solid rgba(34,211,238,0.2);">Surgeon, Software engineer</td></tr>
+            </tbody>
+          </table>
+        </div>
+        `}
+      </div>
+
+      ${
+    isPA1 ? '' : `
+      <!-- THE BIG ERAS AT A GLANCE TABLE -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="color:var(--cyan); margin:0;">📚 The "Big Eras" at a Glance</h3>
+        <button onclick="openTableModal('📚 The Big Eras at a Glance', this.parentElement.nextElementSibling.outerHTML)" class="cta-btn-outline" style="padding:5px 12px; font-size:0.8rem; display:inline-flex; align-items:center; gap:5px; cursor:pointer;">🔍 Expand View ⤢</button>
+      </div>
       <table style="width:100%; border-collapse:collapse; margin-bottom:30px;">
         <thead>
-          <tr><th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Year</th><th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Historical Event / Milestone</th><th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Significance in Social Science</th></tr>
+          <tr>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Era</th>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Years</th>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Main Political Power</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Aug 15, 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Indian Independence</td><td style="padding:8px; border:1px solid var(--glass-border);">Lapse of British Paramountcy over 565+ Princely States.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Oct 26, 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">J&K Instrument of Accession</td><td style="padding:8px; border:1px solid var(--glass-border);">Maharaja Hari Singh acceded to India during tribal invasion.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Feb 1948</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Junagadh Plebiscite</td><td style="padding:8px; border:1px solid var(--glass-border);">Over 99% voted for merger with India in referendum.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Sept 1948</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Operation Polo (Hyderabad)</td><td style="padding:8px; border:1px solid var(--glass-border);">5-day police action integrating Nizam's state into India.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Jan 26, 1950</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Constitution of India Enacted</td><td style="padding:8px; border:1px solid var(--glass-border);">Article 326 granted Universal Adult Franchise.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1952</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Potti Sreeramulu Fasting</td><td style="padding:8px; border:1px solid var(--glass-border);">Passed away after 56 days; catalyzed Andhra State in Oct 1953.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1953</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">States Reorganisation Commission</td><td style="padding:8px; border:1px solid var(--glass-border);">Appointed under Justice Fazl Ali, H.N. Kunzru, K.M. Panikkar.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1956</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">States Reorganisation Act</td><td style="padding:8px; border:1px solid var(--glass-border);">Redrew map into 14 States and 6 Union Territories on linguistic lines.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1961</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Operation Vijay (Goa)</td><td style="padding:8px; border:1px solid var(--glass-border);">Liberated Goa, Daman & Diu from 450 years of Portuguese rule.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1982</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">First EVM Trial</td><td style="padding:8px; border:1px solid var(--glass-border);">Tested in Paravur Assembly Constituency, Kerala.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1988 (1989)</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">61st Amendment Act</td><td style="padding:8px; border:1px solid var(--glass-border);">Voting age reduced from 21 to 18 years.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2004</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Nationwide EVM Rollout</td><td style="padding:8px; border:1px solid var(--glass-border);">EVMs used in all 543 Lok Sabha constituencies.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2013 / 2019</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">VVPAT & NOTA Integration</td><td style="padding:8px; border:1px solid var(--glass-border);">7-second paper trail & None of the Above option added.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>June 2, 2014</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Telangana Statehood</td><td style="padding:8px; border:1px solid var(--glass-border);">Formed as India's 29th State from Andhra Pradesh.</td></tr>
-          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Oct 31, 2019</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">J&K Reorganisation</td><td style="padding:8px; border:1px solid var(--glass-border);">J&K reorganized into two Union Territories (J&K and Ladakh).</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Ancient & Early Medieval Kingdoms</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Before 1206</td><td style="padding:8px; border:1px solid var(--glass-border);">Cholas, Rajputs, Pandyas, Hoysalas, Kakatiyas, Palas, Senas, etc.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Delhi Sultanate</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1206–1526</td><td style="padding:8px; border:1px solid var(--glass-border);">Mamluk, Khalji, Tughlaq, Sayyid, Lodi Dynasties</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Regional Kingdoms</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1228–1707</td><td style="padding:8px; border:1px solid var(--glass-border);">Ahoms, Vijayanagara, Bahmani Sultanate, Rajputs</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Mughal Empire</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1526–1707 (continued in decline until 1857)</td><td style="padding:8px; border:1px solid var(--glass-border);">Babur to Aurangzeb and successors</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Maratha Confederacy</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1674–1818</td><td style="padding:8px; border:1px solid var(--glass-border);">Shivaji and the Peshwas</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>East India Company Rule</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1757–1858</td><td style="padding:8px; border:1px solid var(--glass-border);">British East India Company</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>British Crown Rule</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1858–1947</td><td style="padding:8px; border:1px solid var(--glass-border);">British Raj</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Independent India</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">1947–Present</td><td style="padding:8px; border:1px solid var(--glass-border);">Republic of India and state reorganisation</td></tr>
         </tbody>
       </table>
 
-      <!-- HIGH-YIELD COMPARISON TABLES -->
-      <h3 style="color:var(--cyan); margin-bottom:14px;">⚔️ High-Yield Exam Comparison Tables</h3>
-
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:20px; margin-bottom:30px;">
-        <div class="card" style="height:auto;">
-          <h4 style="color:var(--cyan); margin-top:0;">Fixed Capital vs. Working Capital</h4>
-          <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
-            <thead><tr><th>Feature</th><th>Fixed Capital</th><th>Working Capital</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Lifespan</strong></td><td>Durable over years</td><td>Single production cycle</td></tr>
-              <tr><td><strong>Exhaustion</strong></td><td>Does not get used up</td><td>Consumed/transformed completely</td></tr>
-              <tr><td><strong>Examples</strong></td><td>Machinery, Tractor, Factory</td><td>Seeds, Raw Cotton, Cash</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="card" style="height:auto;">
-          <h4 style="color:var(--cyan); margin-top:0;">Biotic vs. Abiotic Resources</h4>
-          <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
-            <thead><tr><th>Feature</th><th>Biotic Resources</th><th>Abiotic Resources</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Origin</strong></td><td>Living organic matter</td><td>Non-living inorganic matter</td></tr>
-              <tr><td><strong>Renewability</strong></td><td>Biological reproduction</td><td>Geological time / Cycles</td></tr>
-              <tr><td><strong>Examples</strong></td><td>Forests, Crops, Fish, Coal</td><td>Land, Air, Water, Iron Ore</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="card" style="height:auto;">
-          <h4 style="color:var(--cyan); margin-top:0;">Lok Sabha vs. Vidhan Sabha</h4>
-          <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
-            <thead><tr><th>Feature</th><th>Lok Sabha</th><th>Vidhan Sabha</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Level</strong></td><td>Union National Parliament</td><td>State Legislative Assembly</td></tr>
-              <tr><td><strong>Members</strong></td><td>543 MPs</td><td>MLAs (Varies by state size)</td></tr>
-              <tr><td><strong>Head</strong></td><td>Prime Minister</td><td>Chief Minister</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="card" style="height:auto;">
-          <h4 style="color:var(--cyan); margin-top:0;">Physical Labour vs. Mental Labour</h4>
-          <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
-            <thead><tr><th>Feature</th><th>Physical Labour</th><th>Mental Labour</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Effort</strong></td><td>Muscular strength & stamina</td><td>Cognitive analysis & skill</td></tr>
-              <tr><td><strong>Input</strong></td><td>Manual execution</td><td>Problem-solving & design</td></tr>
-              <tr><td><strong>Examples</strong></td><td>Construction worker, Porter</td><td>Surgeon, Software engineer</td></tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- HISTORICAL TIMELINE TABLE -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <h3 style="color:var(--cyan); margin:0;">🗺️ Complete Timeline of India's Political Map (1206–2014)</h3>
+        <button onclick="openTableModal('🗺️ Complete Timeline of India\'s Political Map (1206–2014)', this.parentElement.nextElementSibling.outerHTML)" class="cta-btn-outline" style="padding:5px 12px; font-size:0.8rem; display:inline-flex; align-items:center; gap:5px; cursor:pointer;">🔍 Expand Timeline Fullscreen ⤢</button>
       </div>
+      <table style="width:100%; border-collapse:collapse; margin-bottom:30px;">
+        <thead>
+          <tr>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Year / Period</th>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Event</th>
+            <th style="background:var(--navy-dark); color:var(--cyan); padding:10px; border:1px solid var(--glass-border);">Significance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Before 1206</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">India divided into many kingdoms (Cholas, Pandyas, Rajputs, Hoysalas, Kakatiyas, Palas, Senas, etc.)</td><td style="padding:8px; border:1px solid var(--glass-border);">No unified Indian state; independent regional kingdoms ruled different parts of the subcontinent.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1191</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">First Battle of Tarain</td><td style="padding:8px; border:1px solid var(--glass-border);">Prithviraj Chauhan defeated Muhammad Ghori.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1192</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Second Battle of Tarain</td><td style="padding:8px; border:1px solid var(--glass-border);">Muhammad Ghori defeated Prithviraj Chauhan, paving the way for Turkish rule in North India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1206</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Delhi Sultanate founded by Qutb-ud-din Aibak</td><td style="padding:8px; border:1px solid var(--glass-border);">Beginning of Muslim rule from Delhi.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1206–1290</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Mamluk (Slave) Dynasty</td><td style="padding:8px; border:1px solid var(--glass-border);">Qutb-ud-din Aibak, Iltutmish, Razia Sultan and Balban consolidated the Sultanate.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1228</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Ahom Kingdom founded by Sukaphaa</td><td style="padding:8px; border:1px solid var(--glass-border);">Began nearly 600 years of Ahom rule in Assam.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1290–1320</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Khalji Dynasty</td><td style="padding:8px; border:1px solid var(--glass-border);">Alauddin Khalji expanded into Gujarat, Rajasthan and the Deccan; introduced market reforms.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1320–1414</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Tughlaq Dynasty</td><td style="padding:8px; border:1px solid var(--glass-border);">Muhammad bin Tughlaq shifted the capital to Daulatabad (later reversed); token currency introduced; Firoz Shah built canals and cities.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1336</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Vijayanagara Empire founded</td><td style="padding:8px; border:1px solid var(--glass-border);">Largest Hindu empire in South India; capital at Hampi.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1347</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Bahmani Sultanate founded</td><td style="padding:8px; border:1px solid var(--glass-border);">First independent Muslim kingdom in the Deccan.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1398</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Timur invades Delhi</td><td style="padding:8px; border:1px solid var(--glass-border);">Delhi was devastated, weakening the Sultanate.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1414–1451</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Sayyid Dynasty</td><td style="padding:8px; border:1px solid var(--glass-border);">Weak rulers who controlled only a small region around Delhi.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1451–1526</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Lodi Dynasty</td><td style="padding:8px; border:1px solid var(--glass-border);">Last ruling dynasty of the Delhi Sultanate.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1498</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Vasco da Gama reaches Calicut</td><td style="padding:8px; border:1px solid var(--glass-border);">Beginning of European maritime trade with India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1526</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">First Battle of Panipat</td><td style="padding:8px; border:1px solid var(--glass-border);">Babur defeated Ibrahim Lodi; Mughal Empire founded.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1530–1540</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Humayun's first reign</td><td style="padding:8px; border:1px solid var(--glass-border);">Lost the empire to Sher Shah Suri.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1540–1545</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Sher Shah Suri's rule</td><td style="padding:8px; border:1px solid var(--glass-border);">Grand Trunk Road expanded; standard currency and efficient administration introduced.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1555</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Humayun regains the throne</td><td style="padding:8px; border:1px solid var(--glass-border);">Restored Mughal rule before his death.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1556–1605</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Akbar's reign</td><td style="padding:8px; border:1px solid var(--glass-border);">Empire expanded greatly; Mansabdari system introduced; Rajput alliances; Sulh-i-Kul (universal peace).</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1565</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Battle of Talikota</td><td style="padding:8px; border:1px solid var(--glass-border);">Vijayanagara defeated by the Deccan Sultanates; Hampi destroyed.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1576</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Battle of Haldighati</td><td style="padding:8px; border:1px solid var(--glass-border);">Maharana Pratap fought Mughal forces led by Man Singh; resistance continued.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1600</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">British East India Company established</td><td style="padding:8px; border:1px solid var(--glass-border);">Granted a royal charter by Queen Elizabeth I.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1602</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Dutch East India Company established</td><td style="padding:8px; border:1px solid var(--glass-border);">Dutch entered Indian trade.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1605–1627</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Jahangir's reign</td><td style="padding:8px; border:1px solid var(--glass-border);">Promoted art, painting and stable administration.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1628–1658</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Shah Jahan's reign</td><td style="padding:8px; border:1px solid var(--glass-border);">Taj Mahal, Red Fort and Jama Masjid built.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1630</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Birth of Shivaji Maharaj</td><td style="padding:8px; border:1px solid var(--glass-border);">Founder of the Maratha Empire.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1639</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Madras (Fort St. George) established</td><td style="padding:8px; border:1px solid var(--glass-border);">Major British trading centre.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1664</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">French East India Company established</td><td style="padding:8px; border:1px solid var(--glass-border);">French entered Indian trade.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1668</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Bombay transferred to the British East India Company</td><td style="padding:8px; border:1px solid var(--glass-border);">Became an important British port.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1671</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Battle of Saraighat</td><td style="padding:8px; border:1px solid var(--glass-border);">Ahoms under Lachit Borphukan defeated the Mughals in Assam.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1674</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Shivaji crowned Chhatrapati</td><td style="padding:8px; border:1px solid var(--glass-border);">Official beginning of the Maratha Kingdom.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1680</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Death of Shivaji</td><td style="padding:8px; border:1px solid var(--glass-border);">Maratha expansion continued under later rulers.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1690</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Calcutta established</td><td style="padding:8px; border:1px solid var(--glass-border);">Became a major British administrative centre.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1707</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Death of Aurangzeb</td><td style="padding:8px; border:1px solid var(--glass-border);">Mughal decline begins; rise of regional powers.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1707–1818</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Maratha Confederacy</td><td style="padding:8px; border:1px solid var(--glass-border);">Marathas became the dominant power across much of India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1757</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Battle of Plassey</td><td style="padding:8px; border:1px solid var(--glass-border);">British defeated Siraj-ud-Daulah; beginning of British political rule.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1761</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Third Battle of Panipat</td><td style="padding:8px; border:1px solid var(--glass-border);">Marathas defeated by Ahmad Shah Abdali; major setback for Maratha expansion.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1764</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Battle of Buxar</td><td style="padding:8px; border:1px solid var(--glass-border);">British defeated Mir Qasim, Nawab of Awadh and Shah Alam II; gained Diwani rights.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1773</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Regulating Act</td><td style="padding:8px; border:1px solid var(--glass-border);">Governor-General of Bengal created; Warren Hastings appointed.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1798</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Subsidiary Alliance introduced</td><td style="padding:8px; border:1px solid var(--glass-border);">Indian rulers accepted British troops and influence.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1848–1856</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Doctrine of Lapse</td><td style="padding:8px; border:1px solid var(--glass-border);">British annexed states without natural heirs.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1849</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Punjab annexed</td><td style="padding:8px; border:1px solid var(--glass-border);">Sikh Empire incorporated into British India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1856</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Awadh annexed</td><td style="padding:8px; border:1px solid var(--glass-border);">Annexation caused widespread resentment.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1857</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Revolt of 1857</td><td style="padding:8px; border:1px solid var(--glass-border);">Major uprising against British rule; First War of Independence (by many Indian historians).</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1858</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">British Crown Rule begins</td><td style="padding:8px; border:1px solid var(--glass-border);">East India Company abolished; India came under the British Crown.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1885</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Indian National Congress founded</td><td style="padding:8px; border:1px solid var(--glass-border);">Beginning of organised national politics.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1905</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Partition of Bengal</td><td style="padding:8px; border:1px solid var(--glass-border);">Bengal divided by Lord Curzon; widespread protests followed.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1911</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Bengal reunited; capital shifted to Delhi</td><td style="padding:8px; border:1px solid var(--glass-border);">Delhi became the capital of British India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1919</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Government of India Act & Jallianwala Bagh Massacre</td><td style="padding:8px; border:1px solid var(--glass-border);">Limited reforms introduced; massacre intensified the freedom struggle.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1920</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Non-Cooperation Movement</td><td style="padding:8px; border:1px solid var(--glass-border);">Gandhi launched a nationwide movement against British rule.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1930</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Salt March (Dandi March)</td><td style="padding:8px; border:1px solid var(--glass-border);">Civil Disobedience Movement gained momentum.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1935</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Government of India Act</td><td style="padding:8px; border:1px solid var(--glass-border);">Provincial autonomy introduced; basis for later constitutional developments.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1942</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Quit India Movement</td><td style="padding:8px; border:1px solid var(--glass-border);">Final mass movement demanding immediate British withdrawal.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1946</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Cabinet Mission</td><td style="padding:8px; border:1px solid var(--glass-border);">Proposed a federal India; negotiations ultimately failed.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>3 June 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Mountbatten Plan</td><td style="padding:8px; border:1px solid var(--glass-border);">Announced Partition of British India into India and Pakistan.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>July 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Indian Independence Act</td><td style="padding:8px; border:1px solid var(--glass-border);">British Parliament approved the creation of India and Pakistan.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>15 August 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">India becomes independent</td><td style="padding:8px; border:1px solid var(--glass-border);">Partition; over 560 princely states had to choose accession; Lapse of British Paramountcy over 565+ Princely States.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1947 / Feb 1948</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Junagadh Crisis & Plebiscite</td><td style="padding:8px; border:1px solid var(--glass-border);">Referendum (over 99% voted for merger) led to Junagadh joining India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>October 26, 1947</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Jammu & Kashmir Instrument of Accession</td><td style="padding:8px; border:1px solid var(--glass-border);">Joined India after tribal invasion supported from Pakistan; Maharaja Hari Singh acceded to India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>September 1948</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Operation Polo (Hyderabad)</td><td style="padding:8px; border:1px solid var(--glass-border);">5-day police action integrating Nizam's state of Hyderabad into India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>26 January 1950</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Constitution comes into force</td><td style="padding:8px; border:1px solid var(--glass-border);">India became a Republic and a Union of States; Article 326 granted Universal Adult Franchise.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1952</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Potti Sriramulu's hunger strike and death</td><td style="padding:8px; border:1px solid var(--glass-border);">Passed away after 56 days; triggered demand for linguistic states and catalyzed Andhra State in Oct 1953.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1953</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Andhra State created</td><td style="padding:8px; border:1px solid var(--glass-border);">India's first linguistic state.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1953</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">States Reorganisation Commission established</td><td style="padding:8px; border:1px solid var(--glass-border);">Appointed under Justice Fazl Ali, H.N. Kunzru, K.M. Panikkar; recommended reorganising states mainly on linguistic lines.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1955</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">SRC report submitted</td><td style="padding:8px; border:1px solid var(--glass-border);">Became the basis for state reorganisation.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1 November 1956</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">States Reorganisation Act</td><td style="padding:8px; border:1px solid var(--glass-border);">India reorganised into <strong>14 states and 6 Union Territories</strong> on linguistic lines.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1960</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Maharashtra and Gujarat created</td><td style="padding:8px; border:1px solid var(--glass-border);">Bombay State divided on linguistic lines.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Dec 1961</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Operation Vijay (Goa)</td><td style="padding:8px; border:1px solid var(--glass-border);">Liberated Goa, Daman & Diu from 450 years of Portuguese rule.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1963</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Nagaland becomes a state</td><td style="padding:8px; border:1px solid var(--glass-border);">Recognition of Naga identity.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1966</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Punjab Reorganisation</td><td style="padding:8px; border:1px solid var(--glass-border);">Haryana created; Chandigarh became a Union Territory.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1971</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Himachal Pradesh becomes a state</td><td style="padding:8px; border:1px solid var(--glass-border);">Achieved full statehood.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1972</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Meghalaya, Manipur and Tripura become states</td><td style="padding:8px; border:1px solid var(--glass-border);">Strengthened representation in the North-East.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1975</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Sikkim joins India</td><td style="padding:8px; border:1px solid var(--glass-border);">Became India's 22nd state after a referendum.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1982</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">First EVM Trial</td><td style="padding:8px; border:1px solid var(--glass-border);">Tested in Paravur Assembly Constituency, Kerala.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1987</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Goa, Mizoram and Arunachal Pradesh become states</td><td style="padding:8px; border:1px solid var(--glass-border);">Further reorganisation of western and north-eastern India.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>1988 (1989)</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">61st Constitutional Amendment Act</td><td style="padding:8px; border:1px solid var(--glass-border);">Voting age reduced from 21 to 18 years.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2000</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Chhattisgarh created</td><td style="padding:8px; border:1px solid var(--glass-border);">Carved out of Madhya Pradesh.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2000</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Uttarakhand (then Uttaranchal) created</td><td style="padding:8px; border:1px solid var(--glass-border);">Carved out of Uttar Pradesh.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2000</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Jharkhand created</td><td style="padding:8px; border:1px solid var(--glass-border);">Carved out of Bihar.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2004</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Nationwide EVM Rollout</td><td style="padding:8px; border:1px solid var(--glass-border);">EVMs used in all 543 Lok Sabha constituencies.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2013 / 2019</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">VVPAT & NOTA Integration</td><td style="padding:8px; border:1px solid var(--glass-border);">7-second paper trail & None of the Above option added.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>2 June 2014</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">Telangana becomes India's 29th state</td><td style="padding:8px; border:1px solid var(--glass-border);">Formed from Andhra Pradesh after a long regional movement.</td></tr>
+          <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Oct 31, 2019</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">J&K Reorganisation</td><td style="padding:8px; border:1px solid var(--glass-border);">J&K reorganized into two Union Territories (J&K and Ladakh).</td></tr>
+        </tbody>
+      </table>
+      `}
 
       <!-- GOLDEN MEMORY TRICKS -->
       <h3 style="color:var(--cyan); margin-bottom:14px;">💡 Golden Memory Tricks</h3>
@@ -10991,55 +11351,49 @@ function renderQuickRevision() {
   `;
 }
 
-function setupSearch() {
-  const searchInput = document.getElementById('search-input');
-  if (!searchInput) return;
 
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase().trim();
-    if (!query) {
-      renderTopics();
-      renderFlashcards();
-      renderGlossary();
-      return;
-    }
+  function setupSearch() {
+    const searchInput = document.getElementById('search-input');
+    if (!searchInput) return;
 
-    const filteredTopics = TOPICS.filter(t => 
-      t.title.toLowerCase().includes(query) || 
-      t.preview.toLowerCase().includes(query) ||
-      t.contentHtml.toLowerCase().includes(query)
-    );
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query) {
+        renderTopics();
+        renderFlashcards();
+        renderGlossary();
+        return;
+      }
 
-    const filteredGlossary = GLOSSARY.filter(g => 
-      g.term.toLowerCase().includes(query) || 
-      g.def.toLowerCase().includes(query)
-    );
+      const filteredTopics = TOPICS.filter(t =>
+        t.title.toLowerCase().includes(query) ||
+        t.preview.toLowerCase().includes(query) ||
+        t.contentHtml.toLowerCase().includes(query)
+      );
 
-    const filteredFc = FLASHCARDS.filter(f => 
-      f.q.toLowerCase().includes(query) || 
-      f.a.toLowerCase().includes(query) ||
-      f.topic.toLowerCase().includes(query)
-    );
+      const filteredGlossary = GLOSSARY.filter(g =>
+        g.term.toLowerCase().includes(query) ||
+        g.def.toLowerCase().includes(query)
+      );
 
-    displayGlossaryTerms(filteredGlossary);
+      const filteredFc = FLASHCARDS.filter(f =>
+        f.q.toLowerCase().includes(query) ||
+        f.a.toLowerCase().includes(query) ||
+        f.topic.toLowerCase().includes(query)
+      );
 
-    STATE.flashcardFiltered = filteredFc;
-    STATE.flashcardIndex = 0;
-    updateFlashcardUI();
+      displayGlossaryTerms(filteredGlossary);
+
+      STATE.flashcardFiltered = filteredFc;
+      STATE.flashcardIndex = 0;
+      updateFlashcardUI();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    setSyllabusMode(STATE.syllabusMode);
+    setupSearch();
+
+    console.log('SST Study Guide SPA Engine Initialized!');
   });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  initNavigation();
-  renderTopics();
-  renderFlashcards();
-  renderQuiz();
-  renderImportantQuestions();
-  renderGlossary();
-  renderDiagrams();
-  renderQuickRevision();
-  setupSearch();
-  updateHeroStats();
-
-  console.log('SST Study Guide SPA Engine Initialized!');
-});
