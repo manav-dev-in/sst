@@ -29,22 +29,33 @@ const TOPICS = [
     difficulty: 'Easy',
     readTime: '6 min',
     preview: 'Discover why Nature and Resources are not identical. Learn how human intelligence, technology, and needs transform raw elements of nature into valuable resources.',
-    contentHtml: `
-          <p>Everything you use in daily life—your clothes, school desk, smartphone, drinking water, and pencil—originally originated from <strong>Nature</strong>. However, Nature and Resources are not identical concepts in Social Science.</p>
+    contentHtml: `<p>Everything you use in daily life—your clothes, school desk, smartphone, drinking water, and pencil—originally originated from <strong>Nature</strong>. However, Nature and Resources are not identical concepts in Social Science. Nature encompasses the physical universe, while resources represent elements that have been integrated into the human socio-economic matrix.</p>
+          
           <div class="callout callout-definition">
             <div class="callout-title">📖 What is Nature?</div>
-            <strong>Nature</strong> includes everything that exists on Earth without being created by human intervention, including biotic and abiotic components.
+            <strong>Nature</strong> includes everything that exists on Earth naturally without human creation, including sunlight, air, water bodies, wild vegetation, minerals, and atmospheric gases.
           </div>
+
           <div class="callout callout-definition">
             <div class="callout-title">📖 What is a Resource?</div>
-            A <strong>Resource</strong> is anything available in nature that has utility, value, and the capacity to satisfy human needs and desires.
+            A <strong>Resource</strong> is any feature of the physical environment that has proven utility, monetary or functional value, and the capacity to satisfy human needs, desires, and societal goals.
           </div>
+
+          <h3>The Human Utility Threshold Rule</h3>
+          <p>Substances in nature remain neutral material until human knowledge, scientific curiosity, and technical skill discover their utility. For example, crude petroleum lay beneath the Arabian Desert for millions of years as neutral nature. It transformed into 'Black Gold'—a critical global resource—only when human civilization invented the internal combustion engine and oil refining technology in the 19th century.</p>
+
           <div class="callout callout-important">
-            <div class="callout-title">⭐ The Human Utility Threshold Rule</div>
-            Nature becomes a resource <em>only when humans discover its utility and possess the technological capability to extract and process it</em>.
+            <div class="callout-title">⭐ Core Principle of Resource Geography</div>
+            <em>"Resources are not static things; they become resources through human perception, technological application, and economic need."</em> — Erich Zimmermann
           </div>
-        `
-  }, ,
+
+          <h3>Key Takeaways for Exam Revision</h3>
+          <ul>
+            <li><strong>Human Agency:</strong> Humans are the primary resource-creating agents. Without human intelligence, natural elements remain latent.</li>
+            <li><strong>Value Dimensions:</strong> Value can be economic (minerals sold in markets), aesthetic (a beautiful waterfall), legal (clean air under environmental laws), or ethical (forest preservation).</li>
+            <li><strong>Dynamic Nature:</strong> A substance can gain or lose resource status based on shifting technology and cultural preferences.</li>
+          </ul>`
+  },
   {
     id: 'ch1-conditions-transformation',
     chapterId: 'natural-resources',
@@ -54,20 +65,29 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '7 min',
     preview: 'Understand the three indispensable criteria required for any substance in nature to be classified as a resource: Technological Accessibility, Economic Feasibility, and Cultural Acceptability.',
-    contentHtml: `
-          <p>Not everything present in nature is automatically a resource. Economists and geographers establish three indispensable criteria that must be satisfied simultaneously.</p>
+    contentHtml: `<p>Not everything present in nature is automatically recognized as a resource. Economists, geographers, and environmental scientists establish three indispensable criteria that must be satisfied simultaneously before a natural substance can be classified as a viable resource.</p>
+
           <div class="formula-block">
-            Resource = Substance + Technological Accessibility + Economic Feasibility + Cultural Acceptability
+            Resource Status = Natural Element + Technological Accessibility + Economic Feasibility + Cultural Acceptability
           </div>
+
+          <h3>1. Technological Accessibility</h3>
+          <p>Society must possess the scientific know-how, machinery, and technical tools to extract, refine, and harness the resource. For example, water ($H_2O$) consists of hydrogen and oxygen—two highly combustible and energy-dense gases. However, because we currently lack cost-effective, large-scale technology to separate hydrogen from water efficiently, ocean water cannot yet serve as a mainstream fuel resource.</p>
+
+          <h3>2. Economic Feasibility</h3>
+          <p>The cost of extracting and processing the substance must be significantly lower than the market value and social benefit derived from it. If extracting $100 worth of gold requires $10,000 worth of machinery and energy, the deposit is economically unfeasible and cannot be classified as a commercial resource.</p>
+
+          <h3>3. Cultural Acceptability</h3>
+          <p>The extraction and usage of the resource must align with societal norms, legal frameworks, and ethical guidelines. For instance, mining in sacred groves, protected national parks, or indigenous heritage sites may be technologically possible and economically profitable, but cultural and environmental laws prohibit it, making it unviable.</p>
+
           <div class="callout callout-observation">
             <div class="callout-title">💡 Memory Trick: The TEC Rule</div>
             Remember <strong>TEC</strong> for Resource Status:
-            <br>• <strong>T</strong> – Technological Accessibility
-            <br>• <strong>E</strong> – Economic Feasibility
-            <br>• <strong>C</strong> – Cultural Acceptability
-          </div>
-        `
-  }, ,
+            <br>• <strong>T</strong> – Technological Accessibility (Tools & Science available?)
+            <br>• <strong>E</strong> – Economic Feasibility (Profitable & Cost-effective?)
+            <br>• <strong>C</strong> – Cultural Acceptability (Legal & Ethically approved?)
+          </div>`
+  },
   {
     id: 'ch1-classification-resources',
     chapterId: 'natural-resources',
@@ -77,17 +97,61 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Master the multi-dimensional classification of natural resources based on origin, exhaustibility, development stage, and ownership.',
-    contentHtml: `
-          <p>Resources are categorized into multi-dimensional frameworks based on distinct geographical and economic criteria.</p>
-          <h3>Classification Frameworks</h3>
+    contentHtml: `<p>To systematically manage and conserve Earth's wealth, geographers categorize resources across four major criteria: Origin, Exhaustibility, Ownership, and Status of Development.</p>
+
+          <h3>1. Based on Origin</h3>
           <ul>
-            <li><strong>By Origin:</strong> Biotic (living organic matter like forests, crops) vs. Abiotic (non-living inorganic matter like land, minerals).</li>
-            <li><strong>By Exhaustibility:</strong> Renewable (naturally replenishable like solar, wind) vs. Non-Renewable (geological scale like coal, petroleum).</li>
-            <li><strong>By Ownership:</strong> Individual (private farm), Community (village park), National (within 12nm sea), International (beyond 200nm EEZ).</li>
-            <li><strong>By Status of Development:</strong> Potential, Developed, Stock, Reserves.</li>
+            <li><strong>Biotic Resources:</strong> Derived from the biosphere and possess life. Examples include forests, agricultural crops, livestock, wildlife, and marine organisms.</li>
+            <li><strong>Abiotic Resources:</strong> Composed of non-living inorganic matter. Examples include rocks, land, water, minerals, and atmospheric gases.</li>
           </ul>
-        `
-  }, ,
+
+          <h3>2. Based on Exhaustibility</h3>
+          <ul>
+            <li><strong>Renewable Resources:</strong> Resources that can be replenished or reproduced naturally through physical, chemical, or biological cycles within a human timeframe (e.g., solar energy, wind power, groundwater, forests).</li>
+            <li><strong>Non-Renewable Resources:</strong> Resources that take millions of geological years to form. Their supply is finite, and once extracted, they are exhausted permanently (e.g., coal, crude oil, iron ore, uranium).</li>
+          </ul>
+
+          <h3>3. Based on Ownership</h3>
+          <ul>
+            <li><strong>Individual Resources:</strong> Privately owned by individuals (e.g., farmland, houses, private wells).</li>
+            <li><strong>Community Resources:</strong> Accessible to all members of a community (e.g., village grazing grounds, public parks, burial grounds).</li>
+            <li><strong>National Resources:</strong> All resources within a nation's political boundaries and territorial seas extending up to 12 nautical miles ($22.2\text{ km}$) from the coast.</li>
+            <li><strong>International Resources:</strong> Regulated by international bodies outside national boundaries, such as oceanic waters beyond 200 nautical miles of the Exclusive Economic Zone (EEZ).</li>
+          </ul>
+
+          <h3>4. Based on Status of Development</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Definition</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Potential</strong></td>
+                <td>Found in a region but not yet utilized due to lack of investment/infrastructure.</td>
+                <td>Solar & Wind energy in Rajasthan & Gujarat deserts.</td>
+              </tr>
+              <tr>
+                <td><strong>Developed</strong></td>
+                <td>Surveyed, quantity & quality determined, actively utilized.</td>
+                <td>Jharia Coal mines, Bhakra Nangal Hydro project.</td>
+              </tr>
+              <tr>
+                <td><strong>Stock</strong></td>
+                <td>Have potential to satisfy human needs, but humans lack technology to tap them.</td>
+                <td>Hydrogen extraction from ocean water.</td>
+              </tr>
+              <tr>
+                <td><strong>Reserves</strong></td>
+                <td>Subset of stock which can be put into use with existing technology, kept for future.</td>
+                <td>Water stored in dams for future hydroelectric generation.</td>
+              </tr>
+            </tbody>
+          </table>`
+  },
   {
     id: 'ch1-renewable-sustainability',
     chapterId: 'natural-resources',
@@ -97,21 +161,29 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Explore vital ecosystem services provided by Nature, the consequences of resource over-exploitation, and sustainable conservation strategies.',
-    contentHtml: `
-          <p>Ecosystem services are the direct and indirect benefits ecosystems provide to human life and economic activities.</p>
-          <h3>4 Categories of Ecosystem Services</h3>
+    contentHtml: `<p>Ecosystem services represent the fundamental life-support systems and environmental benefits provided by nature that make human civilization possible. Over-exploitation of these natural capital stocks leads to irreversible ecological degradation.</p>
+
+          <h3>The 4 Pillars of Ecosystem Services</h3>
           <ul>
-            <li><strong>Provisioning Services:</strong> Tangible products supplied by nature (food, water, timber, medicine).</li>
-            <li><strong>Regulating Services:</strong> Climate control, flood regulation, water purification, pollination.</li>
-            <li><strong>Supporting Services:</strong> Photosynthesis, soil formation, nutrient cycling.</li>
-            <li><strong>Cultural Services:</strong> Recreation, spiritual value, aesthetic beauty.</li>
+            <li><strong>Provisioning Services:</strong> Tangible materials extracted directly from nature, such as food crops, drinking water, timber, fuelwood, medicinal plants, and industrial fibers.</li>
+            <li><strong>Regulating Services:</strong> Natural mechanisms that maintain planetary equilibrium, such as climate regulation by rainforests, flood control by wetlands, water filtration by aquifers, and crop pollination by insects.</li>
+            <li><strong>Supporting Services:</strong> Fundamental biological and physical processes that sustain all life, including soil formation, nutrient cycling (nitrogen/carbon cycles), and photosynthesis.</li>
+            <li><strong>Cultural Services:</strong> Non-material aesthetic, spiritual, educational, and recreational benefits derived from natural landscapes.</li>
           </ul>
+
           <div class="callout callout-important">
-            <div class="callout-title">🌿 Sustainable Development & 3Rs</div>
-            Development that satisfies present needs without compromising future generations. Practice the 3Rs: <strong>Reduce</strong>, <strong>Reuse</strong>, and <strong>Recycle</strong>.
+            <div class="callout-title">🌿 Sustainable Development Definition</div>
+            <strong>Sustainable Development</strong> is development that meets the economic and social needs of the present generation without compromising the ability of future generations to meet their own needs. It requires balancing economic growth, social inclusion, and environmental protection.
           </div>
-        `
-  }, ,
+
+          <h3>The 3R Strategy for Resource Conservation</h3>
+          <p>To prevent resource depletion, environmentalists emphasize the <strong>3Rs Principle</strong>:</p>
+          <ol>
+            <li><strong>Reduce:</strong> Minimizing consumption and avoiding wasteful usage of electricity, water, and raw materials.</li>
+            <li><strong>Reuse:</strong> Utilizing items multiple times for their original or alternative purposes instead of discarding them immediately.</li>
+            <li><strong>Recycle:</strong> Processing waste materials (paper, glass, metals, plastics) into new raw materials for manufacturing.</li>
+          </ol>`
+  },
   {
     id: 'ch1-soil-resources-profile',
     chapterId: 'natural-resources',
@@ -121,20 +193,56 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Explore India\'s 6 major soil types, soil horizon profile layers (O, A, B, C, R), and causes of soil erosion and land degradation.',
-    contentHtml: `
-          <p>Soil is a vital living abiotic natural resource forming the fertile top layer supporting agriculture.</p>
+    contentHtml: `<p>Soil is a complex, living abiotic natural resource forming the thin top layer of the Earth's crust. It acts as the primary medium for plant growth, agriculture, and terrestrial ecosystem stability. It takes hundreds to thousands of years to form just one centimeter of fertile topsoil.</p>
+
           <h3>Soil Profile Horizons</h3>
+          <p>A vertical cross-section of soil reveals distinct layers called <strong>Horizons</strong>:</p>
           <ul>
-            <li><strong>O Horizon:</strong> Organic humus layer.</li>
-            <li><strong>A Horizon:</strong> Fertile topsoil with living roots and minerals.</li>
-            <li><strong>B Horizon:</strong> Subsoil accumulating clay and mineral oxides.</li>
-            <li><strong>C Horizon:</strong> Weathered parent rock fragments.</li>
-            <li><strong>R Horizon:</strong> Solid parent bedrock.</li>
+            <li><strong>O Horizon (Organic Layer):</strong> Top layer dominated by fresh and decomposing organic leaf litter and humus.</li>
+            <li><strong>A Horizon (Topsoil):</strong> Fertile dark layer rich in decomposed organic matter (humus) and living organisms (earthworms, bacteria). Crucial for plant root growth.</li>
+            <li><strong>B Horizon (Subsoil):</strong> Weathered mineral layer accumulating fine clay particles, iron oxides, and soluble minerals leached down from topsoil.</li>
+            <li><strong>C Horizon (Parent Material):</strong> Partially weathered parent rock fragments devoid of organic humus.</li>
+            <li><strong>R Horizon (Bedrock):</strong> Unweathered solid parent bedrock forming the base.</li>
           </ul>
-          <h3>Major Soils of India</h3>
-          <p>Alluvial Soil (northern plains), Black Regur Soil (Deccan cotton belt), Red & Yellow Soil, Laterite Soil (leached Western Ghats), Arid Soil (Thar desert).</p>
-        `
-  }, ,
+
+          <h3>Major Soil Types of India</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Soil Type</th>
+                <th>Distribution Region</th>
+                <th>Key Characteristics & Suitable Crops</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Alluvial Soil</strong></td>
+                <td>Northern Plains (Indus-Ganga-Brahmaputra), Coastal Deltas.</td>
+                <td>Most fertile, rich in potash and lime. Divided into <em>Bhangar</em> (old, kankar-rich) & <em>Khadar</em> (new, fine silty). Crops: Rice, Wheat, Sugarcane.</td>
+              </tr>
+              <tr>
+                <td><strong>Black (Regur) Soil</strong></td>
+                <td>Deccan Trap Plateau (Maharashtra, MP, Gujarat).</td>
+                <td>Volcanic basalt origin, high clay content, deep cracks in summer aiding aeration. Self-ploughing nature. Crops: Cotton, Soybean.</td>
+              </tr>
+              <tr>
+                <td><strong>Red & Yellow Soil</strong></td>
+                <td>Deccan Plateau east & south (Odisha, Chhattisgarh).</td>
+                <td>Reddish color due to diffusion of iron in crystalline/metamorphic rocks. Hydrated form turns yellow. Crops: Millets, Pulses.</td>
+              </tr>
+              <tr>
+                <td><strong>Laterite Soil</strong></td>
+                <td>Western Ghats, Meghalaya Hills.</td>
+                <td>Formed under intense tropical leaching due to heavy rainfall. Low humus. Crops: Cashew, Tea, Coffee with heavy manuring.</td>
+              </tr>
+              <tr>
+                <td><strong>Arid / Desert Soil</strong></td>
+                <td>Western Rajasthan.</td>
+                <td>Sandy texture, saline, lacking organic humus and moisture. High salt content. Crops: Barley, Bajra under irrigation.</td>
+              </tr>
+            </tbody>
+          </table>`
+  },
   {
     id: 'ch1-water-resources-watershed',
     chapterId: 'natural-resources',
@@ -144,16 +252,24 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Examine water distribution, groundwater aquifer depletion, rainwater harvesting models, and community watershed management.',
-    contentHtml: `
-          <p>Freshwater constitutes only 2.5% of global water. India is the largest global extractor of groundwater, facing severe aquifer depletion in agricultural belts.</p>
-          <h3>Watershed Management Models</h3>
+    contentHtml: `<p>Water covers approximately 71% of Earth's surface, but 97.5% is saline ocean water. Freshwater makes up only 2.5%, with nearly 70% locked in polar glaciers and ice caps. Less than 1% of total freshwater is easily accessible for human consumption in rivers, lakes, and shallow aquifers.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">⚠️ India's Groundwater Crisis</div>
+            India extracts over 250 cubic kilometers of groundwater annually—more than China and the United States combined. Over 60% of irrigated agriculture and 85% of drinking water depend on groundwater, causing severe aquifer depletion in Punjab, Haryana, and Tamil Nadu.
+          </div>
+
+          <h3>Traditional & Modern Rainwater Harvesting Systems</h3>
           <ul>
-            <li><strong>Ralegan Siddhi (Maharashtra):</strong> Anna Hazare's check dam and trench model recharging village wells.</li>
-            <li><strong>Johad (Rajasthan):</strong> Traditional earthen check dams capturing monsoon runoff.</li>
-            <li><strong>Taanka System:</strong> Underground rooftop rainwater storage tanks in Rajasthan houses.</li>
+            <li><strong>Johads (Rajasthan):</strong> Small earthen check dams built across natural contour slopes to capture monsoon runoff and recharge sub-surface aquifers.</li>
+            <li><strong>Taankas (Thar Desert):</strong> Underground covered storage tanks constructed inside courtyards to collect pristine rooftop rainwater for drinking during dry summers.</li>
+            <li><strong>Guls / Kuls (Western Himalayas):</strong> Diversion channels built along mountain slopes to carry glacial meltwater to agricultural fields.</li>
+            <li><strong>Bambo Drip Irrigation (Meghalaya):</strong> 200-year-old system using bamboo pipes to transport stream water to hilltop betel-nut crops.</li>
           </ul>
-        `
-  }, ,
+
+          <h3>Community Watershed Management: Case Study</h3>
+          <p>In <strong>Ralegan Siddhi</strong> (Ahmednagar, Maharashtra), village leader Anna Hazare spearheaded a watershed development project building contour trenches, check dams, and continuous contour bunds. This restored the local water table, turning a drought-stricken village into a self-sufficient green agricultural economy.</p>`
+  },
   {
     id: 'ch1-mineral-belts-metallurgy',
     chapterId: 'natural-resources',
@@ -163,16 +279,28 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Discover India\'s rich mineral belts, metallic ores (Iron, Bauxite, Manganese), non-metallic minerals (Mica, Limestone), and rare Thorium sands.',
-    contentHtml: `
-          <p>Minerals are concentrated in specific geological belts across India.</p>
+    contentHtml: `<p>Minerals are naturally occurring inorganic substances with a definite chemical composition and crystalline structure. India's ancient geological plate tectonic history endows it with diverse, rich mineral deposits distributed across three major peninsular belts.</p>
+
           <div class="callout callout-definition">
-            <div class="callout-title">📖 India's Mineral Storehouse</div>
-            The <strong>Chota Nagpur Plateau</strong> is called the 'Ruhr of India' holding over 80% of coal, iron ore, mica, and bauxite reserves.
+            <div class="callout-title">📖 The Mineral Storehouse of India</div>
+            The <strong>Chota Nagpur Plateau</strong> (covering Jharkhand, Odisha, Chhattisgarh, and West Bengal) is known as the <em>'Ruhr of India'</em> because it contains over 80% of India's high-grade coal, iron ore, manganese, bauxite, and mica reserves.
           </div>
-          <h3>Key Metallic Ores</h3>
-          <p>Iron Ore (Magnetite & Hematite), Bauxite (Aluminum smelting), Copper, and Monazite Sands of Kerala (Thorium nuclear fuel).</p>
-        `
-  }, ,
+
+          <h3>3 Primary Mineral Belts of India</h3>
+          <ol>
+            <li><strong>North-Eastern Peninsular Belt:</strong> Chota Nagpur Plateau & Odisha Plateau. Rich in Hematite Iron Ore, Coal (Gondwana fields of Raniganj & Jharia), Manganese, Bauxite, and Mica.</li>
+            <li><strong>South-Western Peninsular Belt:</strong> Karnataka Plateau & Goa. Rich in high-grade Magnetite Iron Ore (Kudremukh & Bellary-Chitradurga-Chikkamagaluru-Tumakuru belt), Bauxite, and Clay.</li>
+            <li><strong>North-Western Belt:</strong> Aravalli Range (Rajasthan & Gujarat). Rich in non-ferrous metals like Copper (Khetri mines), Zinc, Lead, Sandstone, Granite, and Gypsum.</li>
+          </ol>
+
+          <h3>Key Metallic vs. Non-Metallic Minerals</h3>
+          <ul>
+            <li><strong>Iron Ore (Ferrous):</strong> Backbone of modern industry. High-grade ores are <em>Magnetite</em> (72% pure iron, magnetic properties) and <em>Hematite</em> (60-70% pure iron, most used industrially).</li>
+            <li><strong>Bauxite (Non-Ferrous):</strong> Clay-like deposit from which <em>Alumina</em> and <em>Aluminum</em> are smelted. Lightweight, highly conductive, and corrosion-resistant.</li>
+            <li><strong>Mica (Non-Metallic):</strong> Excellent dielectric strength, low power loss factor, and heat resistance. Essential for the electronics and electrical industry. Kodarma-Gaya-Hazaribagh belt in Jharkhand is the leading producer.</li>
+            <li><strong>Monazite Sands (Strategic Atomic Mineral):</strong> Found along the coastal beach sands of Kerala, rich in <em>Thorium</em>—a vital fuel for India's 3-Stage Nuclear Power Program.</li>
+          </ul>`
+  },
   {
     id: 'ch1-energy-transition-renewable',
     chapterId: 'natural-resources',
@@ -182,16 +310,23 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Analyze commercial fossil fuels (Coal, Petroleum, CNG) versus India\'s clean energy revolution (Solar PV, Wind power, Hydro, Geothermal, Biogas).',
-    contentHtml: `
-          <p>Energy resources drive national industrial manufacturing and transport grids.</p>
+    contentHtml: `<p>Energy is the indispensable catalyst for industrial manufacturing, agricultural pumping, transport networks, and commercial development. India is undergoing a massive structural transition from carbon-intensive commercial fossil fuels toward clean, zero-emission renewable energy grids.</p>
+
+          <h3>Conventional Fossil Fuels</h3>
           <ul>
-            <li><strong>Coal ('Buried Sunshine'):</strong> Primary fuel for thermal electricity.</li>
-            <li><strong>Petroleum ('Black Gold'):</strong> Mined at Mumbai High & Digboi.</li>
-            <li><strong>Clean Solar PV:</strong> Bhadla Solar Park in Rajasthan.</li>
-            <li><strong>Wind Energy:</strong> Muppandal Wind Farm in Tamil Nadu.</li>
+            <li><strong>Coal ('Buried Sunshine'):</strong> India's most abundant commercial energy fuel, accounting for over 55% of thermal electricity generation. Formed from dense swamp vegetation buried under high heat and pressure over 200 million years (Gondwana age). Types include Anthracite (highest carbon), Bituminous (commercial grade), Lignite (brown coal), and Peat.</li>
+            <li><strong>Petroleum ('Black Gold'):</strong> Mined from sedimentary anticlines and fault traps. Major oilfields: <em>Mumbai High</em> (offshore), <em>Digboi</em> (Assam—India's oldest oil well), and <em>Ankleshwar</em> (Gujarat).</li>
+            <li><strong>Natural Gas & CNG:</strong> Environmentally friendly alternative producing significantly lower carbon emissions. Transported via key pipelines like the $1,700\text{ km}$ Hazira-Vijaipur-Jagdishpur (HVJ) pipeline.</li>
           </ul>
-        `
-  }, ,
+
+          <h3>India's Renewable Clean Energy Revolution</h3>
+          <div class="callout callout-observation">
+            <div class="callout-title">💡 Mega Renewable Infrastructure Projects</div>
+            <br>• <strong>Solar Power:</strong> <em>Bhadla Solar Park</em> in Rajasthan ($2,245\text{ MW}$) is one of the world's largest photovoltaic plants.
+            <br>• <strong>Wind Energy:</strong> <em>Muppandal Wind Farm</em> in Kanyakumari, Tamil Nadu, harnesses strong coastal monsoon winds.
+            <br>• <strong>Biogas (Gobar Gas):</strong> Decomposes organic cattle dung and crop residue anaerobically, producing methane for rural cooking and organic manure.
+          </div>`
+  },
   {
     id: 'ch2-colonial-partition-princely',
     chapterId: 'political-map',
@@ -201,14 +336,20 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Understand the administrative chaos at Indian independence in August 1947, split between British Indian Provinces and over 565 semi-autonomous Princely States.',
-    contentHtml: `
-          <p>At independence on August 15, 1947, India inherited a dual administrative structure: 11 British Indian Provinces and over 565 Princely States (Rajwadas).</p>
-          <div class="callout callout-important">
-            <div class="callout-title">⚡ The Indian Independence Act 1947 Loophole</div>
-            Lapse of British Paramountcy gave princely rulers three choices: join India, join Pakistan, or remain independent. Sardar Patel prevented national balkanization.
+    contentHtml: `<p>On August 15, 1947, India gained independence from British colonial rule, but was simultaneously shattered by Partition into two separate dominions: India and Pakistan. Beyond the British Indian provinces, India faced the existential threat of balkanization due to <strong>565+ Princely States</strong>.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">📖 Paramountcy & The Legal Loophole</div>
+            Under the <em>Indian Independence Act of 1947</em>, British Paramountcy over princely states lapsed. Legally, all 565+ princely rulers gained the right to join India, join Pakistan, or declare complete independence—threatening to divide India into hundreds of warring fiefdoms.
           </div>
-        `
-  }, ,
+
+          <h3>3 High-Risk Refusal Princely States</h3>
+          <ul>
+            <li><strong>Hyderabad:</strong> The Nizam wanted an independent sovereign state in the heart of peninsular India. Resolved via <em>Operation Polo</em> (September 1948 police action).</li>
+            <li><strong>Junagadh:</strong> The Nawab acceded to Pakistan despite a 99% Hindu population. Resolved via plebiscite in February 1948 favoring India.</li>
+            <li><strong>Jammu & Kashmir:</strong> Maharaja Hari Singh signed the <em>Instrument of Accession</em> on October 26, 1947, following invasion by Pakistani tribal raiders.</li>
+          </ul>`
+  },
   {
     id: 'ch2-sardar-patel-integration',
     chapterId: 'political-map',
@@ -218,14 +359,24 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Learn how India\'s first Deputy Prime Minister and Home Minister, Sardar Vallabhbhai Patel, alongside V.P. Menon, integrated hundreds of princely states into a unified democratic union.',
-    contentHtml: `
-          <p>Sardar Vallabhbhai Patel, the <strong>"Iron Man of India"</strong>, led the political integration of princely states.</p>
-          <div class="callout callout-definition">
-            <div class="callout-title">📖 Instrument of Accession (IoA)</div>
-            Legal document signed by princely rulers ceding control over 3 national subjects: <strong>Defense, External Affairs, and Communications</strong>.
+    contentHtml: `<p>The successful territorial integration of 565 princely states into a unified Indian Union remains one of the greatest administrative and political achievements in modern world history, led by <strong>Sardar Vallabhbhai Patel</strong> and Senior Civil Servant <strong>V.P. Menon</strong>.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">🏛️ The Instrument of Accession (IoA)</div>
+            The legal document signed by princely rulers ceding control over three core subjects to the Dominion of India: <strong>Defense</strong>, <strong>External Affairs</strong>, and <strong>Communications</strong>.
           </div>
-        `
-  }, ,
+
+          <h3>Patel's Carrot-and-Stick Diplomacy</h3>
+          <ul>
+            <li><strong>The Carrot (Privy Purses):</strong> Royal rulers were offered guaranteed tax-free annual pensions (Privy Purses), retention of private properties, and ceremonial titles.</li>
+            <li><strong>The Stick (Firm Federal Unity):</strong> Patel warned rulers that refusal to join would trigger popular democratic uprisings by their own citizens, leaving the Indian military unable to guarantee their safety.</li>
+          </ul>
+
+          <div class="callout callout-observation">
+            <div class="callout-title">💡 Historical Title</div>
+            Sardar Patel earned the title <strong>'Bismarck of India'</strong> for unifying the nation just as Otto von Bismarck unified Germany in the 19th century.
+          </div>`
+  },
   {
     id: 'ch2-case-studies-integration',
     chapterId: 'political-map',
@@ -235,15 +386,23 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Examine the dramatic accession stories of the three princely states that resisted initial integration: Junagadh, Hyderabad, and Jammu & Kashmir.',
-    contentHtml: `
-          <h3>1. Junagadh</h3>
-          <p>Resolved via a democratic plebiscite in Feb 1948 where over 99% voted to join India.</p>
-          <h3>2. Hyderabad (Operation Polo)</h3>
-          <p>Nizam unleashed the Razakars; Indian Army initiated Operation Polo in Sept 1948 to integrate Hyderabad.</p>
-          <h3>3. Jammu & Kashmir</h3>
-          <p>Maharaja Hari Singh signed the Instrument of Accession on Oct 26, 1947 following tribal raider invasion.</p>
-        `
-  }, ,
+    contentHtml: `<p>While over 500 princely states signed the Instrument of Accession smoothly before August 15, 1947, three key princely states posed extraordinary geopolitical challenges: <strong>Hyderabad</strong>, <strong>Junagadh</strong>, and <strong>Jammu & Kashmir</strong>.</p>
+          
+          <div class="callout callout-definition">
+            <div class="callout-title">🏛️ Case Study 1: Hyderabad (Operation Polo)</div>
+            The Nizam of Hyderabad, Mir Osman Ali Khan, ruled a Hindu-majority territory in peninsular India. He refused accession and established a brutal paramilitary force called the <strong>Razakars</strong>. In September 1948, India launched a 5-day police action named <strong>Operation Polo</strong>, integrating Hyderabad into the Indian Union.
+          </div>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">🏛️ Case Study 2: Junagadh</div>
+            The Nawab of Junagadh (Gujarat) acceded to Pakistan despite being geographically surrounded by India with an 80%+ Hindu population. Following a popular citizen uprising and plebiscite in February 1948, over 99% voted to join India.
+          </div>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">🏛️ Case Study 3: Jammu & Kashmir</div>
+            Maharaja Hari Singh sought independence initially. However, following an armed invasion by tribal raiders backed by Pakistan in October 1947, the Maharaja signed the <strong>Instrument of Accession</strong> on October 26, 1947, bringing J&K legally into India.
+          </div>`
+  },
   {
     id: 'ch2-states-reorganisation-act',
     chapterId: 'political-map',
@@ -253,15 +412,20 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Explore the reorganization of Indian state boundaries along linguistic lines following Potti Sreeramulu\'s martyrdom and the recommendations of the Fazl Ali Commission.',
-    contentHtml: `
+    contentHtml: `<p>Following independence, internal borders were drawn arbitrarily based on British administrative convenience. Popular democratic movements demanded state reorganization based on major spoken regional languages.</p>
+
           <div class="callout callout-important">
-            <div class="callout-title">⚡ The Catalyst: Andhra Movement (1952)</div>
-            Potti Sreeramulu fasted for 56 days unto death, leading to the creation of <strong>Andhra State</strong> on Oct 1, 1953 (first linguistic state).
+            <div class="callout-title">📜 Martyrdom of Potti Sreeramulu</div>
+            Freedom fighter <strong>Potti Sreeramulu</strong> undertook a 56-day hunger strike demanding a separate Telugu-speaking state. His martyrdom triggered widespread protests, leading to the creation of <strong>Andhra State</strong> on October 1, 1953—India's first linguistic state.
           </div>
-          <h3>States Reorganisation Act 1956</h3>
-          <p>Recommended by Justice Fazl Ali, H.N. Kunzru, and K.M. Panikkar, establishing <strong>14 States + 6 Union Territories</strong>.</p>
-        `
-  }, ,
+
+          <h3>States Reorganisation Commission (SRC 1953)</h3>
+          <p>Chaired by <strong>Justice Fazal Ali</strong> along with members H.N. Kunzru and K.M. Panikkar. The SRC recommended replacing the old Part A, B, C, D state classifications with a unified linguistic administrative framework.</p>
+
+          <div class="formula-block">
+            States Reorganisation Act (1956) = Created 14 States + 6 Union Territories
+          </div>`
+  },
   {
     id: 'ch2-post-1956-statehood-milestones',
     chapterId: 'political-map',
@@ -271,10 +435,18 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Trace the creation of new Indian states from 1960 to 1987, including the Bombay split, Goa liberation, Nagaland, and Northeast reorganisations.',
-    contentHtml: `
-          <p>1960: Bombay split into Gujarat & Maharashtra. 1961: Goa liberated (Operation Vijay). 1963: Nagaland. 1966: Punjab & Haryana split. 1971: Himachal statehood. 1975: Sikkim (36th Amendment). 1987: Mizoram, Arunachal, Goa statehood.</p>
-        `
-  }, ,
+    contentHtml: `<p>The political map of India continued to evolve dynamically post-1956 to address linguistic, regional, and ethnic aspirations across different territories.</p>
+
+          <h3>Key Statehood Milestones (1960–1987)</h3>
+          <ul>
+            <li><strong>Bombay Reorganisation Act (1960):</strong> Divided the bilingual Bombay state into <strong>Maharashtra</strong> (for Marathi speakers) and <strong>Gujarat</strong> (for Gujarati speakers).</li>
+            <li><strong>Nagaland (1963):</strong> Carved out of Assam as India's 16th state to satisfy Naga tribal aspirations.</li>
+            <li><strong>Punjab Reorganisation (1966):</strong> Bifurcated Punjab into <strong>Punjab</strong> (Punjabi-speaking), <strong>Haryana</strong> (Hindi-speaking), and <strong>Himachal Pradesh</strong> (UT, later state in 1971).</li>
+            <li><strong>North-Eastern Areas Act (1971):</strong> Created full states of <strong>Meghalaya</strong>, <strong>Manipur</strong>, and <strong>Tripura</strong>.</li>
+            <li><strong>Sikkim (1975):</strong> Integrated as India's 22nd state via the 36th Constitutional Amendment.</li>
+            <li><strong>Goa, Mizoram & Arunachal Pradesh (1987):</strong> Granted full statehood.</li>
+          </ul>`
+  },
   {
     id: 'ch2-2000-2014-new-states-movement',
     chapterId: 'political-map',
@@ -284,10 +456,18 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Examine the formation of Chhattisgarh, Uttarakhand, Jharkhand in November 2000 and Telangana in June 2014 driven by administrative and tribal development demands.',
-    contentHtml: `
-          <p>November 2000 Statehood Trio: Chhattisgarh (from MP), Uttarakhand (from UP), Jharkhand (from Bihar). June 2, 2014: Telangana carved from Andhra Pradesh.</p>
-        `
-  }, ,
+    contentHtml: `<p>In the 21st century, state reorganization shifted from linguistic identity to administrative efficiency, regional imbalance, and localized economic development.</p>
+
+          <h3>New States Created in November 2000</h3>
+          <ul>
+            <li><strong>Chhattisgarh (Nov 1, 2000):</strong> Carved out of eastern Madhya Pradesh to accelerate tribal development.</li>
+            <li><strong>Uttarakhand (Nov 9, 2000):</strong> Carved out of the hill districts of northern Uttar Pradesh.</li>
+            <li><strong>Jharkhand (Nov 15, 2000):</strong> Carved out of southern Bihar to give voice to tribal populations and mineral belts.</li>
+          </ul>
+
+          <h3>Telangana Statehood Movement (2014)</h3>
+          <p>On June 2, 2014, <strong>Telangana</strong> was created as India's 29th state by bifurcating Andhra Pradesh following decades of public agitation over regional economic imbalance and water allocation.</p>`
+  },
   {
     id: 'ch2-jk-reorganisation-2019-ut-mergers',
     chapterId: 'political-map',
@@ -297,11 +477,18 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Understand the J&K Reorganisation Act 2019, UT of Ladakh creation, UT mergers, and India\'s current 28 States and 8 Union Territories map.',
-    contentHtml: `
-          <p>Oct 31, 2019: J&K reorganised into UT of J&K (with Assembly) and UT of Ladakh (without Assembly). Jan 26, 2020: Dadra & Nagar Haveli merged with Daman & Diu.</p>
-          <div class="formula-block">Current India Map = 28 States + 8 Union Territories</div>
-        `
-  }, ,
+    contentHtml: `<p>Recent constitutional amendments reshaped Union Territory governance structures for administrative efficiency and national integration.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">🏛️ Jammu & Kashmir Reorganisation Act (2019)</div>
+            In August 2019, Parliament abrogated special provisions under Article 370 and restructured the state of Jammu & Kashmir into two Union Territories:
+            <br>1. <strong>UT of Jammu & Kashmir</strong> (with a Legislative Assembly)
+            <br>2. <strong>UT of Ladakh</strong> (without a Legislative Assembly)
+          </div>
+
+          <h3>Merger of Daman & Diu and Dadra & Nagar Haveli (2020)</h3>
+          <p>Effective January 26, 2020, two adjacent western Union Territories were merged into a single administrative entity: <strong>Dadra and Nagar Haveli and Daman and Diu</strong> to streamline governance and reduce administrative costs.</p>`
+  },
   {
     id: 'ch2-constitutional-articles-disputes',
     chapterId: 'political-map',
@@ -311,10 +498,20 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Learn the constitutional mechanics under Articles 1, 2, and 3 for altering state borders and how inter-state river water disputes are resolved.',
-    contentHtml: `
-          <p>Article 1: "Union of States". Article 2: Admitting new states. Article 3: Exclusive power of Parliament to alter state names and boundaries by simple majority.</p>
-        `
-  }, ,
+    contentHtml: `<p>The Constitution of India establishes clear procedures for territorial adjustment while providing constitutional machinery for resolving interstate river and boundary disputes.</p>
+
+          <h3>Articles 1 to 4 of the Constitution</h3>
+          <ul>
+            <li><strong>Article 1:</strong> Declares "India, that is Bharat, shall be a Union of States."</li>
+            <li><strong>Article 2:</strong> Empowers Parliament to admit or establish new states into the Union.</li>
+            <li><strong>Article 3:</strong> Empowers Parliament to form new states, alter state boundaries, or change state names by simple majority.</li>
+          </ul>
+
+          <div class="callout callout-observation">
+            <div class="callout-title">🌊 Inter-State Water Dispute Tribunals</div>
+            Article 262 empowers Parliament to adjudicate disputes regarding the use, distribution, or control of waters of inter-state rivers (e.g., Cauvery Water Dispute Tribunal, Krishna Water Dispute Tribunal).
+          </div>`
+  },
   {
     id: 'ch5-adult-franchise-article326',
     chapterId: 'electoral-system',
@@ -324,10 +521,23 @@ const TOPICS = [
     difficulty: 'Easy',
     readTime: '7 min',
     preview: 'Understand the revolutionary constitutional principle granting equal voting rights to every adult citizen regardless of gender, caste, religion, wealth, or literacy.',
-    contentHtml: `
-          <p>Article 326 guarantees equal voting rights to all citizens aged 18 and above. Voting age was lowered from 21 to 18 by the 61st Constitutional Amendment Act, 1988.</p>
-        `
-  }, ,
+    contentHtml: `<p>Universal Adult Franchise guarantees that every adult citizen possesses an equal right to vote without discrimination based on caste, religion, gender, wealth, or literacy.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">📜 Article 326 of the Constitution</div>
+            Elections to the House of the People (Lok Sabha) and Legislative Assemblies of States shall be on the basis of <strong>Universal Adult Suffrage</strong>.
+          </div>
+
+          <div class="formula-block">
+            61st Constitutional Amendment Act (1988) = Lowered Voting Age from 21 Years to 18 Years
+          </div>
+
+          <h3>Pillars of Democratic Equality</h3>
+          <ul>
+            <li><strong>One Person, One Vote, One Value:</strong> Every vote carries identical mathematical weight in determining election results.</li>
+            <li><strong>Inclusivity:</strong> Removes historic property, educational, and gender qualifications enforced during colonial elections.</li>
+          </ul>`
+  },
   {
     id: 'ch5-election-commission-eci',
     chapterId: 'electoral-system',
@@ -337,10 +547,19 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Explore Article 324, the multi-member structure of ECI, powers of Chief Election Commissioner Sukumar Sen to present, and autonomous status.',
-    contentHtml: `
-          <p>Article 324 establishes an independent Election Commission. Sukumar Sen was India's first CEC. ECI regulates elections to Parliament, Assemblies, President, and Vice President.</p>
-        `
-  }, ,
+    contentHtml: `<p>India is the world's largest vibrant democracy. Free, fair, and periodic elections serve as the bedrock of constitutional democracy, giving citizens the power to elect representatives.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">⚖️ Constitutional Status of ECI (Article 324)</div>
+            Article 324 vests the superintendence, direction, and control of all elections to Parliament, State Legislatures, and the offices of President and Vice-President in the independent <strong>Election Commission of India (ECI)</strong>.
+          </div>
+
+          <h3>Structure & Independence</h3>
+          <ul>
+            <li><strong>Composition:</strong> Consists of one Chief Election Commissioner (CEC) and two Election Commissioners appointed by the President.</li>
+            <li><strong>Security of Tenure:</strong> The CEC cannot be removed except through impeachment by Parliament on grounds of proved misbehaviour or incapacity.</li>
+          </ul>`
+  },
   {
     id: 'ch5-evm-vvpat-evolution',
     chapterId: 'electoral-system',
@@ -350,10 +569,14 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Trace the technological transition from paper ballot boxes to Electronic Voting Machines (EVMs), VVPAT paper audit trails, and NOTA.',
-    contentHtml: `
-          <p>EVMs tested in 1982 (Kerala) and deployed nationwide in 2004. Manufactured by BEL & ECIL. VVPAT prints 7-second paper verification slip. NOTA introduced in 2013 Supreme Court ruling.</p>
-        `
-  }, ,
+    contentHtml: `<p>Technology and regulatory frameworks preserve election integrity, preventing booth capturing and voter fraud while ensuring absolute transparency.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">📱 EVM & VVPAT Innovation</div>
+            <br>• <strong>EVM (Electronic Voting Machine):</strong> Standalone, non-networked tamper-proof battery-powered electronic device recording votes digitally.
+            <br>• <strong>VVPAT (Voter Verifiable Paper Audit Trail):</strong> Prints a paper slip showing candidate name and party symbol for 7 seconds behind a glass window before dropping into a sealed box for physical audit verification.
+          </div>`
+  },
   {
     id: 'ch5-election-cycle-process',
     chapterId: 'electoral-system',
@@ -363,10 +586,18 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Follow the step-by-step electoral lifecycle from notification, nominations, scrutiny by Returning Officer, campaigning, Model Code of Conduct, polling, to vote counting.',
-    contentHtml: `
-          <p>Lifecycle: Notification ➔ Nominations ➔ Scrutiny by RO ➔ Campaigning & MCC ➔ 48h Silence Period ➔ Secret Ballot Polling ➔ Counting & Certificate of Election.</p>
-        `
-  }, ,
+    contentHtml: `<p>Conducting general elections for over 950 million registered voters involves aChoice-driven, multi-stage administrative process overseen by Returning Officers (RO) and District Election Officers (DEO).</p>
+
+          <h3>The 6 Stages of Election Workflow</h3>
+          <ol>
+            <li><strong>Notification of Election:</strong> Official Gazette notification issued by President/Governor.</li>
+            <li><strong>Filing Nominations:</strong> Candidates submit nomination papers and mandatory financial & criminal background affidavits.</li>
+            <li><strong>Scrutiny of Nominations:</strong> RO verifies validity of candidate nomination forms.</li>
+            <li><strong>Withdrawal of Candidature:</strong> Official time window for candidates to withdraw.</li>
+            <li><strong>Campaigning Phase:</strong> Parties release manifestos and campaign under strict ECI guidelines.</li>
+            <li><strong>Polling & Counting:</strong> Citizens cast votes using EVM-VVPATs followed by vote counting and declaration of results.</li>
+          </ol>`
+  },
   {
     id: 'ch5-voter-registration-epic-portal',
     chapterId: 'electoral-system',
@@ -376,10 +607,16 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Discover how the Electoral Roll is maintained, official ECI registration forms (Form 6, 7, 8), EPIC card features, and National Voters\' Day.',
-    contentHtml: `
-          <p>Form 6 (new 18-yr voter registration), Form 7 (deletions), Form 8 (corrections). EPIC (Elector's Photo Identity Card). Jan 25 celebrated as National Voters' Day.</p>
-        `
-  }, ,
+    contentHtml: `<p>Voter registration is the cornerstone of inclusive democracy. ECI ensures that no voter is left behind through continuous roll updates.</p>
+
+          <h3>Electoral Photo Identity Card (EPIC)</h3>
+          <p>Introduced in 1993 under CEC T.N. Seshan, the <strong>EPIC Card</strong> serves as official proof of voter identity, preventing impersonation and bogus voting.</p>
+
+          <div class="callout callout-observation">
+            <div class="callout-title">🌐 Digital Voter Services</div>
+            The <strong>NVSP (National Voters' Service Portal)</strong> and <strong>Voter Helpline App</strong> allow citizens to register online (Form 6), correct details (Form 8), and track application status seamlessly.
+          </div>`
+  },
   {
     id: 'ch5-model-code-conduct-cvigil',
     chapterId: 'electoral-system',
@@ -389,10 +626,15 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Understand the ethical rules enforced under Model Code of Conduct (MCC), government power restrictions, silence period, and cVIGIL app.',
-    contentHtml: `
-          <p>MCC prevents misuse of official government power. Campaign silence period begins 48h before polling closes. cVIGIL app resolves citizen code violation reports within 100 minutes.</p>
-        `
-  }, ,
+    contentHtml: `<p>The Model Code of Conduct (MCC) is a set of moral guidelines agreed upon by political parties to maintain decorum and fair competition during elections.</p>
+
+          <h3>Key Provisions of MCC</h3>
+          <ul>
+            <li><strong>No Misuse of Official Power:</strong> Ruling parties cannot announce new schemes, grants, or use government vehicles for campaigning once elections are declared.</li>
+            <li><strong>No Hate Speech:</strong> Speeches appealing to communal or caste feelings are strictly prohibited.</li>
+            <li><strong>c-VIGIL App:</strong> Enables citizens to report MCC violations by uploading photo/video proof with automatic GPS location tracking. ECI responds within 100 minutes.</li>
+          </ul>`
+  },
   {
     id: 'ch5-fptp-vs-proportional-representation',
     chapterId: 'electoral-system',
@@ -402,10 +644,36 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Compare the First-Past-The-Post (FPTP) plurality voting system used in Lok Sabha with Proportional Representation (PR-STV) used in Rajya Sabha.',
-    contentHtml: `
-          <p>FPTP: Candidate with most votes wins (Lok Sabha / Vidhan Sabha). PR-STV: Single Transferable Vote preference ranking (Rajya Sabha / Presidential elections).</p>
-        `
-  }, ,
+    contentHtml: `<p>Democracies adopt different electoral systems to translate citizen votes into legislative seats. India uses two distinct electoral systems.</p>
+
+          <h3>Comparison: FPTP vs. Proportional Representation</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>First-Past-The-Post (FPTP)</th>
+                <th>Proportional Representation (PR)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Usage in India</strong></td>
+                <td>Lok Sabha & State Vidhan Sabha elections.</td>
+                <td>Rajya Sabha & Legislative Council elections.</td>
+              </tr>
+              <tr>
+                <td><strong>Winning Criterion</strong></td>
+                <td>Candidate who secures the highest number of votes wins (plurality), even without 50%+ votes.</td>
+                <td>Party gets seats in exact proportion to total percentage of votes polled nationwide.</td>
+              </tr>
+              <tr>
+                <td><strong>Voter Choice</strong></td>
+                <td>Voters vote for a specific candidate.</td>
+                <td>Voters vote for a political party list.</td>
+              </tr>
+            </tbody>
+          </table>`
+  },
   {
     id: 'ch5-electoral-reforms-women-reservation',
     chapterId: 'electoral-system',
@@ -415,10 +683,19 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Examine major electoral reforms including CEC T.N. Seshan\'s vision, candidate wealth/criminal affidavits, and Nari Shakti Vandan Adhiniyam 2023.',
-    contentHtml: `
-          <p>T.N. Seshan reforms, mandatory Form 26 wealth/criminal disclosure affidavit, ₹95L Lok Sabha spend limit, 1/6th vote deposit forfeiture, and Nari Shakti Vandan Adhiniyam (33% women reservation).</p>
-        `
-  }, ,
+    contentHtml: `<p>Continuous electoral reforms strengthen democratic integrity, combat corruption, and foster equal political participation.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">🏛️ Nari Shakti Vandan Adhiniyam (2023)</div>
+            The <strong>106th Constitutional Amendment Act</strong> reserves <strong>33% of seats</strong> for women in the Lok Sabha and State Legislative Assemblies to boost female political representation.
+          </div>
+
+          <h3>Key Electoral Reforms</h3>
+          <ul>
+            <li><strong>Mandatory Affidavits:</strong> Candidates must publicly disclose assets, educational qualifications, and criminal cases.</li>
+            <li><strong>Curbing Money Power:</strong> Ceiling on campaign spending and mandatory filing of income tax returns by political parties.</li>
+          </ul>`
+  },
   {
     id: 'ch7-intro-factors-production',
     chapterId: 'factors-production',
@@ -428,10 +705,20 @@ const TOPICS = [
     difficulty: 'Easy',
     readTime: '7 min',
     preview: 'Learn the four foundational economic inputs required for manufacturing goods and supplying services: Land, Labour, Capital, and Entrepreneurship.',
-    contentHtml: `
-          <p>The 4 Factors & Income Rewards: Land ➔ Rent, Labour ➔ Wages, Capital ➔ Interest, Entrepreneurship ➔ Profit.</p>
-        `
-  }, ,
+    contentHtml: `<p>In economics, <strong>Factors of Production</strong> are the fundamental inputs and resources required to produce goods and services to generate wealth.</p>
+
+          <div class="formula-block">
+            Production Function = Output = f(Land, Labour, Capital, Entrepreneurship)
+          </div>
+
+          <h3>The 4 Essential Factors</h3>
+          <ol>
+            <li><strong>Land (Natural Capital):</strong> All natural resources provided by nature (soil, water, minerals, forests). Earns <em>Rent</em>.</li>
+            <li><strong>Labour (Human Effort):</strong> Physical muscle power and mental cognitive work performed by workers. Earns <em>Wages</em>.</li>
+            <li><strong>Capital (Man-Made Assets):</strong> Tools, machinery, factories, and funds used in production. Earns <em>Interest</em>.</li>
+            <li><strong>Entrepreneurship (Organization):</strong> The visionary organizer who combines Land, Labour, and Capital while taking commercial risk. Earns <em>Profit</em>.</li>
+          </ol>`
+  },
   {
     id: 'ch7-land-natural-factor',
     chapterId: 'factors-production',
@@ -441,10 +728,21 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '7 min',
     preview: 'Understand the unique economic characteristics of Land as a passive, geographically immobile, fixed natural input that earns Rent.',
-    contentHtml: `
-          <p>Land includes all natural gifts (soil, minerals, water, climate). Features: passive factor, fixed supply, immobile. Reward: Rent.</p>
-        `
-  }, ,
+    contentHtml: `<p><strong>Land</strong> is the primary natural factor of production encompassing all gift resources provided by nature without human creation cost.</p>
+
+          <h3>4 Characteristics of Land</h3>
+          <ul>
+            <li><strong>Free Gift of Nature:</strong> No cost of production involved in creating land.</li>
+            <li><strong>Fixed & Inelastic Supply:</strong> Total surface area of Earth cannot be expanded by human effort.</li>
+            <li><strong>Permanent & Indestructible:</strong> Land possesses original, indestructible fertility and location.</li>
+            <li><strong>ImmOBILITY:</strong> Land cannot be physically moved from one location to another.</li>
+          </ul>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">💰 Economic Reward</div>
+            The payment made to landowners for the usage of land in economic activity is called <strong>Rent</strong>.
+          </div>`
+  },
   {
     id: 'ch7-labour-human-effort',
     chapterId: 'factors-production',
@@ -454,10 +752,31 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Distinguish between Physical (Manual) and Mental (Intellectual) Labour, labor perishability, and factors determining worker productivity.',
-    contentHtml: `
-          <p>Labour is active human effort. Perishable (lost if unworked today). Physical (manual stamina) vs. Mental (intellectual analysis & design). Reward: Wages.</p>
-        `
-  }, ,
+    contentHtml: `<p><strong>Labour</strong> encompasses all human physical and cognitive mental effort exerted in economic production for monetary compensation (wages).</p>
+
+          <h3>Physical Labour vs. Mental Labour</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Physical Labour</th>
+                <th>Mental / Cognitive Labour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Input</strong></td>
+                <td>Physical muscle power, stamina, manual execution.</td>
+                <td>Analytical reasoning, problem-solving, decision-making.</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td>Construction workers, farm harvesters, factory workers.</td>
+                <td>Software engineers, doctors, research scientists, accountants.</td>
+              </tr>
+            </tbody>
+          </table>`
+  },
   {
     id: 'ch7-human-capital-investment',
     chapterId: 'factors-production',
@@ -467,10 +786,16 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Discover how investment in education, Skill India vocational training, and healthcare transforms raw population into highly productive Human Capital.',
-    contentHtml: `
-          <p>Human Capital = Education + Technical Skills + Health. Skill India & ITIs empower youth into productive economic capital assets.</p>
-        `
-  }, ,
+    contentHtml: `<p>Raw human labour transforms into high-productivity <strong>Human Capital</strong> through targeted investments in human development.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">🎓 4 Pillars of Human Capital Investment</div>
+            <br>1. <strong>Quality Education:</strong> Developing foundational literacy, critical thinking, and problem-solving skills.
+            <br>2. <strong>Technical & Skill Training:</strong> Specialized vocational training (ITIs, Skill India initiatives).
+            <br>3. <strong>Healthcare & Nutrition:</strong> Clean drinking water, immunization, and medical facilities reducing sick days and raising productivity.
+            <br>4. <strong>Information & Mobility:</strong> Access to job market portals and geographic mobility.
+          </div>`
+  },
   {
     id: 'ch7-facilitators-kaizen',
     chapterId: 'factors-production',
@@ -480,10 +805,16 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Learn how technology, automation, AI, and the Japanese Kaizen philosophy of continuous workplace improvement boost human capital productivity.',
-    contentHtml: `
-          <p>Kaizen = 'Change for the better' (continuous daily incremental quality improvement). Automation & AI act as force multipliers.</p>
-        `
-  }, ,
+    contentHtml: `<p>Modern production processes rely on management principles and continuous operational efficiency to maximize output quality.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">⚙️ What is Kaizen?</div>
+            <strong>Kaizen</strong> (改善) is a Japanese business philosophy meaning <em>'continuous improvement'</em> involving all employees to eliminate waste, improve product quality, and streamline workflow.
+          </div>
+
+          <h3>Value Addition in Supply Chain</h3>
+          <p>Value addition occurs when raw materials are transformed into higher utility products (e.g., Raw Cotton $\rightarrow$ Cotton Thread $\rightarrow$ Woven Fabric $\rightarrow$ Designer Shirt).</p>`
+  },
   {
     id: 'ch7-demographic-dividend-india',
     chapterId: 'factors-production',
@@ -493,10 +824,20 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '8 min',
     preview: 'Understand demographic transition, working-age ratio (15-64), and how India\'s median age of ~28 years offers a massive economic growth window.',
-    contentHtml: `
-          <p>Demographic Dividend occurs when working-age population (15-64) exceeds dependents. India's median age ~28 gives a vast workforce advantage.</p>
-        `
-  }, ,
+    contentHtml: `<p>India is currently experiencing a historic demographic transition that offers an unprecedented economic growth window.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">📈 Demographic Dividend Defined</div>
+            The <strong>Demographic Dividend</strong> occurs when a country's working-age population ($15-59\text{ years}$) is significantly larger than its dependent child ($0-14$) and elderly ($60+$) population.
+          </div>
+
+          <h3>Key Demographic Facts for India</h3>
+          <ul>
+            <li>Over 62% of India's population is in the working-age bracket ($15-59\text{ years}$).</li>
+            <li>Average median age in India is 28 years (compared to 38 in China and 48 in Japan).</li>
+            <li>Harnessing this dividend requires creating job opportunities, technical skill development, and robust healthcare.</li>
+          </ul>`
+  },
   {
     id: 'ch7-capital-fixed-working',
     chapterId: 'factors-production',
@@ -506,10 +847,31 @@ const TOPICS = [
     difficulty: 'Medium',
     readTime: '8 min',
     preview: 'Differentiate between Fixed Capital (durable machinery, factory buildings) and Working Capital (raw materials, daily cash reserves).',
-    contentHtml: `
-          <p>Fixed Capital: Durable over years (machinery, tractor). Working Capital: Consumed in 1 production cycle (seeds, raw cotton, daily cash). Reward: Interest.</p>
-        `
-  }, ,
+    contentHtml: `<p><strong>Capital</strong> is the man-made factor of production consisting of tools, machinery, buildings, and financial funds used to produce future goods and services.</p>
+
+          <h3>Fixed Capital vs. Working Capital</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Fixed Capital</th>
+                <th>Working Capital</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Definition</strong></td>
+                <td>Durable man-made assets used repeatedly over many production cycles spanning years.</td>
+                <td>Raw materials, semi-finished goods, and cash on hand consumed in a single production cycle.</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td>Factory buildings, heavy machinery, tractors, computers.</td>
+                <td>Cotton yarn for textiles, seeds/fertilizers, cash for daily wages.</td>
+              </tr>
+            </tbody>
+          </table>`
+  },
   {
     id: 'ch7-entrepreneurship-startups',
     chapterId: 'factors-production',
@@ -519,9 +881,20 @@ const TOPICS = [
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Examine the organizing role of the Entrepreneur, Schumpeterian innovation, risk-taking, startups, and supply chain logistics management.',
-    contentHtml: `
-          <p>Entrepreneur combines Land, Labour, and Capital. Assumes financial risk for Profit. Schumpeterian innovation. Upstream vs. Downstream supply chain management.</p>
-        `
+    contentHtml: `<p>The <strong>Entrepreneur</strong> is the organizer and risk-taker who combines Land, Labour, and Capital to establish and run an economic enterprise.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">💡 Joseph Schumpeter's Innovation Model</div>
+            Economist Joseph Schumpeter defined the entrepreneur as an <strong>innovator</strong> who introduces new products, novel production technology, opens new markets, or reorganizes industry supply chains.
+          </div>
+
+          <h3>4 Functions of an Entrepreneur</h3>
+          <ol>
+            <li><strong>Initiation & Planning:</strong> Conceptualizing business ideas and securing initial investments.</li>
+            <li><strong>Risk-Bearing:</strong> Bearing financial loss risk if market demand shifts.</li>
+            <li><strong>Resource Coordination:</strong> Assembling Land, Labour, and Capital.</li>
+            <li><strong>Innovation & Adaptation:</strong> Implementing cutting-edge technology and customer solutions.</li>
+          </ol>`
   }
 ];
 
@@ -3027,7 +3400,7 @@ const FLASHCARDS = [
     "q": "What is factor substitution?",
     "a": "Replacing one factor of production with another (such as replacing manual labour with capital machinery)."
   }
-  , ,
+  ,
 ];
 
 const MCQS = [
@@ -10152,19 +10525,42 @@ function applySyllabusFilter() {
 function updateHeroStats() {
   const isPA1 = STATE.syllabusMode === 'PA 1';
   const pa1Topics = TOPICS.filter(t => t.chapterId === 'natural-resources' || t.chapterId === 'political-map');
-  const activeCount = isPA1 ? pa1Topics.length : TOPICS.length;
+  const pa1Flashcards = FLASHCARDS.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map');
+  const pa1Mcqs = MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map');
+
+  const totalFc = isPA1 ? pa1Flashcards.length : FLASHCARDS.length;
+  const totalMcqs = isPA1 ? pa1Mcqs.length : MCQS.length;
 
   const statTopics = document.getElementById('stat-total-topics');
-  if (statTopics) statTopics.textContent = isPA1 ? `${activeCount} (PA 1)` : `${TOPICS.length} (Term 1)`;
+  if (statTopics) statTopics.textContent = isPA1 ? `${pa1Topics.length} (PA 1)` : `${TOPICS.length} (Term 1)`;
 
   const statFc = document.getElementById('stat-fc-learned');
-  if (statFc) statFc.textContent = `${STATE.learnedFlashcards.length} / ${FLASHCARDS.length}`;
+  if (statFc) statFc.textContent = `${STATE.learnedFlashcards.length} / ${totalFc}`;
 
   const statQuiz = document.getElementById('stat-quiz-high');
-  if (statQuiz) statQuiz.textContent = `${STATE.quizHighScore} / ${MCQS.length}`;
+  if (statQuiz) statQuiz.textContent = `${STATE.quizHighScore} / ${totalMcqs}`;
 
   const statBm = document.getElementById('stat-bookmarks');
   if (statBm) statBm.textContent = STATE.bookmarks.length;
+}
+
+function getActiveTopics() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const query = (document.getElementById('search-input')?.value || '').toLowerCase().trim();
+
+  return TOPICS.filter(topic => {
+    if (isPA1 && (topic.chapterId === 'electoral-system' || topic.chapterId === 'factors-production')) {
+      return false;
+    }
+    if (query) {
+      return (
+        topic.title.toLowerCase().includes(query) ||
+        topic.preview.toLowerCase().includes(query) ||
+        topic.contentHtml.toLowerCase().includes(query)
+      );
+    }
+    return true;
+  });
 }
 
 function renderTopics() {
@@ -10222,13 +10618,23 @@ function toggleBookmark(id) {
     showToast('Removed from bookmarks');
   }
   localStorage.setItem('g8_sst_bookmarks', JSON.stringify(STATE.bookmarks));
-  renderTopics();
-  updateHeroStats();
+
+  const isBookmarked = STATE.bookmarks.includes(id);
+  const cardBtns = document.querySelectorAll(`[data-topic-id="${id}"] .bm-btn`);
+  cardBtns.forEach(btn => {
+    btn.classList.toggle('active', isBookmarked);
+    btn.innerHTML = isBookmarked ? '★ Bookmarked' : '☆ Bookmark';
+  });
+
+  const statBm = document.getElementById('stat-bookmarks');
+  if (statBm) statBm.textContent = STATE.bookmarks.length;
 
   const modalBm = document.getElementById('modal-bookmark');
   if (modalBm) {
-    modalBm.textContent = STATE.bookmarks.includes(id) ? '★' : '☆';
+    modalBm.textContent = isBookmarked ? '★' : '☆';
   }
+
+  updateHeroStats();
 }
 
 function openModal(index) {
@@ -10250,7 +10656,10 @@ function openModal(index) {
   }
   if (bookmarkBtn) {
     bookmarkBtn.textContent = STATE.bookmarks.includes(topic.id) ? '★' : '☆';
-    bookmarkBtn.onclick = () => toggleBookmark(topic.id);
+    bookmarkBtn.onclick = (e) => {
+      e.stopPropagation();
+      toggleBookmark(topic.id);
+    };
   }
 
   if (overlay) {
@@ -10260,6 +10669,7 @@ function openModal(index) {
 
   setupModalBodyScroll();
   setupKeyboardListeners();
+  setupModalSwipeGestures();
 }
 
 function closeModal() {
@@ -10270,11 +10680,69 @@ function closeModal() {
   }
 }
 
+let isNavigatingModal = false;
 function navigateModalTopic(direction) {
-  let newIdx = STATE.currentTopicIndex + direction;
-  if (newIdx < 0) newIdx = TOPICS.length - 1;
-  if (newIdx >= TOPICS.length) newIdx = 0;
-  openModal(newIdx);
+  if (isNavigatingModal) return;
+  
+  const activeTopics = getActiveTopics();
+  if (activeTopics.length === 0) return;
+
+  const currentTopic = TOPICS[STATE.currentTopicIndex];
+  let activeIdx = activeTopics.findIndex(t => t.id === (currentTopic ? currentTopic.id : ''));
+  if (activeIdx === -1) activeIdx = 0;
+
+  let newActiveIdx = (activeIdx + direction + activeTopics.length) % activeTopics.length;
+  const targetTopic = activeTopics[newActiveIdx];
+  const targetFullIdx = TOPICS.findIndex(t => t.id === targetTopic.id);
+
+  if (targetFullIdx !== -1) {
+    isNavigatingModal = true;
+    const body = document.getElementById('modal-body');
+    if (body) {
+      body.style.opacity = '0.3';
+      body.style.transform = direction > 0 ? 'translateX(12px)' : 'translateX(-12px)';
+      setTimeout(() => {
+        openModal(targetFullIdx);
+        body.style.opacity = '1';
+        body.style.transform = 'none';
+        isNavigatingModal = false;
+      }, 70);
+    } else {
+      openModal(targetFullIdx);
+      isNavigatingModal = false;
+    }
+  }
+}
+
+function setupModalSwipeGestures() {
+  const modalBox = document.querySelector('#modal-overlay .modal-box');
+  if (!modalBox || modalBox.dataset.swipeInitialized) return;
+  modalBox.dataset.swipeInitialized = 'true';
+
+  let startX = 0;
+  let startY = 0;
+
+  modalBox.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 1) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  modalBox.addEventListener('touchend', (e) => {
+    if (e.changedTouches.length === 1) {
+      const diffX = e.changedTouches[0].clientX - startX;
+      const diffY = e.changedTouches[0].clientY - startY;
+
+      if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY) * 1.4) {
+        if (diffX < 0) {
+          navigateModalTopic(1);
+        } else {
+          navigateModalTopic(-1);
+        }
+      }
+    }
+  }, { passive: true });
 }
 
 function setupModalBodyScroll() {
@@ -10282,7 +10750,6 @@ function setupModalBodyScroll() {
   const progress = document.getElementById('modal-progress');
   if (!body || !progress) return;
 
-  // Reset scroll and progress bar to 0%
   body.scrollTop = 0;
   progress.style.width = '0%';
 
@@ -10374,6 +10841,12 @@ function renderFlashcards() {
 }
 
 function updateFlashcardUI() {
+  if (!STATE.flashcardFiltered || STATE.flashcardFiltered.length === 0) return;
+
+  if (STATE.flashcardIndex >= STATE.flashcardFiltered.length || STATE.flashcardIndex < 0) {
+    STATE.flashcardIndex = 0;
+  }
+
   const card = STATE.flashcardFiltered[STATE.flashcardIndex];
   if (!card) return;
 
@@ -10464,12 +10937,17 @@ function filterFlashcards(event, topicName) {
     }
   });
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const basePool = isPA1
+    ? FLASHCARDS.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map')
+    : FLASHCARDS;
+
   // Apply Union / OR logic multi-filtering
   if (STATE.flashcardSelectedTopics.length === 0) {
-    STATE.flashcardFiltered = [...FLASHCARDS];
-    showToast('Flashcards: All Topics (500 Cards)');
+    STATE.flashcardFiltered = [...basePool];
+    showToast(isPA1 ? 'Flashcards: PA 1 Topics (250 Cards)' : 'Flashcards: All Topics (500 Cards)');
   } else {
-    STATE.flashcardFiltered = FLASHCARDS.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
+    STATE.flashcardFiltered = basePool.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
     const countLabel = STATE.flashcardSelectedTopics.length === 1
       ? STATE.flashcardSelectedTopics[0]
       : `${STATE.flashcardSelectedTopics.length} Topics Selected`;
@@ -10481,6 +10959,10 @@ function filterFlashcards(event, topicName) {
 }
 
 function shuffleFlashcards() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  if (isPA1) {
+    STATE.flashcardFiltered = STATE.flashcardFiltered.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map');
+  }
   for (let i = STATE.flashcardFiltered.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [STATE.flashcardFiltered[i], STATE.flashcardFiltered[j]] = [STATE.flashcardFiltered[j], STATE.flashcardFiltered[i]];
@@ -10555,12 +11037,17 @@ function filterQuiz(event, topicName) {
     }
   });
 
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const basePool = isPA1
+    ? MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map')
+    : MCQS;
+
   // Apply Union / OR logic multi-filtering
   if (STATE.quizSelectedTopics.length === 0) {
-    STATE.quizActiveQuestions = [...MCQS];
-    showToast('Quiz Filtered: All Topics (500 Questions)');
+    STATE.quizActiveQuestions = [...basePool];
+    showToast(isPA1 ? 'Quiz Filtered: PA 1 Topics (250 Questions)' : 'Quiz Filtered: All Topics (500 Questions)');
   } else {
-    STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
+    STATE.quizActiveQuestions = basePool.filter(q => STATE.quizSelectedTopics.includes(q.topic));
     const countLabel = STATE.quizSelectedTopics.length === 1
       ? STATE.quizSelectedTopics[0]
       : `${STATE.quizSelectedTopics.length} Topics Selected`;
@@ -10574,14 +11061,22 @@ function filterQuiz(event, topicName) {
 }
 
 function shuffleQuiz() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const basePool = isPA1
+    ? MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map')
+    : MCQS;
+
   if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
   if (STATE.quizActiveQuestions.length === 0) {
     if (STATE.quizSelectedTopics.length === 0) {
-      STATE.quizActiveQuestions = [...MCQS];
+      STATE.quizActiveQuestions = [...basePool];
     } else {
-      STATE.quizActiveQuestions = MCQS.filter(q => STATE.quizSelectedTopics.includes(q.topic));
+      STATE.quizActiveQuestions = basePool.filter(q => STATE.quizSelectedTopics.includes(q.topic));
     }
+  } else if (isPA1) {
+    STATE.quizActiveQuestions = STATE.quizActiveQuestions.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map');
   }
+
   for (let i = STATE.quizActiveQuestions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [STATE.quizActiveQuestions[i], STATE.quizActiveQuestions[j]] = [STATE.quizActiveQuestions[j], STATE.quizActiveQuestions[i]];
