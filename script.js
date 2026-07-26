@@ -9689,170 +9689,7 @@ const MCQS = [
   }
 ];
 
-const IMPORTANT_QUESTIONS = {
-  "m1": [
-    {
-      "q": "What is a Natural Resource?",
-      "a": "<strong>Natural Resource:</strong> Any substance, element, or energy source occurring naturally in the environment that possesses utility, economic value, and the direct capacity to satisfy human needs and desires (e.g., fresh water, fertile soil, crude oil, solar energy)."
-    },
-    {
-      "q": "State the TEC Rule for resource status.",
-      "a": "<strong>The TEC Rule:</strong> For any natural substance to be classified as a resource, it must satisfy three criteria simultaneously:<br>• <strong>T</strong> – Technological Accessibility (availability of scientific tools & extraction know-how).<br>• <strong>E</strong> – Economic Feasibility (extraction value must exceed cost).<br>• <strong>C</strong> – Cultural Acceptability (society accepts its extraction & consumption)."
-    },
-    {
-      "q": "Define Universal Adult Franchise.",
-      "a": "<strong>Universal Adult Franchise:</strong> The foundational democratic principle guaranteeing every adult citizen (aged 18 and above) the right to cast one equal vote in elections, without any discrimination based on caste, creed, gender, religion, place of birth, or economic status."
-    },
-    {
-      "q": "Which Article of the Constitution guarantees Universal Adult Franchise in India?",
-      "a": "<strong>Article 326</strong> of the Constitution of India explicitly mandates that elections to the Lok Sabha and State Legislative Assemblies (Vidhan Sabha) shall be conducted on the basis of adult suffrage."
-    },
-    {
-      "q": "What is the minimum voting age in India currently?",
-      "a": "<strong>18 years of age.</strong> Originally set at 21 years in 1950, it was formally lowered to 18 years by the landmark <strong>61st Constitutional Amendment Act, 1988</strong> (which came into force in March 1989)."
-    },
-    {
-      "q": "Who was known as the 'Iron Man of India'?",
-      "a": "<strong>Sardar Vallabhbhai Patel</strong>, India's first Deputy Prime Minister and Home Minister, earned this title for his decisive leadership, diplomatic skill, and firm resolve in integrating over 565 princely states into the Indian Union."
-    },
-    {
-      "q": "What is the Instrument of Accession (IoA)?",
-      "a": "<strong>Instrument of Accession (IoA):</strong> A binding legal document executed by the rulers of princely states in 1947, by which they agreed to accede to the Dominion of India, surrendering control over three core subjects: <strong>Defense, External Affairs, and Communications</strong>."
-    },
-    {
-      "q": "Name the four fundamental Factors of Production.",
-      "a": "The four core economic factors required to produce goods and services are:<br>1. <strong>Land</strong> (Natural resources & space)<br>2. <strong>Labour</strong> (Human physical & mental effort)<br>3. <strong>Capital</strong> (Physical tools, machinery & working capital)<br>4. <strong>Entrepreneurship</strong> (Visionary organization & risk-taking)"
-    },
-    {
-      "q": "What is the primary economic reward earned by Land?",
-      "a": "<strong>Rent:</strong> The unearned economic return or payment made to landowners for utilizing natural space, fertile soil, or mineral-rich real estate."
-    },
-    {
-      "q": "What is the economic reward earned by Labour?",
-      "a": "<strong>Wages or Salary:</strong> Monetary remuneration paid to workers in exchange for their physical or cognitive labour input during production."
-    },
-    {
-      "q": "What is Fixed Capital?",
-      "a": "<strong>Fixed Capital:</strong> Long-term, durable physical assets that can be used repeatedly in the production process over many years without being consumed in a single cycle (e.g., factory buildings, tractors, heavy manufacturing machinery, computer servers)."
-    },
-    {
-      "q": "What is Working Capital?",
-      "a": "<strong>Working Capital:</strong> Short-term operational inputs that are completely transformed or consumed within a single production cycle, as well as liquid cash required to pay daily wages and electricity bills (e.g., raw cotton, seeds, chemical reagents, cash-in-hand)."
-    },
-    {
-      "q": "Define Human Capital.",
-      "a": "<strong>Human Capital:</strong> The accumulated stock of professional knowledge, technical expertise, cognitive skills, innovation capability, and health embodied in a nation's working population, built through education and specialized training."
-    },
-    {
-      "q": "What is Japanese Kaizen philosophy?",
-      "a": "<strong>Kaizen (改善):</strong> A Japanese business & industrial philosophy meaning 'continuous improvement'. It focuses on making small, ongoing positive changes in work processes, involving employees at every level to enhance efficiency, eliminate waste, and boost quality."
-    },
-    {
-      "q": "What is VVPAT?",
-      "a": "<strong>VVPAT (Voter Verifiable Paper Audit Trail):</strong> An independent ballot verification system attached to Electronic Voting Machines (EVMs). When a voter presses a button, it prints a paper slip displaying the candidate name, serial number, and party symbol for 7 seconds behind a sealed glass window before automatically dropping into a secure lockbox."
-    }
-  ],
-  "m2": [
-    {
-      "q": "Differentiate between Nature and Resources with suitable examples.",
-      "a": "<strong>Nature vs. Resource Distinction:</strong><br>• <strong>Nature:</strong> Refers to all biophysical features existing on Earth independently of human presence (e.g., raw waterfall, unmined petroleum under sea beds, wild virgin forests).<br>• <strong>Resource:</strong> Refers to elements of nature that have been identified, extracted, and processed using human knowledge, skill, and technology to meet human needs (e.g., hydroelectricity generated from waterfalls, refined petrol, timber desks).<br>• <strong>Key Takeaway:</strong> <em>Nature turns into a Resource only through human intelligence and utility recognition.</em>"
-    },
-    {
-      "q": "Explain the three options given to Princely States by the Indian Independence Act 1947.",
-      "a": "Under Section 7(1)(b) of the Indian Independence Act 1947, British Paramountcy over princely states lapsed on August 15, 1947, giving rulers three distinct choices:<br>1. <strong>Accede to the Dominion of India</strong> by signing the Instrument of Accession.<br>2. <strong>Accede to the Dominion of Pakistan</strong>.<br>3. <strong>Remain an independent sovereign state</strong> (an option strongly opposed by Sardar Patel as a threat to national security)."
-    },
-    {
-      "q": "Why was the States Reorganisation Commission (SRC 1953) appointed?",
-      "a": "<strong>Appointment of SRC (1953):</strong><br>• <strong>Trigger:</strong> Following the death of veteran freedom fighter <strong>Potti Sreeramulu</strong> after a 56-day hunger strike, violent public demonstrations erupted, forcing the creation of Andhra State in October 1953.<br>• <strong>Formation:</strong> To systematically address nationwide demands for language-based administrative boundaries, the Union Government appointed the States Reorganisation Commission in December 1953 under <strong>Justice Fazl Ali, H.N. Kunzru, and K.M. Panikkar</strong>.<br>• <strong>Outcome:</strong> Recommended redrawing India's political map primarily on linguistic cohesion, leading to the States Reorganisation Act 1956."
-    },
-    {
-      "q": "Differentiate between Fixed Capital and Working Capital.",
-      "a": "<strong>Comparison Framework:</strong><br>• <strong>Fixed Capital:</strong> Includes long-lasting physical tools, building infrastructure, and heavy machinery. It is durable over multiple production years, undergoes accounting depreciation, and does not get consumed in a single production run (e.g., automated loom, tractor).<br>• <strong>Working Capital:</strong> Consists of raw materials, intermediate goods, and liquid cash liquidity. It gets completely consumed or converted into finished goods during a single production cycle (e.g., raw silk thread, fuel, cash for daily wages)."
-    },
-    {
-      "q": "What is the Demographic Dividend and why is it crucial for India?",
-      "a": "<strong>Demographic Dividend:</strong> The accelerated economic growth potential that occurs when a nation's demographic structure shifts such that the working-age population (ages 15–64) outnumbers non-working dependents (children under 15 and elderly above 65).<br>• <strong>Significance for India:</strong> Over 65% of India's population is in the working-age bracket, with a median age of ~28 years. This provides a golden 30-to-40-year window (until ~2055) to drive industrialization, boost savings, elevate GDP per capita, and establish India as a global manufacturing hub."
-    },
-    {
-      "q": "Differentiate between Biotic and Abiotic Resources.",
-      "a": "<strong>Classification Criteria:</strong><br>• <strong>Biotic Resources:</strong> Obtained from the biosphere and possess organic life or originate from living matter (e.g., forests, agricultural crops, livestock, marine fish, fossil fuels like coal & petroleum formed from decayed organic matter).<br>• <strong>Abiotic Resources:</strong> Composed of non-living, physical, and inorganic matter derived from the lithosphere, atmosphere, or hydrosphere (e.g., land, iron ore, copper, drinking water, atmospheric gases)."
-    },
-    {
-      "q": "What is the Model Code of Conduct (MCC) in elections?",
-      "a": "<strong>Model Code of Conduct (MCC):</strong> A comprehensive set of ethical and procedural guidelines issued by the Election Commission of India (ECI) to ensure free, fair, and orderly elections.<br>• <strong>Implementation:</strong> Comes into force immediately when election schedules are officially announced.<br>• <strong>Key Rules:</strong> Prohibits ruling parties from using government vehicles or public funds for campaigning, bans announcing new welfare schemes or infrastructure grants after election announcement, and enforces a mandatory <strong>48-hour Silence Period</strong> prior to polling close."
-    },
-    {
-      "q": "Why is Labour considered a 'perishable' factor of production?",
-      "a": "<strong>Perishability of Labour:</strong> Labour capacity is intrinsically linked to time and the physical presence of the worker.<br>• <strong>Core Economic Reason:</strong> Unlike physical capital or raw materials which can be stored in a warehouse for future use, <em>unworked labour hours are permanently lost</em>. If a factory worker is unemployed or idle for one day, that specific day's productive labor capacity disappears forever and can never be recovered or stored."
-    },
-    {
-      "q": "What is the role of a Returning Officer (RO)?",
-      "a": "<strong>Returning Officer (RO):</strong> A senior statutory officer appointed by the Election Commission of India for each parliamentary or assembly constituency.<br>• <strong>Duties:</strong> Oversees nomination paper submission, conducts rigorous scrutiny of candidate affidavits, allocates official election symbols to recognized & independent candidates, supervises polling station setup, oversees vote counting, and officially certifies the election result winner."
-    },
-    {
-      "q": "What are Ecosystem Services?",
-      "a": "<strong>Ecosystem Services:</strong> The direct and indirect economic, environmental, and life-support benefits provided by natural ecosystems to human civilization without direct payment.<br>• <strong>Four Categories:</strong><br>1. <i>Provisioning Services:</i> Food, timber, fresh water, medicinal plants.<br>2. <i>Regulating Services:</i> Carbon sequestration, climate regulation, flood mitigation by wetlands, soil erosion control.<br>3. <i>Supporting Services:</i> Soil formation, nutrient cycling, oxygen production via photosynthesis.<br>4. <i>Cultural Services:</i> Recreational, aesthetic, and spiritual enrichment."
-    }
-  ],
-  "m3": [
-    {
-      "q": "Explain the three mandatory conditions required for any natural substance to become a resource.",
-      "a": "<strong>Resource Transformation Conditions:</strong><br>A natural substance does not automatically become a resource simply because it exists in nature. It must fulfill three mandatory conditions:<br><br>1. <strong>Technological Accessibility:</strong> Humans must possess the technological tools, scientific knowledge, engineering skill, and infrastructure to extract, refine, and utilize the substance efficiently (e.g., shale gas remained a dormant rock layer until hydraulic fracturing technology was developed).<br><br>2. <strong>Economic Feasibility:</strong> The financial value of the extracted resource and its market returns must significantly exceed the cumulative cost of exploration, extraction, processing, and environmental mitigation.<br><br>3. <strong>Cultural & Environmental Acceptability:</strong> The extraction and consumption of the resource must align with societal ethics, legal frameworks, public health standards, and ecological safety guidelines."
-    },
-    {
-      "q": "Describe the accession process of Junagadh, Hyderabad, and Jammu & Kashmir.",
-      "a": "<strong>Integration of Problem States (1947–1948):</strong><br><br>1. <strong>Junagadh (Plebiscite):</strong> The Muslim Nawab of Junagadh acceded to Pakistan despite a >80% Hindu population and no contiguous land border with Pakistan. Sardar Patel dispatched troops to secure borders and held a democratic <strong>Plebiscite (referendum) in February 1948</strong>, where over 99% of residents voted to join India.<br><br>2. <strong>Hyderabad (Operation Polo):</strong> Nizam Mir Osman Ali Khan refused accession, seeking independent statehood while encouraging the violent <i>Razakar</i> militia. In September 1948, the Indian Army executed <strong>Operation Polo</strong> (a 5-day police action), disarming the militia and integrating Hyderabad into the Union.<br><br>3. <strong>Jammu & Kashmir (Instrument of Accession):</strong> Maharaja Hari Singh initially hesitated to join either dominion. However, when armed Pakistani tribal invaders assaulted the state in October 1947, the Maharaja appealed for military aid and signed the official <strong>Instrument of Accession on October 26, 1947</strong>, acceding Defense, Foreign Affairs, and Communications to India."
-    },
-    {
-      "q": "Explain the structure, composition, and core responsibilities of the Election Commission of India (ECI).",
-      "a": "<strong>Constitutional Framework of ECI:</strong><br><br>• <strong>Constitutional Mandate:</strong> Established under <strong>Article 324</strong> as an autonomous, multi-member permanent constitutional authority tasked with superintending, directing, and conducting free and fair elections.<br><br>• <strong>Composition:</strong> Consists of a <strong>Chief Election Commissioner (CEC)</strong> and two <strong>Election Commissioners (ECs)</strong> appointed by the President of India. They enjoy fixed 6-year tenures (or up to age 65) with security of tenure equivalent to Supreme Court Judges.<br><br>• <strong>Core Responsibilities:</strong><br>1. <i>Electoral Rolls:</i> Periodic revision and digital purification of voter lists across all 543 Lok Sabha constituencies.<br>2. <i>Election Schedule & MCC:</i> Announcing election dates, enforcing the Model Code of Conduct, and deploying election observers.<br>3. <i>Political Parties & Symbols:</i> Granting national/state party status and assigning official voting symbols.<br>4. <i>EVM & VVPAT Management:</i> Supervising the security, randomisation, and audit counting of electronic voting equipment."
-    },
-    {
-      "q": "What is Human Capital and how does raw human labour transform into human capital?",
-      "a": "<strong>Human Capital Formation:</strong><br><br>• <strong>Definition:</strong> Human Capital is the stock of productive skill, scientific knowledge, managerial competence, and physical health embodied in a country's working-age population.<br><br>• <strong>Transformation Mechanism:</strong> Raw human labour (unskilled physical muscle power) transforms into high-yield Human Capital through five critical investment pillars:<br>1. <strong>Quality Education:</strong> Primary, secondary, and higher vocational education developing foundational literacy, analytical reasoning, and problem-solving.<br>2. <strong>Technical & Skill Training:</strong> Specialized industrial training institutes (ITIs), coding bootcamps, and government initiatives like <i>Skill India</i> and <i>PMKVY</i>.<br>3. <strong>Healthcare Infrastructure:</strong> Clean drinking water, immunization, and healthcare facilities that reduce sick leaves, increase life expectancy, and raise daily worker productivity.<br>4. <strong>Information & Mobility:</strong> Access to job market information networks and geographic mobility allowing workers to relocate to high-productivity sectors.<br>5. <strong>Research & Innovation:</strong> Fostering specialized R&D capabilities in science, engineering, software, and AI automation."
-    },
-    {
-      "q": "Explain the 5 stages of a product Supply Chain using the example of a Chocolate Bar.",
-      "a": "<strong>Supply Chain Blueprint (Chocolate Bar Example):</strong><br><br>1. <strong>Stage 1 — Primary Extraction (Raw Inputs):</strong> Cocoa bean harvesting by cocoa farmers in Kerala/Ghana, along with dairy farming for fresh milk and sugarcane cultivation for sugar.<br><br>2. <strong>Stage 2 — Intermediate Processing:</strong> Fermenting, drying, and roasting cocoa beans, followed by grinding into cocoa mass and pressing into cocoa butter and powder at processing mills.<br><br>3. <strong>Stage 3 — Manufacturing & Blending:</strong> Industrial confectionery factories combine cocoa butter, milk solids, sugar, and emulsifiers in automated vats, moulding them into foil-wrapped chocolate bars.<br><br>4. <strong>Stage 4 — Logistics & Cold-Chain Distribution:</strong> Temperature-controlled refrigerated trucks transport packaged chocolates to regional logistics hubs and distribution warehouses.<br><br>5. <strong>Stage 5 — Retail & Final Consumption:</strong> Delivery to local kirana outlets, supermarkets, and quick-commerce dark stores where end consumers purchase the finished chocolate bar."
-    }
-  ],
-  "m5": [
-    {
-      "q": "Detailed Essay: Explain the Four Factors of Production, their economic rewards, and how they interact in an economic supply chain.",
-      "a": "<strong>Comprehensive Economic Analysis:</strong><br><br>Every product or service created in an economy requires the systematic combination of four fundamental <strong>Factors of Production</strong>:<br><br>1. <strong>LAND (Economic Reward: Rent)</strong><br>• <i>Definition:</i> Includes all free gifts of nature provided by the biophysical environment—fertile agricultural soil, groundwater, timber forests, mineral deposits (iron ore, bauxite), atmospheric air, and geographic site location.<br>• <i>Characteristics:</i> Supply is geographically fixed, immobile, and passive. Income earned by land owners is termed <strong>Rent</strong>.<br><br>2. <strong>LABOUR (Economic Reward: Wages / Salary)</strong><br>• <i>Definition:</i> All human physical and mental efforts exerted during the production process to generate economic utilities.<br>• <i>Characteristics:</i> Labour is active, heterogeneous (varies by skill level), and highly perishable (unworked labor hours cannot be stored). Workers earn <strong>Wages or Salaries</strong>.<br><br>3. <strong>CAPITAL (Economic Reward: Interest)</strong><br>• <i>Definition:</i> Man-made physical assets created to assist future production.<br>• <i>Types:</i> Divided into <strong>Fixed Capital</strong> (durable machinery, factory buildings, tools) and <strong>Working Capital</strong> (raw materials, fuel, cash liquidity). Owners of financial capital earn <strong>Interest</strong>.<br><br>4. <strong>ENTREPRENEURSHIP (Economic Reward: Profit / Loss)</strong><br>• <i>Definition:</i> The human visionary catalyst who organizes Land, Labour, and Capital into a business enterprise, makes strategic decisions, drives product innovation, and assumes financial risk.<br>• <i>Characteristics:</i> Earns residual <strong>Profit</strong> if successful, or bears financial <strong>Loss</strong> if revenue falls below total operational costs.<br><br><strong>Interdependence in a Modern Supply Chain:</strong><br>No single factor can create wealth in isolation. In a modern automobile plant, <i>Land</i> provides the factory site and raw steel ore; <i>Labour</i> operates welding robots and performs engineering design; <i>Capital</i> provides assembly machinery and working funds; while the <i>Entrepreneur</i> secures investment, manages global logistics, and markets the vehicle to consumers."
-    },
-    {
-      "q": "Historical Analysis: Discuss Sardar Vallabhbhai Patel's diplomatic strategy in integrating 565+ Princely States into the Indian Union after 1947.",
-      "a": "<strong>Historical Integration of Princely States:</strong><br><br><strong>Background & Crisis:</strong><br>When British Paramountcy lapsed on August 15, 1947, India faced potential balkanization into over 565 independent princely kingdoms. As Home Minister, <strong>Sardar Vallabhbhai Patel</strong>, assisted by V.P. Menon, orchestrated an unprecedented political integration campaign.<br><br><strong>Patel's Multi-Pronged Strategy:</strong><br><br>1. <strong>The Instrument of Accession (IoA):</strong> Patel persuaded rulers to sign the IoA, ceding control over only three national subjects—<i>Defense, External Affairs, and Communications</i>—while retaining internal autonomy initially.<br><br>2. <strong>Privy Purse & Royal Privileges:</strong> Offered rulers a tax-free financial allowance (Privy Purse) guaranteed by the Constitution, along with titles and personal property rights, incentivizing peaceful accession.<br><br>3. <strong>Appeals to Shared Heritage & Patriotism:</strong> Reminded princes of their patriotic duty to build a united democratic Bharat, pointing out that landlocked states could not survive economically or militarily on their own.<br><br>4. <strong>Decisive Realpolitik & Military Action:</strong><br>• <i>Junagadh:</i> Deployed troops and organized a democratic Plebiscite in Feb 1948 (>99% voted for India).<br>• <i>Hyderabad:</i> Launched <strong>Operation Polo</strong> in Sept 1948, neutralizing the Razakar militia in 5 days.<br>• <i>Jammu & Kashmir:</i> Accepted accession on Oct 26, 1947 when Pakistani invaders struck, dispatching airlifted troops to defend Srinagar.<br><br><strong>Historical Significance:</strong> Unified 565+ fragmented territories into a single geographic entity, establishing the foundation for modern federal India."
-    },
-    {
-      "q": "Civics Deep-Dive: Explain Universal Adult Franchise, Article 326, election voting technology evolution (Ballots to EVMs & VVPAT), and democratic ethics.",
-      "a": "<strong>Comprehensive Democratic Systems Analysis:</strong><br><br><strong>1. Universal Adult Franchise (Article 326):</strong><br>• <i>Constitutional Foundation:</i> Article 326 enshrines adult suffrage as the bedrock of Indian democracy, guaranteeing every citizen aged 18+ one equal vote.<br>• <i>61st Amendment (1988):</i> Lowered the voting age from 21 to 18 years, empowering youth participation.<br>• <i>Democratic Significance:</i> Eliminates colonial-era property or educational voter qualifications, establishing political equality across gender, caste, and wealth lines.<br><br><strong>2. Evolution of Voting Technology in India:</strong><br>• <i>Paper Ballot Era (1951–1990s):</i> Voters stamped paper ballots and dropped them into steel boxes. Highly vulnerable to ballot box tampering, booth capturing, and prolonged counting delays.<br>• <i>EVM Introduction (1982–2004):</i> Electronic Voting Machines developed by BEL and ECIL were trialed in 1982 (Kerala) and deployed nationwide in the 2004 General Elections. Features tamper-proof microcontrollers, battery operation, and instant vote tallying.<br>• <i>VVPAT Rollout (2013–2019):</i> Voter Verifiable Paper Audit Trail machines were integrated to display a 7-second printed verification slip behind a sealed glass window before dropping into a locked box, providing a 100% verifiable physical paper trail for audit counts.<br><br><strong>3. Democratic Ethics & Electoral Integrity:</strong><br>• <i>Model Code of Conduct (MCC):</i> Enforces a level playing field once elections are announced.<br>• <i>48-Hour Silence Period:</i> Bans campaign rallies, public speeches, and political broadcasts 48 hours prior to polling close.<br>• <i>cVIGIL App & Vigilance:</i> Enables citizens to report election code violations in real-time with geotagged photo/video evidence."
-    }
-  ]
-};
-
 const GLOSSARY = [
-  {
-    "term": "Abiotic Resource",
-    "def": "A natural resource derived from non-living physical inorganic matter, such as land, minerals, water, and air."
-  },
-  {
-    "term": "Adult Franchise",
-    "def": "The democratic right of all adult citizens above a legally specified age (18+ in India) to vote in elections without discrimination."
-  },
-  {
-    "term": "Afforestation",
-    "def": "The practice of establishing a forest by planting trees on barren, deforested, or unused land."
-  },
-  {
-    "term": "Agenda 21",
-    "def": "A comprehensive blueprint of action adopted at the 1992 Earth Summit in Rio de Janeiro for global sustainable development in the 21st century."
-  },
-  {
-    "term": "Agricultural Density",
-    "def": "The ratio of rural agricultural population to total arable land area."
-  },
   {
     "term": "Andhra State",
     "def": "India's first language-based state created on October 1, 1953 for Telugu-speaking people following Potti Sreeramulu's 56-day fast."
@@ -10961,6 +10798,199 @@ function closeModal() {
     overlay.classList.remove('open');
     document.body.style.overflow = '';
   }
+
+}
+
+function applySyllabusFilter() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
+  // 1. Section Visibility & Nav Styling
+  const ch5Sec = document.getElementById('electoral-system');
+  const ch7Sec = document.getElementById('factors-production');
+  const navCh5 = document.getElementById('nav-electoral-system');
+  const navCh7 = document.getElementById('nav-factors-production');
+
+  if (ch5Sec) ch5Sec.style.display = isPA1 ? 'none' : 'block';
+  if (ch7Sec) ch7Sec.style.display = isPA1 ? 'none' : 'block';
+
+  if (navCh5) {
+    navCh5.style.opacity = isPA1 ? '0.4' : '1';
+    navCh5.style.pointerEvents = isPA1 ? 'none' : 'auto';
+    navCh5.title = isPA1 ? 'Term 1 Only' : '';
+  }
+  if (navCh7) {
+    navCh7.style.opacity = isPA1 ? '0.4' : '1';
+    navCh7.style.pointerEvents = isPA1 ? 'none' : 'auto';
+    navCh7.title = isPA1 ? 'Term 1 Only' : '';
+  }
+
+  // 2. Re-render Grid Views
+  renderTopics();
+  renderFlashcards();
+  renderQuiz();
+  renderImportantQuestions();
+  renderGlossary();
+  renderDiagrams();
+  renderQuickRevision();
+  updateHeroStats();
+}
+
+function updateHeroStats() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const pa1Topics = TOPICS.filter(t => t.chapterId === 'natural-resources' || t.chapterId === 'political-map');
+  const pa1Flashcards = FLASHCARDS.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map');
+  const pa1Mcqs = MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map');
+
+  const totalFc = isPA1 ? pa1Flashcards.length : FLASHCARDS.length;
+  const totalMcqs = isPA1 ? pa1Mcqs.length : MCQS.length;
+
+  const statTopics = document.getElementById('stat-total-topics');
+  if (statTopics) statTopics.textContent = isPA1 ? `${pa1Topics.length} (PA 1)` : `${TOPICS.length} (Term 1)`;
+
+  const statFc = document.getElementById('stat-fc-learned');
+  if (statFc) statFc.textContent = `${STATE.learnedFlashcards.length} / ${totalFc}`;
+
+  const statQuiz = document.getElementById('stat-quiz-high');
+  if (statQuiz) statQuiz.textContent = `${STATE.quizHighScore} / ${totalMcqs}`;
+
+  const statBm = document.getElementById('stat-bookmarks');
+  if (statBm) statBm.textContent = STATE.bookmarks.length;
+}
+
+function getActiveTopics() {
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+  const query = (document.getElementById('search-input')?.value || '').toLowerCase().trim();
+
+  return TOPICS.filter(topic => {
+    if (isPA1 && (topic.chapterId === 'electoral-system' || topic.chapterId === 'factors-production')) {
+      return false;
+    }
+    if (query) {
+      return (
+        topic.title.toLowerCase().includes(query) ||
+        topic.preview.toLowerCase().includes(query) ||
+        topic.contentHtml.toLowerCase().includes(query)
+      );
+    }
+    return true;
+  });
+}
+
+function renderTopics() {
+  const grids = {
+    'natural-resources': document.getElementById('natural-resources-grid'),
+    'political-map': document.getElementById('political-map-grid'),
+    'electoral-system': document.getElementById('electoral-system-grid'),
+    'factors-production': document.getElementById('factors-production-grid')
+  };
+
+  Object.values(grids).forEach(grid => { if (grid) grid.innerHTML = ''; });
+
+  const isPA1 = STATE.syllabusMode === 'PA 1';
+
+  TOPICS.forEach((topic, idx) => {
+    if (isPA1 && (topic.chapterId === 'electoral-system' || topic.chapterId === 'factors-production')) {
+      return;
+    }
+
+    const grid = grids[topic.chapterId];
+    if (!grid) return;
+
+    const isBookmarked = STATE.bookmarks.includes(topic.id);
+
+    const card = document.createElement('div');
+    card.className = 'card topic-card';
+    card.setAttribute('data-topic-id', topic.id);
+    card.innerHTML = `
+      <div class="card-top">
+        <span class="card-icon">${topic.icon}</span>
+        <span class="difficulty-badge ${topic.difficulty.toLowerCase()}">${topic.difficulty}</span>
+      </div>
+      <h3 class="card-title">${topic.title}</h3>
+      <p class="card-preview">${topic.preview}</p>
+      <div class="card-meta">
+        <span>⏱️ ${topic.readTime}</span>
+        <button class="bm-btn ${isBookmarked ? 'active' : ''}" onclick="event.stopPropagation(); toggleBookmark('${topic.id}')" title="Bookmark Topic">
+          ${isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+        </button>
+      </div>
+    `;
+
+    card.addEventListener('click', () => openModal(idx));
+    grid.appendChild(card);
+  });
+}
+
+function toggleBookmark(id) {
+  const idx = STATE.bookmarks.indexOf(id);
+  if (idx === -1) {
+    STATE.bookmarks.push(id);
+    showToast('✨ Topic bookmarked!');
+  } else {
+    STATE.bookmarks.splice(idx, 1);
+    showToast('Removed from bookmarks');
+  }
+  localStorage.setItem('g8_sst_bookmarks', JSON.stringify(STATE.bookmarks));
+
+  const isBookmarked = STATE.bookmarks.includes(id);
+  const cardBtns = document.querySelectorAll(`[data-topic-id="${id}"] .bm-btn`);
+  cardBtns.forEach(btn => {
+    btn.classList.toggle('active', isBookmarked);
+    btn.innerHTML = isBookmarked ? '★ Bookmarked' : '☆ Bookmark';
+  });
+
+  const statBm = document.getElementById('stat-bookmarks');
+  if (statBm) statBm.textContent = STATE.bookmarks.length;
+
+  const modalBm = document.getElementById('modal-bookmark');
+  if (modalBm) {
+    modalBm.textContent = isBookmarked ? '★' : '☆';
+  }
+
+  updateHeroStats();
+}
+
+function openModal(index) {
+  STATE.currentTopicIndex = index;
+  const topic = TOPICS[index];
+  if (!topic) return;
+
+  const overlay = document.getElementById('modal-overlay');
+  const icon = document.getElementById('modal-icon');
+  const title = document.getElementById('modal-title');
+  const body = document.getElementById('modal-body');
+  const bookmarkBtn = document.getElementById('modal-bookmark');
+
+  if (icon) icon.textContent = topic.icon;
+  if (title) title.textContent = topic.title;
+  if (body) {
+    body.innerHTML = topic.contentHtml;
+    body.scrollTop = 0; // Reset scroll to beginning of topic
+  }
+  if (bookmarkBtn) {
+    bookmarkBtn.textContent = STATE.bookmarks.includes(topic.id) ? '★' : '☆';
+    bookmarkBtn.onclick = (e) => {
+      e.stopPropagation();
+      toggleBookmark(topic.id);
+    };
+  }
+
+  if (overlay) {
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  setupModalBodyScroll();
+  setupKeyboardListeners();
+  setupModalSwipeGestures();
+}
+
+function closeModal() {
+  const overlay = document.getElementById('modal-overlay');
+  if (overlay) {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 }
 
 let isNavigatingModal = false;
@@ -11058,133 +11088,19 @@ function printModalContent() {
   if (!topic) return;
   const printWin = window.open('', '_blank');
   printWin.document.write(`
-    <html>
-      <head>
-        <title>${topic.title} — SST Study Guide</title>
-        <style>
-          body { font-family: sans-serif; padding: 30px; line-height: 1.6; color: #111; }
-          h1 { color: #0f172a; border-bottom: 2px solid #0284c7; padding-bottom: 10px; }
-          table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-          th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; }
-          th { background: #f1f5f9; }
-          .callout { background: #f8fafc; border-left: 4px solid #0284c7; padding: 15px; margin: 15px 0; }
-        </style>
-      </head>
-      <body>
-        <h1>${topic.title}</h1>
-        ${topic.contentHtml}
-      </body>
-    </html>
+    <html><head><title>${topic.title} — SST Study Guide</title></head><body>
+      <h1>${topic.title}</h1>
+      ${topic.contentHtml}
+    </body></html>
   `);
   printWin.document.close();
   printWin.focus();
   printWin.print();
 }
-
-function setupKeyboardListeners() {
-  document.onkeydown = (e) => {
-    const overlay = document.getElementById('modal-overlay');
-    if (overlay && overlay.classList.contains('open')) {
-      if (e.key === 'Escape') closeModal();
-      if (e.key === 'ArrowLeft') navigateModalTopic(-1);
-      if (e.key === 'ArrowRight') navigateModalTopic(1);
-    }
-  };
-}
-
-function renderFlashcards() {
-  const isPA1 = STATE.syllabusMode === 'PA 1';
-  if (isPA1) {
-    STATE.flashcardFiltered = FLASHCARDS.filter(c => c.topic === 'Natural Resources' || c.topic === 'Political Map');
-  } else if (STATE.flashcardSelectedTopics && STATE.flashcardSelectedTopics.length > 0) {
-    STATE.flashcardFiltered = FLASHCARDS.filter(c => STATE.flashcardSelectedTopics.includes(c.topic));
-  } else {
-    STATE.flashcardFiltered = [...FLASHCARDS];
-  }
-
-  // Dim filter buttons for Term 1 topics in PA 1 mode
-  const filterBtns = document.querySelectorAll('#fc-filter-wrap button');
-  filterBtns.forEach(btn => {
-    const txt = btn.textContent;
-    if (isPA1 && (txt.includes('Electoral System') || txt.includes('Factors of Production'))) {
-      btn.style.opacity = '0.35';
-      btn.style.pointerEvents = 'none';
-      btn.title = 'Term 1 Only';
-    } else {
-      btn.style.opacity = '1';
-      btn.style.pointerEvents = 'auto';
-      btn.title = '';
-    }
-  });
-
-  if (STATE.flashcardIndex >= STATE.flashcardFiltered.length) {
-    STATE.flashcardIndex = 0;
-  }
-  updateFlashcardUI();
-}
-
-function updateFlashcardUI() {
-  if (!STATE.flashcardFiltered || STATE.flashcardFiltered.length === 0) return;
-
-  if (STATE.flashcardIndex >= STATE.flashcardFiltered.length || STATE.flashcardIndex < 0) {
-    STATE.flashcardIndex = 0;
-  }
-
-  const card = STATE.flashcardFiltered[STATE.flashcardIndex];
-  if (!card) return;
-
-  const tag = document.getElementById('fc-tag');
-  const q = document.getElementById('fc-question');
-  const a = document.getElementById('fc-answer');
-  const counter = document.getElementById('fc-counter');
-  const markBtn = document.getElementById('fc-mark-btn');
-  const fcEl = document.getElementById('flashcard');
-
-  if (fcEl) fcEl.classList.remove('flipped');
-
-  if (tag) tag.textContent = card.topic.toUpperCase();
-  if (q) q.textContent = card.q;
-  if (a) a.textContent = card.a;
-  if (counter) counter.textContent = `${STATE.flashcardIndex + 1} / ${STATE.flashcardFiltered.length}`;
-
-  const isLearned = STATE.learnedFlashcards.includes(card.q);
-  if (markBtn) {
-    markBtn.textContent = isLearned ? '✓ Learned' : 'Mark as Learned';
-    markBtn.style.background = isLearned ? 'var(--emerald)' : '';
-  }
-}
-
-function flipFlashcard() {
-  const fc = document.getElementById('flashcard');
-  if (fc) fc.classList.toggle('flipped');
-}
-
-function nextFlashcard() {
-  STATE.flashcardIndex = (STATE.flashcardIndex + 1) % STATE.flashcardFiltered.length;
-  updateFlashcardUI();
-}
-
-function prevFlashcard() {
-  STATE.flashcardIndex = (STATE.flashcardIndex - 1 + STATE.flashcardFiltered.length) % STATE.flashcardFiltered.length;
-  updateFlashcardUI();
-}
-
-function toggleMarkLearned() {
-  const card = STATE.flashcardFiltered[STATE.flashcardIndex];
-  if (!card) return;
-
-  const idx = STATE.learnedFlashcards.indexOf(card.q);
-  if (idx === -1) {
-    STATE.learnedFlashcards.push(card.q);
-    showToast('🎉 Flashcard marked as learned!');
-  } else {
-    STATE.learnedFlashcards.splice(idx, 1);
-    showToast('Flashcard un-marked');
-  }
   localStorage.setItem('g8_sst_learned_fc', JSON.stringify(STATE.learnedFlashcards));
   updateFlashcardUI();
   updateHeroStats();
-}
+// end fc
 
 function filterFlashcards(event, topicName) {
   if (!STATE.flashcardSelectedTopics) STATE.flashcardSelectedTopics = [];
@@ -11300,7 +11216,6 @@ function filterQuiz(event, topicName) {
     }
   }
 
-  // Update button active state highlights
   const buttons = document.querySelectorAll('.mcq-filter-btn');
   buttons.forEach(btn => {
     const text = btn.textContent;
@@ -11325,7 +11240,6 @@ function filterQuiz(event, topicName) {
     ? MCQS.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map')
     : MCQS;
 
-  // Apply Union / OR logic multi-filtering
   if (STATE.quizSelectedTopics.length === 0) {
     STATE.quizActiveQuestions = [...basePool];
     showToast(isPA1 ? 'Quiz Filtered: PA 1 Topics (250 Questions)' : 'Quiz Filtered: All Topics (500 Questions)');
@@ -11350,15 +11264,15 @@ function shuffleQuiz() {
     : MCQS;
 
   if (!STATE.quizSelectedTopics) STATE.quizSelectedTopics = [];
-  if (STATE.quizActiveQuestions.length === 0) {
+  if (!STATE.quizActiveQuestions || STATE.quizActiveQuestions.length === 0) {
     if (STATE.quizSelectedTopics.length === 0) {
       STATE.quizActiveQuestions = [...basePool];
     } else {
       STATE.quizActiveQuestions = basePool.filter(q => STATE.quizSelectedTopics.includes(q.topic));
     }
-  } else if (isPA1) {
-    STATE.quizActiveQuestions = STATE.quizActiveQuestions.filter(q => q.topic === 'Natural Resources' || q.topic === 'Political Map');
   }
+
+  STATE.quizActiveQuestions.forEach(q => { delete q._shuffledOpts; delete q._shuffledAns; });
 
   for (let i = STATE.quizActiveQuestions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -11400,10 +11314,24 @@ function resetQuizContainerUI() {
   }
 }
 
+function prepareQuestionOptions(q) {
+  if (!q._shuffledOpts) {
+    const indexedOpts = q.opts.map((opt, idx) => ({ text: opt, isCorrect: idx === (q.ans !== undefined ? q.ans : 0) }));
+    for (let i = indexedOpts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indexedOpts[i], indexedOpts[j]] = [indexedOpts[j], indexedOpts[i]];
+    }
+    q._shuffledOpts = indexedOpts.map(o => o.text);
+    q._shuffledAns = indexedOpts.findIndex(o => o.isCorrect);
+  }
+}
+
 function updateQuizQuestion() {
   resetQuizContainerUI();
   const q = STATE.quizActiveQuestions[STATE.quizIndex];
   if (!q) return;
+
+  prepareQuestionOptions(q);
 
   const count = document.getElementById('quiz-count');
   const scoreBadge = document.getElementById('quiz-score-badge');
@@ -11425,7 +11353,8 @@ function updateQuizQuestion() {
 
   if (optionsWrap) {
     optionsWrap.innerHTML = '';
-    q.opts.forEach((optText, optIdx) => {
+    const displayOpts = q._shuffledOpts || q.opts;
+    displayOpts.forEach((optText, optIdx) => {
       const btn = document.createElement('button');
       btn.className = 'quiz-opt-btn';
       btn.innerHTML = `<span class="opt-letter">${String.fromCharCode(65 + optIdx)}</span> ${optText}`;
@@ -11442,14 +11371,15 @@ function selectQuizOption(selectedIdx) {
   const buttons = document.querySelectorAll('.quiz-opt-btn');
   buttons.forEach(btn => btn.disabled = true);
 
-  const isCorrect = selectedIdx === q.ans;
+  const targetAns = q._shuffledAns !== undefined ? q._shuffledAns : (q.ans || 0);
+  const isCorrect = selectedIdx === targetAns;
   if (isCorrect) {
     buttons[selectedIdx].classList.add('correct');
     STATE.quizScore++;
     showToast('✨ Correct Answer!');
   } else {
     buttons[selectedIdx].classList.add('wrong');
-    if (buttons[q.ans]) buttons[q.ans].classList.add('correct');
+    if (buttons[targetAns]) buttons[targetAns].classList.add('correct');
     showToast('❌ Incorrect answer');
   }
 
@@ -11467,6 +11397,8 @@ function selectQuizOption(selectedIdx) {
     expWrap.style.display = 'block';
     expWrap.innerHTML = `<strong>${isCorrect ? '💡 Explanation:' : '💡 Correct Answer & Rationale:'}</strong> ${q.exp}`;
   }
+
+
 
   const nextBtn = document.getElementById('quiz-next-btn');
   if (nextBtn) nextBtn.style.display = 'inline-block';
@@ -11504,16 +11436,11 @@ function renderImportantQuestions() {
   if (!container) return;
 
   const isPA1 = STATE.syllabusMode === 'PA 1';
-  const isCh5or7 = item => {
-    const text = (item.q + ' ' + item.a).toLowerCase();
-    const ch5ch7Keywords = ['article 326', 'article 324', 'voting age', '61st constitutional', 'election commission', 'evm', 'vvpat', 'labour', 'capital', 'factor of production', 'factors of production', 'fixed capital', 'working capital', 'entrepreneur', 'kaizen', 'demographic dividend'];
-    return ch5ch7Keywords.some(kw => text.includes(kw));
-  };
-
-  const m1List = isPA1 ? IMPORTANT_QUESTIONS.m1.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m1;
-  const m2List = isPA1 ? IMPORTANT_QUESTIONS.m2.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m2;
-  const m3List = isPA1 ? IMPORTANT_QUESTIONS.m3.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m3;
-  const m5List = isPA1 ? IMPORTANT_QUESTIONS.m5.filter(item => !isCh5or7(item)) : IMPORTANT_QUESTIONS.m5;
+  const filterByPA1 = item => item.topic === 'Natural Resources' || item.topic === 'Political Map';
+  const m1List = isPA1 ? IMPORTANT_QUESTIONS.m1.filter(filterByPA1) : IMPORTANT_QUESTIONS.m1;
+  const m2List = isPA1 ? IMPORTANT_QUESTIONS.m2.filter(filterByPA1) : IMPORTANT_QUESTIONS.m2;
+  const m3List = isPA1 ? IMPORTANT_QUESTIONS.m3.filter(filterByPA1) : IMPORTANT_QUESTIONS.m3;
+  const m5List = isPA1 ? IMPORTANT_QUESTIONS.m5.filter(filterByPA1) : IMPORTANT_QUESTIONS.m5;
 
   container.innerHTML = `
     ${isPA1 ? `<div class="callout callout-important" style="margin-bottom:20px; background:rgba(34,211,238,0.1); border-color:var(--cyan);"><div class="callout-title" style="color:var(--cyan);">📝 PA 1 Syllabus Active</div>Showing Important Questions from Chapter 1 (Natural Resources) & Chapter 2 (Political Map).</div>` : ''}
@@ -11602,7 +11529,6 @@ function renderImportantQuestions() {
 function renderGlossary() {
   const isPA1 = STATE.syllabusMode === 'PA 1';
 
-  // Topic filter button visibility for PA 1 vs Term 1
   const topicBtns = document.querySelectorAll('#glossary-topic-wrap button');
   topicBtns.forEach(btn => {
     const txt = btn.textContent;
@@ -11612,11 +11538,9 @@ function renderGlossary() {
       btn.style.display = 'inline-block';
     }
   });
-
-  // Letter filter buttons setup
   const lettersWrap = document.getElementById('glossary-letters');
   const alphabet = ['ALL', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
-  if (lettersWrap && lettersWrap.children.length === 0) {
+  if (lettersWrap) {
     lettersWrap.innerHTML = alphabet.map(l => `
       <button class="glossary-letter-btn ${l === 'ALL' ? 'active' : ''}" onclick="filterGlossaryLetter(event, '${l}')">${l}</button>
     `).join('');
@@ -11705,7 +11629,9 @@ function filterGlossaryCombined() {
 
   if (isPA1) {
     filtered = filtered.filter(t => !ch5ch7Keywords.some(kw => t.term.toLowerCase().includes(kw)));
-  } else if (STATE.glossarySelectedTopics && STATE.glossarySelectedTopics.length > 0) {
+  }
+
+  if (STATE.glossarySelectedTopics && STATE.glossarySelectedTopics.length > 0) {
     filtered = filtered.filter(t => {
       const termLower = (t.term + ' ' + t.def).toLowerCase();
       return STATE.glossarySelectedTopics.some(topic => {
@@ -11962,8 +11888,6 @@ function renderQuickRevision() {
         `}
       </div>
 
-      ${
-    isPA1 ? '' : `
       <!-- THE BIG ERAS AT A GLANCE TABLE -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
         <h3 style="color:var(--cyan); margin:0;">📚 The "Big Eras" at a Glance</h3>
@@ -12088,7 +12012,6 @@ function renderQuickRevision() {
           <tr><td style="padding:8px; border:1px solid var(--glass-border);"><strong>Oct 31, 2019</strong></td><td style="padding:8px; border:1px solid var(--glass-border);">J&K Reorganisation</td><td style="padding:8px; border:1px solid var(--glass-border);">J&K reorganized into two Union Territories (J&K and Ladakh).</td></tr>
         </tbody>
       </table>
-      `}
 
       <!-- GOLDEN MEMORY TRICKS -->
       <h3 style="color:var(--cyan); margin-bottom:14px;">💡 Golden Memory Tricks</h3>
