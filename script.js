@@ -327,190 +327,364 @@ const TOPICS = [
             <br>• <strong>Biogas (Gobar Gas):</strong> Decomposes organic cattle dung and crop residue anaerobically, producing methane for rural cooking and organic manure.
           </div>`
   },
+    {
+    id: 'ch2-precolonial-empires-kingdoms',
+    chapterId: 'political-map',
+    chapterTitle: "Reshaping India's Political Map",
+    icon: '🏰',
+    title: '9. Pre-Colonial India: Empires, Sultanates & Regional Kingdoms',
+    difficulty: 'Medium',
+    readTime: '9 min',
+    preview: 'Trace India\'s pre-colonial political landscape across the Delhi Sultanate (5 dynasties), Vijayanagara Empire, Rajput Kingdoms, and the 600-year Ahom Kingdom.',
+    contentHtml: `<p>Throughout history, India was rarely governed by a single monarch or central authority. Instead, it existed as a dynamic tapestry of hundreds of independent kingdoms, tribal territories, regional empires, sultanates, and confederacies.</p>
+
+          <div class="callout callout-definition">
+            <div class="callout-title">📜 Historical Reality of Pre-Colonial India</div>
+            India was not a unified administrative state before British colonization. At times, powerful empires (like the Mauryas, Guptas, or Mughals) consolidated large parts of the subcontinent; at other times, India was fragmented into hundreds of sovereign kingdoms.
+          </div>
+
+          <h3>1. The Delhi Sultanate (1206–1526)</h3>
+          <p>Established following the Second Battle of Tarain (1192) when Muhammad Ghori defeated Prithviraj Chauhan. The Sultanate was ruled across five successive dynasties:</p>
+          <ol>
+            <li><strong>Slave (Mamluk) Dynasty (1206–1290):</strong> Founded by Qutb-ud-din Aibak.</li>
+            <li><strong>Khalji Dynasty (1290–1320):</strong> Expanded central control under Alauddin Khalji.</li>
+            <li><strong>Tughlaq Dynasty (1320–1414):</strong> Peak territorial reach under Muhammad bin Tughlaq.</li>
+            <li><strong>Sayyid Dynasty (1414–1451):</strong> Ruled post-Timur's invasion.</li>
+            <li><strong>Lodi Dynasty (1451–1526):</strong> Final Afghan dynasty defeated by Babur.</li>
+          </ol>
+
+          <div class="callout callout-fact">
+            <div class="callout-title">🏛️ Achievements & Unconquered Frontiers</div>
+            <br>• <strong>Achievements:</strong> Centralized administration, standardized land revenue, road networks, Persian cultural synthesis, and iconic monuments (Qutb Minar, forts).
+            <br>• <strong>Unconquered Regions:</strong> The Sultanate never controlled all of India. Major independent regions included the <strong>Ahoms</strong> in Assam, the <strong>Vijayanagara Empire</strong> in the South, various <strong>Rajput Kingdoms</strong>, Kashmir, and Kerala.
+          </div>
+
+          <h3>2. The Vijayanagara Empire (1336–1646)</h3>
+          <p>Founded by brothers <strong>Harihara I</strong> and <strong>Bukka Raya I</strong> with its capital at <strong>Hampi</strong> (Karnataka). It became one of the wealthiest global trade cities of the medieval era.</p>
+          <ul>
+            <li><strong>Golden Age:</strong> Reached its peak under Emperor <strong>Krishnadevaraya</strong> (1509–1529), who promoted trade, literature, and Dravidian temple architecture.</li>
+            <li><strong>Decline:</strong> Decisively defeated by an alliance of Deccan Sultanates at the <strong>Battle of Talikota (1565)</strong>.</li>
+          </ul>
+
+          <h3>3. Rajput Kingdoms</h3>
+          <p>Ruled extensive territories across Western and Northern India (Mewar, Marwar, Amber/Jaipur, Bikaner, Bundi). Famous military rulers included <strong>Rana Kumbha</strong>, <strong>Rana Sanga</strong>, and <strong>Maharana Pratap</strong>. While some kingdoms forged diplomatic alliances with the Mughals, others maintained fierce independence.</p>
+
+          <h3>4. The Ahom Kingdom (1228–1826)</h3>
+          <p>Founded by <strong>Sukaphaa</strong> in Assam, the Ahom Dynasty ruled the Brahmaputra Valley for nearly <strong>600 years</strong>. In 1671, Ahom general <strong>Lachit Borphukan</strong> decisively defeated the Mughal army at the historic <strong>Battle of Saraighat</strong> using river naval tactics, ensuring Assam remained unconquered by the Mughals.</p>`
+  },
+  {
+    id: 'ch2-mughal-governance-akbar-aurangzeb',
+    chapterId: 'political-map',
+    chapterTitle: "Reshaping India's Political Map",
+    icon: '🕌',
+    title: '10. The Mughal Era: Statecraft & Akbar vs. Aurangzeb Comparative Rule',
+    difficulty: 'Hard',
+    readTime: '10 min',
+    preview: 'Analyze Mughal statecraft from Babur to Aurangzeb, featuring an unabridged side-by-side comparative analysis between Akbar\'s inclusive rule and Aurangzeb\'s orthodox expansionism.',
+    contentHtml: `<p>The <strong>Mughal Empire (1526–1857)</strong> was founded by <strong>Babur</strong> after defeating Ibrahim Lodi at the <strong>First Battle of Panipat (1526)</strong>. Under six major emperors (<em>Great Mughals</em>), the empire created a sophisticated administrative state covering most of South Asia.</p>
+
+          <div class="callout callout-important">
+            <div class="callout-title">⚖️ The Two Contrasting Pillars of Mughal Governance</div>
+            The trajectory of Mughal power was shaped by two fundamentally contrasting governance models: <strong>Akbar's syncretic integration</strong> (16th century) versus <strong>Aurangzeb's orthodox centralization</strong> (17th century).
+          </div>
+
+          <h3>Detailed Comparative Analysis: Akbar vs. Aurangzeb</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Governance Dimension</th>
+                <th>👑 Akbar the Great (1556–1605)</th>
+                <th>⚔️ Aurangzeb Alamgir (1658–1707)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Philosophical Approach</strong></td>
+                <td><strong>Inclusive & Syncretic (*Sulh-i-kul*):</strong> Promoted 'Universal Peace' and integrated non-Muslim communities into high governance.</td>
+                <td><strong>Orthodox Islamic Centralization:</strong> Governed strictly according to orthodox Sunni Islamic jurisprudence (*Fatawa-e-Alamgiri*).</td>
+              </tr>
+              <tr>
+                <td><strong>Religious Tax & Freedom</strong></td>
+                <td>Abolished the <em>Jizya</em> poll tax and pilgrim tax; built the <em>Ibadat Khana</em> for interfaith debates; promulgated <em>Din-i-Ilahi</em>.</td>
+                <td>Re-imposed <em>Jizya</em> in 1679; restricted public non-Muslim religious festivals; demolished several newly constructed temples.</td>
+              </tr>
+              <tr>
+                <td><strong>Rajput & Regional Policy</strong></td>
+                <td>Forged strong matrimonial & strategic alliances; granted high imperial mansabs to Rajput kings (e.g., Raja Man Singh).</td>
+                <td>Alienated Rajputs of Mewar & Marwar; engaged in prolonged conflicts with Rajputs, Sikhs, and Marathas.</td>
+              </tr>
+              <tr>
+                <td><strong>Land Revenue & Admin</strong></td>
+                <td>Standardized land measurement and tax collection under Raja Todar Mal's <strong>Zabt System</strong>; structured <strong>Mansabdari System</strong>.</td>
+                <td>Maintained Mansabdari system, but efficiency declined due to severe financial stress and the <em>Jagirdari Crisis</em>.</td>
+              </tr>
+              <tr>
+                <td><strong>Military & Territorial Reach</strong></td>
+                <td>Consolidated Northern & Central India with balanced frontiers and stable local governance.</td>
+                <td>Expanded empire to maximum size by annexing Bijapur & Golconda; got trapped in a 25-year Deccan campaign (*Deccan Ulcer*).</td>
+              </tr>
+              <tr>
+                <td><strong>Financial Health</strong></td>
+                <td>Prosperous, high-surplus treasury supported by flourishing trade, craftsmanship, and stable agriculture.</td>
+                <td>Depleted treasury caused by relentless warfare, military maintenance, and widespread regional revolts.</td>
+              </tr>
+              <tr>
+                <td><strong>Long-Term Imperial Stability</strong></td>
+                <td>Laid a multi-ethnic administrative foundation that sustained Mughal prosperity for over a century.</td>
+                <td>Achieved maximum land area, but severe internal rebellions and financial drain triggered rapid decline post-1707.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="callout callout-observation">
+            <div class="callout-title">💡 Post-Aurangzeb Imperial Fragmentation</div>
+            Following Aurangzeb's death in 1707, weak central successors could not hold the vast empire together. Regional governors (*Subahdars*) broke away to establish independent successor states in Hyderabad, Bengal, and Awadh.
+          </div>`
+  },
+  {
+    id: 'ch2-regional-powers-eic-expansion',
+    chapterId: 'political-map',
+    chapterTitle: "Reshaping India's Political Map",
+    icon: '⚔️',
+    title: '11. Rise of Regional Powers & British East India Company Expansion',
+    difficulty: 'Hard',
+    readTime: '10 min',
+    preview: 'Examine 18th-century regional powers (Marathas, Sikhs, Mysore), the rise of British EIC trade-to-empire control (Plassey, Buxar), Doctrine of Lapse, Subsidiary Alliance, and the 1857 Revolt.',
+    contentHtml: `<p>As Mughal authority faded in the 18th century, powerful regional states emerged to claim political dominance before being systematically subjugated by the British East India Company (EIC).</p>
+
+          <h3>1. Powerful 18th-Century Regional Powers</h3>
+          <ul>
+            <li><strong>Maratha Confederacy:</strong> Founded by <strong>Chhatrapati Shivaji Maharaj</strong> with the goal of <em>Swarajya</em> (self-rule). Developed guerrilla warfare (*Ganimi Kawa*) and a powerful coastal navy. Under the <strong>Peshwas</strong>, Marathas expanded across central and northern India before losing to the British in three Anglo-Maratha Wars (1775–1818).</li>
+            <li><strong>Sikh Empire:</strong> Founded by <strong>Maharaja Ranjit Singh</strong> with capital at Lahore. Created a modern, formidable <em>Khalsa Army</em> trained by European officers. Annexed by the British following the Anglo-Sikh Wars (1845–1849).</li>
+            <li><strong>Kingdom of Mysore:</strong> Led by <strong>Hyder Ali</strong> and <strong>Tipu Sultan</strong> ('Tiger of Mysore'). Tipu modernized his army and invented iron-cased <strong>rocket artillery</strong> used in four Anglo-Mysore Wars. Mysore was captured in 1799 after Tipu was killed at Seringapatam.</li>
+          </ul>
+
+          <h3>2. British East India Company: From Trade to Empire</h3>
+          <p>Chartered by Queen Elizabeth I in 1600 for spice and cotton trade, the EIC gradually transformed into a sovereign territorial power through decisive military victories:</p>
+          <div class="callout callout-fact">
+            <div class="callout-title">⚔️ Two Battles That Gave Britain India</div>
+            <br>• <strong>Battle of Plassey (1757):</strong> Robert Clive defeated Nawab Siraj-ud-Daulah of Bengal, marking the onset of British political control.
+            <br>• <strong>Battle of Buxar (1764):</strong> EIC defeated combined armies of Mughal Emperor Shah Alam II, Nawab of Awadh, and Nawab of Bengal—securing <strong>Diwani Rights</strong> (revenue collection) over Bengal, Bihar, and Odisha.
+          </div>
+
+          <h3>3. Imperial Annexation Instruments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Policy</th>
+                <th>Architect</th>
+                <th>Core Mechanism</th>
+                <th>States Annexed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Subsidiary Alliance</strong></td>
+                <td>Lord Wellesley (1798)</td>
+                <td>Rulers surrendered foreign policy & defense, accepted British troops, and paid for their upkeep.</td>
+                <td>Hyderabad (1798), Mysore (1799), Awadh (1801).</td>
+              </tr>
+              <tr>
+                <td><strong>Doctrine of Lapse</strong></td>
+                <td>Lord Dalhousie (1848)</td>
+                <td>If a native ruler died without a direct male biological heir, his kingdom was automatically annexed.</td>
+                <td>Satara (1848), Jhansi (1853), Nagpur (1854).</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>4. The Revolt of 1857 & The British Raj</h3>
+          <p>Widespread political, economic, and military grievances culminated in the <strong>Revolt of 1857</strong> led by Rani Lakshmibai, Tantia Tope, Nana Sahib, Begum Hazrat Mahal, and Bahadur Shah Zafar. Though suppressed, the revolt ended EIC rule: under the <strong>Government of India Act 1858</strong>, administrative control was transferred directly to the <strong>British Crown</strong> (the <em>British Raj</em>).</p>`
+  },
   {
     id: 'ch2-colonial-partition-princely',
     chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
+    chapterTitle: "Reshaping India's Political Map",
     icon: '🗺️',
-    title: '9. Colonial Partition & The Challenge of 565+ Princely States',
+    title: '12. Colonial Partition & The Challenge of 565+ Princely States',
     difficulty: 'Medium',
     readTime: '8 min',
-    preview: 'Understand the administrative chaos at Indian independence in August 1947, split between British Indian Provinces and over 565 semi-autonomous Princely States.',
-    contentHtml: `<p>On August 15, 1947, India gained independence from British colonial rule, but was simultaneously shattered by Partition into two separate dominions: India and Pakistan. Beyond the British Indian provinces, India faced the existential threat of balkanization due to <strong>565+ Princely States</strong>.</p>
+    preview: 'Understand the administrative division under the British Raj between Direct Provinces and 565 Princely States, Partition of 1947, and the grave threat of Indian Balkanization.',
+    contentHtml: `<p>Under the British Raj (1858–1947), the Indian subcontinent was politically bifurcated into two distinct administrative systems:</p>
 
-          <div class="callout callout-definition">
-            <div class="callout-title">📖 Paramountcy & The Legal Loophole</div>
-            Under the <em>Indian Independence Act of 1947</em>, British Paramountcy over princely states lapsed. Legally, all 565+ princely rulers gained the right to join India, join Pakistan, or declare complete independence—threatening to divide India into hundreds of warring fiefdoms.
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>🏛️ British Indian Provinces</th>
+                <th>👑 Princely States (565 Kingdom Enclaves)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Governance</strong></td>
+                <td>Direct rule by British Governors reporting to the Viceroy.</td>
+                <td>Internal autonomy under native Maharajas, Nizams, Nawabs, and Rajas.</td>
+              </tr>
+              <tr>
+                <td><strong>Coverage</strong></td>
+                <td>~60% of land area (Bombay, Madras, Bengal, Punjab, UP).</td>
+                <td>~40% of land area, ~33% of population across <strong>565 states</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>Sovereignty</strong></td>
+                <td>Direct British territorial sovereignty & legal codes.</td>
+                <td>Recognized British <strong>Paramountcy</strong> (ceded defense & foreign affairs).</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <h3>3 High-Risk Refusal Princely States</h3>
-          <ul>
-            <li><strong>Hyderabad:</strong> The Nizam wanted an independent sovereign state in the heart of peninsular India. Resolved via <em>Operation Polo</em> (September 1948 police action).</li>
-            <li><strong>Junagadh:</strong> The Nawab acceded to Pakistan despite a 99% Hindu population. Resolved via plebiscite in February 1948 favoring India.</li>
-            <li><strong>Jammu & Kashmir:</strong> Maharaja Hari Singh signed the <em>Instrument of Accession</em> on October 26, 1947, following invasion by Pakistani tribal raiders.</li>
-          </ul>`
+          <div class="callout callout-important">
+            <div class="callout-title">⚡ The Independence & Balkanization Crisis (1947)</div>
+            On August 15, 1947, India gained independence alongside Partition into India and Pakistan. Crucially, the <em>Indian Independence Act 1947</em> terminated British Paramountcy over the 565 Princely States, granting each ruler three choices:
+            <br>1. Accede to <strong>India</strong>
+            <br>2. Accede to <strong>Pakistan</strong>
+            <br>3. Remain an <strong>Independent Sovereign Nation</strong>
+            <br><br>If states chose independence, India faced total <em>Balkanization</em>—fragmenting into hundreds of landlocked, hostile countries.
+          </div>`
   },
   {
     id: 'ch2-sardar-patel-integration',
     chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
+    chapterTitle: "Reshaping India's Political Map",
     icon: '🏛️',
-    title: '10. Sardar Vallabhbhai Patel & Diplomatic Integration',
+    title: '13. Sardar Vallabhbhai Patel & Diplomatic Integration',
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Learn how India\'s first Deputy Prime Minister and Home Minister, Sardar Vallabhbhai Patel, alongside V.P. Menon, integrated hundreds of princely states into a unified democratic union.',
-    contentHtml: `<p>The successful territorial integration of 565 princely states into a unified Indian Union remains one of the greatest administrative and political achievements in modern world history, led by <strong>Sardar Vallabhbhai Patel</strong> and Senior Civil Servant <strong>V.P. Menon</strong>.</p>
+    contentHtml: `<p>The territorial integration of 565 princely states into the Indian Union stands as one of history's greatest political achievements, engineered by <strong>Sardar Vallabhbhai Patel</strong> (Home Minister & Deputy PM) and civil servant <strong>V.P. Menon</strong>.</p>
 
-          <div class="callout callout-important">
-            <div class="callout-title">🏛️ The Instrument of Accession (IoA)</div>
-            The legal document signed by princely rulers ceding control over three core subjects to the Dominion of India: <strong>Defense</strong>, <strong>External Affairs</strong>, and <strong>Communications</strong>.
+          <div class="callout callout-definition">
+            <div class="callout-title">📜 The Instrument of Accession (IoA)</div>
+            The legal mechanism through which princely rulers surrendered control over three primary national domains to the Dominion of India: <strong>Defense</strong>, <strong>External Affairs</strong>, and <strong>Communications</strong>.
           </div>
 
-          <h3>Patel's Carrot-and-Stick Diplomacy</h3>
+          <h3>Patel's Masterful Strategy</h3>
           <ul>
-            <li><strong>The Carrot (Privy Purses):</strong> Royal rulers were offered guaranteed tax-free annual pensions (Privy Purses), retention of private properties, and ceremonial titles.</li>
-            <li><strong>The Stick (Firm Federal Unity):</strong> Patel warned rulers that refusal to join would trigger popular democratic uprisings by their own citizens, leaving the Indian military unable to guarantee their safety.</li>
+            <li><strong>Patriotic Appeal:</strong> Appealed to rulers' historical patriotism to shape a strong, united democratic India.</li>
+            <li><strong>The Carrot (Privy Purses):</strong> Offered tax-free annual state pensions (<em>Privy Purses</em>), retention of personal titles, and property rights.</li>
+            <li><strong>The Stick (Firm Realpolitik):</strong> Warned that refusing accession would unleash popular democratic uprisings among their own subjects, which the Indian government could not suppress on their behalf.</li>
           </ul>
 
           <div class="callout callout-observation">
-            <div class="callout-title">💡 Historical Title</div>
-            Sardar Patel earned the title <strong>'Bismarck of India'</strong> for unifying the nation just as Otto von Bismarck unified Germany in the 19th century.
+            <div class="callout-title">💡 The Bismarck of India</div>
+            Sardar Patel is revered as the <strong>'Iron Man of India'</strong> and <strong>'Bismarck of India'</strong> for forging a unified republic without widespread civil war.
           </div>`
   },
   {
     id: 'ch2-case-studies-integration',
     chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
+    chapterTitle: "Reshaping India's Political Map",
     icon: '🗡️',
-    title: '11. Case Studies in Accession: Junagadh, Hyderabad & Kashmir',
+    title: '14. Case Studies in Accession: Junagadh, Hyderabad & Kashmir',
     difficulty: 'Hard',
     readTime: '9 min',
     preview: 'Examine the dramatic accession stories of the three princely states that resisted initial integration: Junagadh, Hyderabad, and Jammu & Kashmir.',
-    contentHtml: `<p>While over 500 princely states signed the Instrument of Accession smoothly before August 15, 1947, three key princely states posed extraordinary geopolitical challenges: <strong>Hyderabad</strong>, <strong>Junagadh</strong>, and <strong>Jammu & Kashmir</strong>.</p>
-          
+    contentHtml: `<p>While over 500 princely states signed the Instrument of Accession before August 15, 1947, three states presented complex geopolitical crises:</p>
+
           <div class="callout callout-definition">
-            <div class="callout-title">🏛️ Case Study 1: Hyderabad (Operation Polo)</div>
-            The Nizam of Hyderabad, Mir Osman Ali Khan, ruled a Hindu-majority territory in peninsular India. He refused accession and established a brutal paramilitary force called the <strong>Razakars</strong>. In September 1948, India launched a 5-day police action named <strong>Operation Polo</strong>, integrating Hyderabad into the Indian Union.
+            <div class="callout-title">🏛️ 1. Junagadh (Plebiscite)</div>
+            The Nawab of Junagadh (Gujarat) acceded to Pakistan despite having an 80%+ Hindu population and no geographical contiguity with Pakistan. Citizens formed a provisional government (<em>Arzi Hukumat</em>); the Nawab fled to Karachi. A democratic <strong>plebiscite in February 1948</strong> saw 99.95% of voters choose India.
           </div>
 
           <div class="callout callout-definition">
-            <div class="callout-title">🏛️ Case Study 2: Junagadh</div>
-            The Nawab of Junagadh (Gujarat) acceded to Pakistan despite being geographically surrounded by India with an 80%+ Hindu population. Following a popular citizen uprising and plebiscite in February 1948, over 99% voted to join India.
+            <div class="callout-title">🏛️ 2. Hyderabad (Operation Polo)</div>
+            The Nizam of Hyderabad (Mir Osman Ali Khan) sought independence in peninsular India. A radical paramilitary group, the <strong>Razakars</strong> (led by Qasim Razvi), terrorized local citizens. India launched a 5-day police action named <strong>Operation Polo</strong> in September 1948, securing the Nizam's surrender and accession.
           </div>
 
           <div class="callout callout-definition">
-            <div class="callout-title">🏛️ Case Study 3: Jammu & Kashmir</div>
-            Maharaja Hari Singh sought independence initially. However, following an armed invasion by tribal raiders backed by Pakistan in October 1947, the Maharaja signed the <strong>Instrument of Accession</strong> on October 26, 1947, bringing J&K legally into India.
+            <div class="callout-title">🏛️ 3. Jammu & Kashmir (Tribal Invasion & IoA)</div>
+            Maharaja Hari Singh initially sought independence. However, on October 22, 1947, Pakistan-backed armed Pashtun tribals invaded Kashmir. Hari Singh appealed to India for military aid and signed the <strong>Instrument of Accession on October 26, 1947</strong>. Indian forces repelled the invasion, leading to the 1947–48 war and the creation of the Line of Control (LoC).
           </div>`
   },
   {
     id: 'ch2-states-reorganisation-act',
     chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
+    chapterTitle: "Reshaping India's Political Map",
     icon: '📜',
-    title: '12. States Reorganisation Commission (SRC 1953) & Act of 1956',
+    title: '15. States Reorganisation Commission (SRC 1953) & Act of 1956',
     difficulty: 'Hard',
     readTime: '9 min',
-    preview: 'Explore the reorganization of Indian state boundaries along linguistic lines following Potti Sreeramulu\'s martyrdom and the recommendations of the Fazl Ali Commission.',
-    contentHtml: `<p>Following independence, internal borders were drawn arbitrarily based on British administrative convenience. Popular democratic movements demanded state reorganization based on major spoken regional languages.</p>
+    preview: 'Explore the reorganization of Indian state boundaries along linguistic lines following Potti Sreeramulu\'s martyrdom and the recommendations of the Fazal Ali Commission.',
+    contentHtml: `<p>Post-1947, India inherited a confusing 4-part state system (Part A, B, C, D). Citizens demanded state boundaries aligned with major spoken regional languages to make government accessible.</p>
 
           <div class="callout callout-important">
-            <div class="callout-title">📜 Martyrdom of Potti Sreeramulu</div>
-            Freedom fighter <strong>Potti Sreeramulu</strong> undertook a 56-day hunger strike demanding a separate Telugu-speaking state. His martyrdom triggered widespread protests, leading to the creation of <strong>Andhra State</strong> on October 1, 1953—India's first linguistic state.
+            <div class="callout-title">🚨 The Andhra Movement & Potti Sriramulu</div>
+            Freedom fighter <strong>Potti Sriramulu</strong> undertook a fast unto death demanding a separate Telugu-speaking state carved out of Madras State. After fasting for <strong>56 days</strong>, he passed away on December 15, 1952. Widespread protests compelled Prime Minister Nehru to form <strong>Andhra State on October 1, 1953</strong>—India's first linguistic state.
           </div>
 
           <h3>States Reorganisation Commission (SRC 1953)</h3>
-          <p>Chaired by <strong>Justice Fazal Ali</strong> along with members H.N. Kunzru and K.M. Panikkar. The SRC recommended replacing the old Part A, B, C, D state classifications with a unified linguistic administrative framework.</p>
+          <p>Appointed in December 1953 under <strong>Justice Fazal Ali</strong> (Chairman), <strong>H.N. Kunzru</strong>, and <strong>K.M. Panikkar</strong> to study nationwide boundary reorganization.</p>
 
           <div class="formula-block">
-            States Reorganisation Act (1956) = Created 14 States + 6 Union Territories
-          </div>`
+            States Reorganisation Act (1956) = Replaced Part A/B/C/D with 14 States + 6 Union Territories
+          </div>
+
+          <p>Linguistic reorganization united speakers of Malayalam (Kerala), Kannada (Karnataka/Mysore), Telugu (Andhra Pradesh), Tamil (Madras), and Marathi/Gujarati within distinct state units.</p>`
   },
   {
     id: 'ch2-post-1956-statehood-milestones',
     chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
-    icon: '🚩',
-    title: '13. Post-1956 State Reorganisation Milestones (1960–1987)',
-    difficulty: 'Hard',
-    readTime: '9 min',
-    preview: 'Trace the creation of new Indian states from 1960 to 1987, including the Bombay split, Goa liberation, Nagaland, and Northeast reorganisations.',
-    contentHtml: `<p>The political map of India continued to evolve dynamically post-1956 to address linguistic, regional, and ethnic aspirations across different territories.</p>
-
-          <h3>Key Statehood Milestones (1960–1987)</h3>
-          <ul>
-            <li><strong>Bombay Reorganisation Act (1960):</strong> Divided the bilingual Bombay state into <strong>Maharashtra</strong> (for Marathi speakers) and <strong>Gujarat</strong> (for Gujarati speakers).</li>
-            <li><strong>Nagaland (1963):</strong> Carved out of Assam as India's 16th state to satisfy Naga tribal aspirations.</li>
-            <li><strong>Punjab Reorganisation (1966):</strong> Bifurcated Punjab into <strong>Punjab</strong> (Punjabi-speaking), <strong>Haryana</strong> (Hindi-speaking), and <strong>Himachal Pradesh</strong> (UT, later state in 1971).</li>
-            <li><strong>North-Eastern Areas Act (1971):</strong> Created full states of <strong>Meghalaya</strong>, <strong>Manipur</strong>, and <strong>Tripura</strong>.</li>
-            <li><strong>Sikkim (1975):</strong> Integrated as India's 22nd state via the 36th Constitutional Amendment.</li>
-            <li><strong>Goa, Mizoram & Arunachal Pradesh (1987):</strong> Granted full statehood.</li>
-          </ul>`
-  },
-  {
-    id: 'ch2-2000-2014-new-states-movement',
-    chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
+    chapterTitle: "Reshaping India's Political Map",
     icon: '⛰️',
-    title: '14. The 2000 & 2014 Statehood Movements: Chhattisgarh, Uttarakhand, Jharkhand & Telangana',
+    title: '16. Chronological State Creation (1960–2014) & Master Summary Timeline',
     difficulty: 'Hard',
-    readTime: '9 min',
-    preview: 'Examine the formation of Chhattisgarh, Uttarakhand, Jharkhand in November 2000 and Telangana in June 2014 driven by administrative and tribal development demands.',
-    contentHtml: `<p>In the 21st century, state reorganization shifted from linguistic identity to administrative efficiency, regional imbalance, and localized economic development.</p>
+    readTime: '10 min',
+    preview: 'Follow the full timeline of state reorganisations from 1960 (Bombay split) to 2014 (Telangana), along with the complete master summary timeline table.',
+    contentHtml: `<p>India's internal boundaries have continued to evolve to accommodate linguistic identity, regional economic balance, and localized governance aspirations.</p>
 
-          <h3>New States Created in November 2000</h3>
-          <ul>
-            <li><strong>Chhattisgarh (Nov 1, 2000):</strong> Carved out of eastern Madhya Pradesh to accelerate tribal development.</li>
-            <li><strong>Uttarakhand (Nov 9, 2000):</strong> Carved out of the hill districts of northern Uttar Pradesh.</li>
-            <li><strong>Jharkhand (Nov 15, 2000):</strong> Carved out of southern Bihar to give voice to tribal populations and mineral belts.</li>
-          </ul>
+          <h3>Evolution of States (1960–2014)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>State / Territory Formed</th>
+                <th>Precursor / Carved From</th>
+                <th>Primary Driver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>1960</strong></td><td>Gujarat & Maharashtra</td><td>Bombay State</td><td>Linguistic division (Gujarati vs. Marathi).</td></tr>
+              <tr><td><strong>1963</strong></td><td>Nagaland</td><td>Assam (Naga Hills)</td><td>Ethnic Naga tribal autonomy.</td></tr>
+              <tr><td><strong>1966</strong></td><td>Haryana & Chandigarh (UT)</td><td>Punjab State</td><td>Hindi-speaking region separated from Punjab.</td></tr>
+              <tr><td><strong>1971</strong></td><td>Himachal Pradesh</td><td>Union Territory</td><td>Elevated to full statehood.</td></tr>
+              <tr><td><strong>1972</strong></td><td>Meghalaya, Manipur, Tripura</td><td>Assam & UTs</td><td>Northeastern administrative reorganization.</td></tr>
+              <tr><td><strong>1975</strong></td><td>Sikkim</td><td>Chogyal Kingdom</td><td>36th Amendment; voted to join India.</td></tr>
+              <tr><td><strong>1987</strong></td><td>Goa, Mizoram, Arunachal Pradesh</td><td>Union Territories</td><td>Full statehood granted.</td></tr>
+              <tr><td><strong>2000</strong></td><td>Chhattisgarh, Uttarakhand, Jharkhand</td><td>MP, UP, Bihar</td><td>Tribal development & hill region governance.</td></tr>
+              <tr><td><strong>2014</strong></td><td>Telangana</td><td>Andhra Pradesh</td><td>Decades of regional agitation & economic disparity.</td></tr>
+              <tr><td><strong>2019</strong></td><td>UTs of J&K and Ladakh</td><td>State of J&K</td><td>J&K Reorganisation Act 2019.</td></tr>
+            </tbody>
+          </table>
 
-          <h3>Telangana Statehood Movement (2014)</h3>
-          <p>On June 2, 2014, <strong>Telangana</strong> was created as India's 29th state by bifurcating Andhra Pradesh following decades of public agitation over regional economic imbalance and water allocation.</p>`
-  },
-  {
-    id: 'ch2-jk-reorganisation-2019-ut-mergers',
-    chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
-    icon: '🏔️',
-    title: '15. Modern Political Map: J&K Reorganisation (2019) & UT Mergers',
-    difficulty: 'Hard',
-    readTime: '8 min',
-    preview: 'Understand the J&K Reorganisation Act 2019, UT of Ladakh creation, UT mergers, and India\'s current 28 States and 8 Union Territories map.',
-    contentHtml: `<p>Recent constitutional amendments reshaped Union Territory governance structures for administrative efficiency and national integration.</p>
-
-          <div class="callout callout-important">
-            <div class="callout-title">🏛️ Jammu & Kashmir Reorganisation Act (2019)</div>
-            In August 2019, Parliament abrogated special provisions under Article 370 and restructured the state of Jammu & Kashmir into two Union Territories:
-            <br>1. <strong>UT of Jammu & Kashmir</strong> (with a Legislative Assembly)
-            <br>2. <strong>UT of Ladakh</strong> (without a Legislative Assembly)
-          </div>
-
-          <h3>Merger of Daman & Diu and Dadra & Nagar Haveli (2020)</h3>
-          <p>Effective January 26, 2020, two adjacent western Union Territories were merged into a single administrative entity: <strong>Dadra and Nagar Haveli and Daman and Diu</strong> to streamline governance and reduce administrative costs.</p>`
-  },
-  {
-    id: 'ch2-constitutional-articles-disputes',
-    chapterId: 'political-map',
-    chapterTitle: 'Reshaping India\'s Political Map',
-    icon: '📜',
-    title: '16. Articles 1, 2 & 3 Mechanism & Inter-State Boundary Disputes',
-    difficulty: 'Hard',
-    readTime: '9 min',
-    preview: 'Learn the constitutional mechanics under Articles 1, 2, and 3 for altering state borders and how inter-state river water disputes are resolved.',
-    contentHtml: `<p>The Constitution of India establishes clear procedures for territorial adjustment while providing constitutional machinery for resolving interstate river and boundary disputes.</p>
-
-          <h3>Articles 1 to 4 of the Constitution</h3>
-          <ul>
-            <li><strong>Article 1:</strong> Declares "India, that is Bharat, shall be a Union of States."</li>
-            <li><strong>Article 2:</strong> Empowers Parliament to admit or establish new states into the Union.</li>
-            <li><strong>Article 3:</strong> Empowers Parliament to form new states, alter state boundaries, or change state names by simple majority.</li>
-          </ul>
-
-          <div class="callout callout-observation">
-            <div class="callout-title">🌊 Inter-State Water Dispute Tribunals</div>
-            Article 262 empowers Parliament to adjudicate disputes regarding the use, distribution, or control of waters of inter-state rivers (e.g., Cauvery Water Dispute Tribunal, Krishna Water Dispute Tribunal).
-          </div>`
+          <h3>Master Summary Timeline (1206 – 2014)</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Historical Milestone</th>
+                <th>Key Significance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>1206</strong></td><td>Delhi Sultanate Established</td><td>Beginning of 5-dynasty Sultanate rule in North India.</td></tr>
+              <tr><td><strong>1336</strong></td><td>Vijayanagara Empire Founded</td><td>Golden era of South Indian Dravidian culture & trade.</td></tr>
+              <tr><td><strong>1526</strong></td><td>First Battle of Panipat</td><td>Babur defeats Ibrahim Lodi; Mughal Empire begins.</td></tr>
+              <tr><td><strong>1556–1605</strong></td><td>Reign of Akbar the Great</td><td><em>Sulh-i-kul</em> tolerance, <em>Zabt</em> tax system, Rajput alliances.</td></tr>
+              <tr><td><strong>1658–1707</strong></td><td>Reign of Aurangzeb</td><td>Peak territorial expansion; <em>Deccan Ulcer</em> & imperial decline.</td></tr>
+              <tr><td><strong>1671</strong></td><td>Battle of Saraighat</td><td>Lachit Borphukan's Ahoms defeat Mughal navy in Assam.</td></tr>
+              <tr><td><strong>1757</strong></td><td>Battle of Plassey</td><td>EIC political rule begins in Bengal under Clive.</td></tr>
+              <tr><td><strong>1764</strong></td><td>Battle of Buxar</td><td>EIC wins <em>Diwani Rights</em> over Bengal, Bihar, and Odisha.</td></tr>
+              <tr><td><strong>1799</strong></td><td>Fall of Seringapatam</td><td>Tipu Sultan dies; Mysore captured by British.</td></tr>
+              <tr><td><strong>1857</strong></td><td>Revolt of 1857</td><td>Great uprising against EIC; end of Company rule.</td></tr>
+              <tr><td><strong>1858</strong></td><td>British Raj Begins</td><td>Direct Crown rule established under Gov of India Act.</td></tr>
+              <tr><td><strong>1947</strong></td><td>Independence & Partition</td><td>India & Pakistan created; 565 princely states face accession.</td></tr>
+              <tr><td><strong>1947–49</strong></td><td>Princely State Integration</td><td>Patel & Menon integrate Junagadh, Hyderabad, J&K.</td></tr>
+              <tr><td><strong>1953</strong></td><td>Andhra State Created</td><td>First linguistic state post-Potti Sriramulu's fast.</td></tr>
+              <tr><td><strong>1956</strong></td><td>States Reorganisation Act</td><td>Realigned India into 14 States & 6 Union Territories.</td></tr>
+              <tr><td><strong>2014</strong></td><td>Telangana Created</td><td>29th state formed by bifurcating Andhra Pradesh.</td></tr>
+            </tbody>
+          </table>`
   },
   {
     id: 'ch5-adult-franchise-article326',
@@ -896,8 +1070,8 @@ const TOPICS = [
             <li><strong>Innovation & Adaptation:</strong> Implementing cutting-edge technology and customer solutions.</li>
           </ol>`
   }
-];
 
+];
 
 const FLASHCARDS = [
   {
@@ -3399,8 +3573,57 @@ const FLASHCARDS = [
     "topic": "Factors of Production",
     "q": "What is factor substitution?",
     "a": "Replacing one factor of production with another (such as replacing manual labour with capital machinery)."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which battle in 1671 saw Ahom general Lachit Borphukan defeat the Mughal navy?",
+    "a": "Battle of Saraighat."
+  },
+  {
+    "topic": "Political Map",
+    "q": "What key religious tax was abolished by Akbar but re-imposed by Aurangzeb in 1679?",
+    "a": "Jizya (tax on non-Muslims)."
+  },
+  {
+    "topic": "Political Map",
+    "q": "What land revenue system was established under Akbar by Raja Todar Mal?",
+    "a": "Zabt System."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which 1757 battle established British East India Company political control in Bengal?",
+    "a": "Battle of Plassey (Robert Clive defeated Siraj-ud-Daulah)."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which 1764 battle granted the EIC Diwani (tax collection) rights over Bengal, Bihar, and Odisha?",
+    "a": "Battle of Buxar."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which annexation policy introduced by Lord Dalhousie annexed Jhansi and Satara?",
+    "a": "Doctrine of Lapse."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which annexation alliance policy introduced by Lord Wellesley forced Hyderabad and Mysore to accept British troops?",
+    "a": "Subsidiary Alliance."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Who undertook a 56-day hunger strike leading to the creation of Andhra State in 1953?",
+    "a": "Potti Sriramulu."
+  },
+  {
+    "topic": "Political Map",
+    "q": "What police action code name was used to integrate Hyderabad into India in September 1948?",
+    "a": "Operation Polo."
+  },
+  {
+    "topic": "Political Map",
+    "q": "How was the accession of Junagadh decisively settled in February 1948?",
+    "a": "Through a democratic plebiscite (99.95% voted for India)."
   }
-  ,
 ];
 
 const MCQS = [
@@ -9403,6 +9626,66 @@ const MCQS = [
     ],
     "ans": 0,
     "exp": "Production factor detail: Creating goods and services to satisfy human wants and maximize societal welfare is the correct answer."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which Ahom military commander defeated the Mughal army at the Battle of Saraighat in 1671?",
+    "opts": [
+      "Lachit Borphukan",
+      "Sukaphaa",
+      "Harihara I",
+      "Prithviraj Chauhan"
+    ],
+    "ans": 0,
+    "exp": "Lachit Borphukan led the Ahom Kingdom to a decisive naval victory against the Mughals at Saraighat in 1671."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which of the following describes Akbar's core governance policy of universal peace and religious inclusivity?",
+    "opts": [
+      "Sulh-i-kul",
+      "Fatawa-e-Alamgiri",
+      "Doctrine of Lapse",
+      "Zabt System"
+    ],
+    "ans": 0,
+    "exp": "Sulh-i-kul (\"Universal Peace\") was Akbar's foundational policy promoting religious tolerance and syncretism."
+  },
+  {
+    "topic": "Political Map",
+    "q": "The Battle of Buxar (1764) was historically significant because it granted the British East India Company:",
+    "opts": [
+      "Diwani Rights (tax collection) over Bengal, Bihar, and Odisha",
+      "Complete control over Punjab",
+      "The title of Emperor of India",
+      "Control over the Ahom Kingdom"
+    ],
+    "ans": 0,
+    "exp": "Winning the Battle of Buxar granted the EIC Diwani rights to collect land revenues across Bengal, Bihar, and Odisha."
+  },
+  {
+    "topic": "Political Map",
+    "q": "Which freedom fighter's 56-day fast unto death led to the creation of Andhra State in 1953?",
+    "opts": [
+      "Potti Sriramulu",
+      "V.P. Menon",
+      "Sardar Patel",
+      "Tanguturi Prakasam"
+    ],
+    "ans": 0,
+    "exp": "Potti Sriramulu's martyrdom after 56 days of fasting led directly to the formation of Andhra State on Oct 1, 1953."
+  },
+  {
+    "topic": "Political Map",
+    "q": "What was the official name of the military/police operation launched in September 1948 to integrate Hyderabad?",
+    "opts": [
+      "Operation Polo",
+      "Operation Vijay",
+      "Operation Meghdoot",
+      "Operation Blue Star"
+    ],
+    "ans": 0,
+    "exp": "Operation Polo was the 5-day police action launched in September 1948 that integrated Hyderabad into India."
   }
 ];
 
