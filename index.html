@@ -35,7 +35,7 @@
   <header>
     <div class="nav-wrap">
       <a href="#home" class="logo hero-link">
-        <div class="logo-mark">G8</div>
+        <div class="logo-mark">SST</div>
         <div class="logo-text-wrap" style="display: flex; flex-direction: column; gap: 1px;">
           <span>SST Study Guide</span>
           <span class="author-badge"
@@ -45,14 +45,6 @@
       </a>
 
       <nav>
-        <div class="syllabus-toggle-wrap">
-          <span class="toggle-label">Mode:</span>
-          <div class="toggle-pill-container">
-            <button class="toggle-pill-btn active" id="header-mode-pa1" onclick="setSyllabusMode('PA 1')">📝 PA 1 (Ch 1-2)</button>
-            <button class="toggle-pill-btn" id="header-mode-term1" onclick="setSyllabusMode('Term 1')">🎓 Term 1 (All)</button>
-          </div>
-        </div>
-
         <div class="search-wrap">
           <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"></circle>
@@ -63,14 +55,18 @@
         <a href="#home" class="nav-link active">Home</a>
         <a href="#natural-resources" class="nav-link">Natural Resources</a>
         <a href="#political-map" class="nav-link">Political Map</a>
-        <a href="#electoral-system" class="nav-link" id="nav-electoral-system">Electoral System</a>
-        <a href="#factors-production" class="nav-link" id="nav-factors-production">Factors of Production</a>
+        <a href="#electoral-system" class="nav-link">Electoral System</a>
+        <a href="#factors-production" class="nav-link">Factors of Production</a>
         <a href="#diagrams" class="nav-link">Diagrams & Maps</a>
         <a href="#quick-revision" class="nav-link">Quick Revision</a>
         <a href="#flashcards" class="nav-link">Flashcards</a>
         <a href="#mcqs" class="nav-link">MCQs Quiz</a>
         <a href="#important-questions" class="nav-link">Important Questions</a>
         <a href="#glossary" class="nav-link">Glossary</a>
+        <span class="author-pill"
+          style="background: rgba(34, 211, 238, 0.12); color: var(--cyan); border: 1px solid rgba(34, 211, 238, 0.35); padding: 5px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; margin-left: 4px;">
+          Made by Manav
+        </span>
       </nav>
 
       <button class="nav-toggle" aria-label="Toggle mobile navigation menu">☰</button>
@@ -89,17 +85,6 @@
         Master Social Science through Interactive Learning. Unabridged textbook explanations, interactive mind maps,
         visual schematics, 500 smart active recall flashcards, 500 practice MCQs, and 15-minute exam revision tools.
       </p>
-
-      <!-- Hero Syllabus Mode Selector -->
-      <div style="margin: 20px 0; display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap;">
-        <span style="font-weight: 700; color: var(--cyan); font-size: 0.88rem; letter-spacing: 0.3px;">Exam Syllabus Filter:</span>
-        <div class="syllabus-toggle-wrap" style="transform: scale(1.05);">
-          <div class="toggle-pill-container">
-            <button class="toggle-pill-btn active" id="hero-mode-pa1" onclick="setSyllabusMode('PA 1')">📝 PA 1 (Chapters 1 & 2)</button>
-            <button class="toggle-pill-btn" id="hero-mode-term1" onclick="setSyllabusMode('Term 1')">🎓 Term 1 (All 4 Chapters)</button>
-          </div>
-        </div>
-      </div>
 
       <div class="hero-actions">
         <a href="#natural-resources" class="cta-btn hero-link">
@@ -153,7 +138,9 @@
       <div class="section-head">
         <div class="section-tag">CHAPTER 2</div>
         <h2>Reshaping India's Political Map</h2>
-        <p>Master India's political evolution: pre-colonial empires (Delhi Sultanate, Vijayanagara, Rajputs, Ahoms), the Mughal era with an unabridged <strong>Akbar vs. Aurangzeb rule comparison</strong>, regional powers & EIC expansion (Plassey, Buxar, Subsidiary Alliance, Doctrine of Lapse, 1857 Revolt), Sardar Patel's integration of 565+ princely states, Andhra Movement & Potti Sriramulu, SRC 1953, States Reorganisation Act 1956, and statehood milestones up to 2014.</p>
+        <p>Master the historical integration of 565+ princely states, Sardar Vallabhbhai Patel's diplomacy, the
+          Instrument of Accession, States Reorganisation Commission (SRC 1953), States Reorganisation Act 1956, and
+          linguistic state reorganization.</p>
       </div>
 
       <div class="card-grid" id="political-map-grid">
@@ -331,15 +318,6 @@
         <div class="section-tag">DICTIONARY</div>
         <h2>Alphabetical Social Science Glossary</h2>
         <p>Complete A-Z key terms dictionary with instant letter filtering.</p>
-      </div>
-
-      <div class="glossary-topic-controls" id="glossary-topic-wrap"
-        style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; justify-content:center;">
-        <button class="glossary-topic-btn fc-filter-btn active" onclick="filterGlossaryTopic(event, 'All')">All Topics</button>
-        <button class="glossary-topic-btn fc-filter-btn" onclick="filterGlossaryTopic(event, 'Natural Resources')">Natural Resources</button>
-        <button class="glossary-topic-btn fc-filter-btn" onclick="filterGlossaryTopic(event, 'Political Map')">Political Map</button>
-        <button class="glossary-topic-btn fc-filter-btn" onclick="filterGlossaryTopic(event, 'Electoral System')">Electoral System</button>
-        <button class="glossary-topic-btn fc-filter-btn" onclick="filterGlossaryTopic(event, 'Factors of Production')">Factors of Production</button>
       </div>
 
       <div class="glossary-letters" id="glossary-letters">
